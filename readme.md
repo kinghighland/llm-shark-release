@@ -1,6 +1,9 @@
-# LLM-Shark v0.1.1
+# LLM-Shark v1.0.x
 
-本仓库不公开源码，Release 仅提供二进制，请在 Assets 下载。
+本仓库不公开源码，Release 仅提供二进制，请在 Assets 下载，也可以在微软应用商店下载：
+Web-Link:	https://apps.microsoft.com/detail/9NJQ6N01CF65
+MS-Store: 	ms-windows-store://pdp/?productid=9NJQ6N01CF65
+
 
 LLM-Shark 是一款面向通信/网络工程师的桌面端“对话式信令诊断工具”。它把 PCAP 中的关键信令抽取、时序图呈现、案例知识库检索与大模型分析串成一条可复用的诊断链路，让定位问题更快、更可解释、可沉淀。
 
