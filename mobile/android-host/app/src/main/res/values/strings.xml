@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Menu -->
+    <string name="menuSettings">Settings</string>
+    <string name="menuAbout">About</string>
+    <string name="menuBack">Back</string>
+
+    <!-- Options panel -->
+    <string name="callInfoTitle">[Call Information Collection]</string>
+    <string name="callSide">Call Side:</string>
+    <string name="checkboxSip183">SIP 183</string>
+    <string name="checkboxSip180">SIP 180 Ringing</string>
+    <string name="checkboxSip200">SIP 200 Off-hook</string>
+    <string name="responseCode">Response Code:</string>
+    <string name="responseCodeHint">e.g.: 487, 503</string>
+    <string name="sipText">SIP Text:</string>
+    <string name="sipTextHint">Enter search text</string>
+    <string name="provisionalCode">Provisional Response:</string>
+    <string name="provisionalCodeHint">e.g.: 100, 181</string>
+    <string name="auxInfoTitle">[Auxiliary Information Collection]</string>
+    <string name="dsmTitle">[Dialog State Machine - DSM]</string>
+    <string name="callDescTitle">[Call Description] (Optional)</string>
+    <string name="callDescHint">Enter call description (max 500 chars)...</string>
+    <string name="diagOpTitle">[Diagnosis Operation]</string>
+    <string name="usageTrialCount">Today: 0/10</string>
+    <string name="btnSearch">Search Cases</string>
+    <string name="btnDiagnose">Start Diagnosis</string>
+    <string name="searchResultDefault">Search result: 0 case(s)</string>
+    <string name="statusWaiting">Status: Waiting...</string>
+
+    <!-- Chat panel -->
+    <string name="btnExecuteDiagnosis">Execute Diagnosis</string>
+    <string name="chatRoundCountDefault">Round: 0/5</string>
+    <string name="btnEndChat">End Chat</string>
+    <string name="btnClearChat">Clear Chat</string>
+    <string name="chatInputHint">Enter follow-up question...</string>
+    <string name="btnSend">Send</string>
+
+    <!-- Settings panel -->
+    <string name="settingsApiTitle">[API Settings]</string>
+    <string name="settingsEndpoint">API Endpoint:</string>
+    <string name="settingsEndpointHint">https://api.siliconflow.cn</string>
+    <string name="settingsModel">Model:</string>
+    <string name="settingsModelHint">Deepseek-ai/DeepSeek-V4-Flash</string>
+    <string name="settingsApiKey">API Key:</string>
+    <string name="settingsApiKeyHint">sk-...</string>
+    <string name="btnValidateApi">Validate API</string>
+    <string name="btnSaveConfig">Save Config</string>
+    <string name="settingsQuickOpTitle">[Quick Actions]</string>
+    <string name="btnAutoFill">Restore Defaults (Use Built-in Trial Service)</string>
+    <string name="settingsTrialHint">The built-in trial service may not be available long-term.</string>
+    <string name="btnOpenInvite">Open Invite Link (Get API Key)</string>
+    <string name="settingsNewUserHint">Tip: New users get 20M tokens free</string>
+    <string name="settingsLanguageTitle">[Language Settings]</string>
+    <string name="settingsLanguage">Interface Language:</string>
+    <string name="settingsLanguageRestartHint">Restart the app for language change to take effect</string>
+
+    <!-- About panel -->
+    <string name="aboutLogoDesc">LLM-Shark Logo</string>
+    <string name="aboutTitle">LLM-Shark Mobile</string>
+    <string name="aboutSubtitle">Conversational Signaling Diagnosis Tool</string>
+    <string name="aboutTagline">AI-Powered FlowShark</string>
+    <string name="aboutVersionDefault">Version: 1.0.x</string>
+    <string name="aboutDeveloper">Developer: flowshark studio</string>
+    <string name="aboutDesktopTitle">About LLM-Shark Desktop</string>
+    <string name="aboutDesktopDesc">AI-powered PCAP diagnosis × Built-in case library × Interactive root cause analysis</string>
+    <string name="aboutStoreHint">Download from Microsoft Store</string>
+
+    <!-- Message item -->
+    <string name="thinkingProcess">▼ Thinking Process</string>
+</resources>

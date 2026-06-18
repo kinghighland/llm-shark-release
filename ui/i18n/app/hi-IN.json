@@ -1,0 +1,194 @@
+{
+  "app": {
+    "pickPcap": "PCAP चुनें",
+    "analyze": "निदान",
+    "notLoaded": "लोड नहीं हुआ",
+    "pickedFileHint": "फ़ाइल चुनी गई है। “निदान” पर क्लिक करें ताकि सारांश मिले और आगे बढ़ने का निर्णय हो सके।",
+    "documentTitleWithFile": "LLM निदान - {file}"
+  },
+  "top": {
+    "about": "जानकारी",
+    "settings": "सेटिंग्स",
+    "theme": "थीम",
+    "language": "भाषा"
+  },
+  "sidebar": {
+    "toggle": "सिकोड़ें/फैलाएँ"
+  },
+  "sessions": {
+    "title": "सत्र",
+    "new": "नया सत्र",
+    "sessionN": "सत्र {n}",
+    "rename": "नाम बदलें",
+    "delete": "हटाएं",
+    "unnamed": "अनाम सत्र",
+    "renamePromptTitle": "सत्र का नाम बदलें",
+    "deleteConfirm": "इस सत्र को हटाएँ?"
+  },
+  "chat": {
+    "title": "चैट",
+    "placeholder": "प्रश्न पूछें…",
+    "send": "भेजें",
+    "stop": "रोकें",
+    "needAnalyzeFirst": "पहले “निदान” पर क्लिक करके संदर्भ बनाएं, फिर प्रश्न पूछें।"
+  },
+  "report": {
+    "title": "रिपोर्ट"
+  },
+  "settings": {
+    "modelConfigTitle": "मॉडल कॉन्फ़िगरेशन (OpenAI संगत)",
+    "endpoint": "Endpoint",
+    "apiKey": "API कुंजी",
+    "apiKeyPlaceholder": "वैकल्पिक (जैसे स्थानीय मॉडल)",
+    "toggleApiKeyTitle": "दिखाएँ/छिपाएँ",
+    "show": "दिखाएँ",
+    "hide": "छिपाएँ",
+    "model": "Model",
+    "validate": "सत्यापित करें",
+    "validating": "सत्यापन हो रहा है…",
+    "validateOk": "सत्यापन सफल",
+    "validateOkWithDetail": "सत्यापन सफल: {detail}",
+    "validateFail": "सत्यापन विफल: {reason}",
+    "temperature": "Temperature",
+    "theme": "Theme",
+    "themeDark": "डार्क",
+    "themeLight": "लाइट",
+    "stream": "Stream",
+    "useKb": "ज्ञान आधार उपयोग करें",
+    "caseLibraryTitle": "केस लाइब्रेरी",
+    "useCaseLibrary": "केस लाइब्रेरी उपयोग करें",
+    "kbUserPath": "KB फ़ाइल पथ",
+    "kbUserPathPlaceholder": "वैकल्पिक: .md केस फ़ाइल चुनें (सादा टेक्स्ट, संपादन योग्य)",
+    "wiresharkTitle": "Wireshark",
+    "tsharkPath": "tshark.exe पथ",
+    "tsharkPathPlaceholder": "पहले “डिटेक्ट” करें। न मिले तो tshark.exe (Wireshark) चुनें",
+    "detect": "डिटेक्ट",
+    "choose": "चुनें…",
+    "tsharkDetected": "tshark मिला: {path}",
+    "tsharkNotFound": "tshark नहीं मिला। Wireshark इंस्टॉल करें या tshark.exe मैन्युअली चुनें।",
+    "saveCfg": "सहेजें",
+    "loadCfg": "लोड करें",
+    "cfgNoSaved": "कोई सहेजी गई सेटिंग नहीं",
+    "cfgLoaded": "लोड हो गया",
+    "cfgSaved": "सहेज दिया गया",
+    "cfgParseFail": "सेटिंग पार्स विफल",
+    "promptAuto": "बाहरी prompt.md अपने आप उपयोग करें (मौजूद होने पर आंतरिक को बदलें)",
+    "promptPath": "प्रॉम्प्ट फ़ाइल पथ",
+    "promptPathPlaceholder": "वैकल्पिक: prompt.md चुनें (सादा टेक्स्ट, संपादन योग्य)"
+  },
+  "license": {
+    "title": "लाइसेंस",
+    "exportFeature": "मशीन फ़िंगरप्रिंट निर्यात करें",
+    "importLicense": "लाइसेंस फ़ाइल आयात करें",
+    "buyPerpetual": "3-वर्षीय लाइसेंस खरीदें",
+    "buyYearly": "1-वर्षीय लाइसेंस खरीदें",
+    "softwareUpdate": "सॉफ़्टवेयर अपडेट",
+    "statusUnknown": "लाइसेंस: अज्ञात",
+    "statusAuthed": "लाइसेंस: सक्रिय",
+    "statusAuthedWithDetail": "लाइसेंस: सक्रिय ({detail})",
+    "statusUnAuthed": "लाइसेंस: निष्क्रिय ({reason})",
+    "detailExpire": "समाप्ति {exp}",
+    "exportDialogTitle": "मशीन फ़िंगरप्रिंट निर्यात करें"
+  },
+  "common": {
+    "copy": "कॉपी",
+    "yes": "हाँ",
+    "no": "नहीं",
+    "unknown": "?",
+    "confirm": "पुष्टि करें",
+    "copied": "कॉपी हो गया।",
+    "close": "बंद करें",
+    "loading": "लोड हो रहा है..."
+  },
+  "errors": {
+    "pathEmpty": "पथ खाली है",
+    "noShellOpen": "shell.open उपलब्ध नहीं है। पथ कॉपी करके फ़ाइल एक्सप्लोरर में खोलें।",
+    "noTauriApiSummary": "Tauri API नहीं मिला (window.__TAURI__)। डेस्कटॉप ऐप से चलाएँ और tauri.conf.json में build.withGlobalTauri सक्षम करें।",
+    "noTauriApiStatus": "Tauri API नहीं मिला। विश्लेषण संभव नहीं।",
+    "noDialogSave": "dialog.save उपलब्ध नहीं है। निर्यात संभव नहीं।",
+    "needAnalyzeToAsk": "पहले निदान करें (रिपोर्ट बनाएं) फिर प्रश्न पूछें",
+    "streamRunning": "स्ट्रीम चल रहा है। कृपया प्रतीक्षा करें।",
+    "noEventApi": "event API नहीं मिला। स्ट्रीमिंग उपलब्ध नहीं।",
+    "uiRuntimeError": "UI रनटाइम त्रुटि: {message} (फ़ाइल: {file}, पंक्ति: {line})",
+    "scriptLoadFail": "स्क्रिप्ट लोड/रन विफल: {src}",
+    "unhandledPromise": "अनहैंडल्ड Promise त्रुटि: {reason}"
+  },
+  "about": {
+    "title": "जानकारी",
+    "subtitle": "वार्तालाप आधारित सिग्नलिंग निदान टूल, AI-सक्षम Flowshark",
+    "version": "संस्करण",
+    "runtime": "रनटाइम",
+    "developer": "डेवलपर",
+    "developerName": "flowshark studio",
+    "copyright": "कॉपीराइट",
+    "copyrightValue": "© 2026",
+    "copyInfo": "जानकारी कॉपी करें",
+    "dialogText": "LLM-Shark\n\nवार्तालाप आधारित सिग्नलिंग निदान टूल, AI-सक्षम Flowshark"
+  },
+  "dialogs": {
+    "openPcapTitle": "PCAP फ़ाइल चुनें",
+    "openKbTitle": "केस लाइब्रेरी फ़ाइल चुनें",
+    "openTsharkTitle": "tshark.exe चुनें",
+    "importLicenseTitle": "लाइसेंस फ़ाइल आयात करें",
+    "openPromptTitle": "prompt.md चुनें",
+    "promptMarkdown": "प्रॉम्प्ट Markdown"
+  },
+  "mermaid": {
+    "notLoaded": "Mermaid लाइब्रेरी नहीं मिली। चैट में डायग्राम रेंडर नहीं हो सकता।",
+    "zoomIn": "ज़ूम इन",
+    "zoomOut": "ज़ूम आउट",
+    "fit": "फिट",
+    "syntaxError": "Mermaid सिंटैक्स त्रुटि{extra}",
+    "versionHint": "(mermaid {v}; ऑनलाइन व्यूअर अलग हो सकता है)",
+    "renderFailSuppressed": "Mermaid रेंडर विफल (त्रुटि ग्राफ छिपाया गया): {msg} {ver}",
+    "renderFail": "Mermaid रेंडर विफल: {msg}\n\n{code}",
+    "renderFailSummary": "चैट में Mermaid रेंडर विफल ({count}): {first}"
+  },
+  "markdown": {
+    "renderFail": "Markdown रेंडर विफल: {msg}"
+  },
+  "summary": {
+    "expand": "फैलाएँ",
+    "collapse": "सिकोड़ें"
+  },
+  "sig": {
+    "markdownTableHeader": "| Frame | Time | Protocol | Message | Cause | Src | Dst |\n|---:|---|---|---|---|---|---|",
+    "noData": "लोड करने के लिए सिग्नलिंग डेटा नहीं है।",
+    "allShown": "सभी सिग्नलिंग आइटम दिखाए गए हैं।",
+    "fullHint": "पूर्ण सिग्नलिंग: {count} आइटम।\nआप और पृष्ठ लोड कर सकते हैं या CSV/JSON फ़ाइल सीधे खोल सकते हैं।",
+    "nextPage": "अगला पृष्ठ लोड करें ({pageSize})",
+    "appendTable": "सिग्नलिंग तालिका जोड़ें:\n\n{table}",
+    "sequenceDiagramTitle": "सिग्नलिंग अनुक्रम आरेख:",
+    "keyTableTitle": "मुख्य सिग्नलिंग तालिका:",
+    "appendTableTitle": "सिग्नलिंग तालिका जोड़ें:",
+    "fullTitle": "पूर्ण सिग्नलिंग:",
+    "pageHeader": "आइटम {start}-{end} / कुल {total}",
+    "onlyFirstN": "पहले {n} आइटम दिखाए जा रहे हैं (कुल {total}).",
+    "openCsv": "CSV खोलें",
+    "openJson": "JSON खोलें",
+    "openDir": "फ़ोल्डर खोलें",
+    "copyCsvPath": "CSV पथ कॉपी करें"
+  },
+  "statusBar": {
+    "template": "कॉलर/कॉल्ड: {a} -> {b}  शुरू/अवधि: {start} / {dur}  प्रकार: {callType}  रिंगिंग: {has180}  उत्तर: {has200}  रद्द: {hasCancel}  ड्रॉप: {dropped}  केस: {kbCount}",
+    "labels": {
+      "number": "नंबर",
+      "time": "शुरू",
+      "duration": "अवधि",
+      "ringing": "रिंगिंग",
+      "offhook": "उठाया गया",
+      "answered": "उत्तर दिया",
+      "cancel": "रद्द",
+      "dropped": "ड्रॉप",
+      "cases": "केस"
+    }
+  },
+  "analyze": {
+    "fetchingSummary": "सारांश प्राप्त किया जा रहा है…",
+    "tooLarge": "फ़ाइल आकार सीमा ({size}) से बड़ी है। विश्लेषण रोक दिया गया।",
+    "detectedProtocols": "पता लगे प्रोटोकॉल: {protocols}",
+    "notAnalyzable": "सारांश बताता है कि निदान रोकना चाहिए ({reason}).",
+    "summaryOk": "सारांश स्वीकृत। विश्लेषण शुरू हो रहा है…",
+    "defaultPrompt": "प्रॉम्प्ट की आवश्यकताओं का सख्ती से पालन करें और निदान कार्य शुरू करें।"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "store": {
+    "entry": "Abonnement",
+    "title": "Abonnementscentrum",
+    "refresh": "Vernieuwen",
+    "restore": "Aankopen herstellen",
+    "manage": "Abonnement beheren",
+    "openProduct": "Microsoft Store openen",
+    "plan": {
+      "pro_month": "Pro maandelijks",
+      "pro_year": "Pro jaarlijks"
+    },
+    "compare": {
+      "title": "Vergelijk plannen in één oogopslag",
+      "sub": "Gratis voor snelle checks, Pro voor volledige diagnose en exports.",
+      "tag1": "AI-signaleringsexpert",
+      "tag2": "Efficiënte professionele diagnose",
+      "tag3": "LLM-Shark casusbibliotheek",
+      "tag4": "Zeer grote efficiëntiewinst",
+      "free": {
+        "tier": "Gratis",
+        "price": "Basistoegang",
+        "f1": "3 analyses per dag",
+        "f2": "10 vervolgvragen per dag",
+        "f3": "Geschikt voor licht gebruik",
+        "f4": "Altijd upgraden"
+      },
+      "proMonth": {
+        "badge": "Populair",
+        "tier": "Pro (maand)",
+        "price": "Maandelijkse facturatie",
+        "f1": "Onbeperkte analyses",
+        "f2": "Onbeperkte vervolgvragen",
+        "f3": "Geschikt voor intensief gebruik",
+        "f4": "Maandabonnement"
+      },
+      "proYear": {
+        "badge": "Beste waarde",
+        "tier": "Pro (jaar)",
+        "price": "Jaarlijkse facturatie",
+        "f1": "Onbeperkte analyses",
+        "f2": "Onbeperkte vervolgvragen",
+        "f3": "Geschikt voor intensief gebruik",
+        "f4": "Jaarabonnement"
+      }
+    },
+    "priceUnknown": "Prijs niet beschikbaar",
+    "expireAt": "Verloopt op {date}",
+    "planTier": "Plan: {tier}",
+    "planActive": "Actief",
+    "planPurchase": "Abonneren",
+    "purchaseFailed": "Aankoop mislukt: {reason}",
+    "statusLoading": "Abonnement controleren…",
+    "statusUnavailable": "Store niet beschikbaar",
+    "listFailed": "Producten laden mislukt: {reason}",
+    "statusActiveExpire": "Actief ({plan}) · Verloopt op {date}",
+    "statusActive": "Actief ({plan})",
+    "statusFree": "Gratis",
+    "restoreFailed": "Herstellen mislukt: {reason}",
+    "restoreOk": "Hersteld",
+    "manageFailed": "Beheer openen mislukt: {reason}",
+    "openFailed": "Store openen mislukt: {reason}"
+  }
+}

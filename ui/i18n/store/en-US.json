@@ -1,0 +1,66 @@
+{
+  "store": {
+    "entry": "Membership",
+    "title": "Membership Center",
+    "refresh": "Refresh",
+    "restore": "Restore Purchases",
+    "manage": "Manage Subscription",
+    "openProduct": "Open Microsoft Store",
+    "plan": {
+      "pro_month": "Pro Monthly",
+      "pro_year": "Pro Yearly"
+    },
+    "compare": {
+      "title": "Compare plans at a glance",
+      "sub": "Save time for heavy use, stay light for quick checks. Same features. Only usage limits and pricing differ.",
+      "tag1": "AI Signaling Expert",
+      "tag2": "Efficient Pro Diagnostics",
+      "tag3": "LLM-Shark Case Library",
+      "tag4": "Major Efficiency Boost",
+      "free": {
+        "tier": "Free",
+        "price": "$0",
+        "f1": "3 analyses per day",
+        "f2": "10 follow-ups per day",
+        "f3": "Best for light use",
+        "f4": "Upgrade anytime"
+      },
+      "proMonth": {
+        "badge": "Popular",
+        "tier": "Pro (month)",
+        "price": "Subscription / month",
+        "f1": "Unlimited analyses",
+        "f2": "Unlimited follow-ups",
+        "f3": "Best for heavy use",
+        "f4": "Monthly subscription"
+      },
+      "proYear": {
+        "badge": "Best value",
+        "tier": "Pro (year)",
+        "price": "Subscription / year",
+        "f1": "Unlimited analyses",
+        "f2": "Unlimited follow-ups",
+        "f3": "Best for heavy use",
+        "f4": "Yearly subscription"
+      }
+    },
+    "priceUnknown": "Price unavailable",
+    "expireAt": "Expires on {date}",
+    "planTier": "Plan: {tier}",
+    "planActive": "Active",
+    "planPurchase": "Subscribe",
+    "purchaseFailed": "Purchase failed: {reason}",
+    "statusLoading": "Checking subscription…",
+    "statusUnavailable": "Store unavailable",
+    "listFailed": "Failed to load products: {reason}",
+    "statusActiveExpire": "Active ({plan}) · Expires {date}",
+    "statusActive": "Active ({plan})",
+    "statusLicensed": "Licensed",
+    "statusTrial": "Trial license",
+    "statusFree": "Free",
+    "restoreFailed": "Restore failed: {reason}",
+    "restoreOk": "Restored",
+    "manageFailed": "Open manage page failed: {reason}",
+    "openFailed": "Open store failed: {reason}"
+  }
+}

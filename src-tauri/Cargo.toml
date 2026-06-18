@@ -1,0 +1,26 @@
+[package]
+name = "LLM-Shark"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+[dependencies]
+tauri = { version = "1", features = ["api-all"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+anyhow = "1"
+reqwest = { version = "0.11", default-features = false, features = ["json", "rustls-tls", "stream"] }
+futures-util = "0.3"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+llm_license = { path = "../license" }
+windows = { version = "0.61", features = ["Foundation", "Foundation_Collections", "Storage_Streams", "System", "Services_Store", "Security_Cryptography", "Security_Cryptography_DataProtection", "Win32_Foundation", "Win32_System_WinRT", "Win32_UI_WindowsAndMessaging", "Win32_UI_Shell"] }
+windows-collections = "0.2"
+windows-future = "0.2"
+qrcode = "0.14"
+
+[features]
+custom-protocol = ["tauri/custom-protocol"]
+
+[build-dependencies]
+embed-resource = "2"

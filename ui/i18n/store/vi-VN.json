@@ -1,0 +1,64 @@
+{
+  "store": {
+    "entry": "Gói thuê bao",
+    "title": "Trung tâm thuê bao",
+    "refresh": "Làm mới",
+    "restore": "Khôi phục mua hàng",
+    "manage": "Quản lý thuê bao",
+    "openProduct": "Mở Microsoft Store",
+    "plan": {
+      "pro_month": "Pro theo tháng",
+      "pro_year": "Pro theo năm"
+    },
+    "compare": {
+      "title": "So sánh gói trong nháy mắt",
+      "sub": "Miễn phí cho kiểm tra nhanh, Pro cho chẩn đoán đầy đủ và xuất dữ liệu.",
+      "tag1": "Chuyên gia tín hiệu AI",
+      "tag2": "Chẩn đoán chuyên nghiệp hiệu quả",
+      "tag3": "Thư viện ca LLM-Shark",
+      "tag4": "Tăng hiệu suất vượt trội",
+      "free": {
+        "tier": "Miễn phí",
+        "price": "Truy cập cơ bản",
+        "f1": "3 phân tích mỗi ngày",
+        "f2": "10 câu hỏi theo dõi mỗi ngày",
+        "f3": "Phù hợp cho nhu cầu nhẹ",
+        "f4": "Nâng cấp bất cứ lúc nào"
+      },
+      "proMonth": {
+        "badge": "Phổ biến",
+        "tier": "Pro (tháng)",
+        "price": "Thanh toán hàng tháng",
+        "f1": "Phân tích không giới hạn",
+        "f2": "Câu hỏi theo dõi không giới hạn",
+        "f3": "Phù hợp cho nhu cầu cao",
+        "f4": "Đăng ký theo tháng"
+      },
+      "proYear": {
+        "badge": "Đáng giá nhất",
+        "tier": "Pro (năm)",
+        "price": "Thanh toán hàng năm",
+        "f1": "Phân tích không giới hạn",
+        "f2": "Câu hỏi theo dõi không giới hạn",
+        "f3": "Phù hợp cho nhu cầu cao",
+        "f4": "Đăng ký theo năm"
+      }
+    },
+    "priceUnknown": "Giá chưa khả dụng",
+    "expireAt": "Hết hạn {date}",
+    "planTier": "Gói: {tier}",
+    "planActive": "Đang hoạt động",
+    "planPurchase": "Đăng ký",
+    "purchaseFailed": "Mua thất bại: {reason}",
+    "statusLoading": "Đang kiểm tra thuê bao…",
+    "statusUnavailable": "Store không khả dụng",
+    "listFailed": "Tải sản phẩm thất bại: {reason}",
+    "statusActiveExpire": "Đang hoạt động ({plan}) · Hết hạn {date}",
+    "statusActive": "Đang hoạt động ({plan})",
+    "statusFree": "Miễn phí",
+    "restoreFailed": "Khôi phục thất bại: {reason}",
+    "restoreOk": "Đã khôi phục",
+    "manageFailed": "Mở quản lý thất bại: {reason}",
+    "openFailed": "Mở store thất bại: {reason}"
+  }
+}

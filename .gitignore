@@ -1,0 +1,93 @@
+
+KIRO.md
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+.claude/
+.deepseek/
+.atomcode/
+*.swp
+*.swo
+
+.cargo-home/
+.kiro.vscode/
+target-batch/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+app.log 
+
+# private cfg
+app/config/models_config.json
+example/*
+
+# KEYS
+license/keys/*
+license/keys.rs 
+license/*.json
+license/keys-BACKUP.zip
+license.json
+feature.sig
+
+# reference
+refer/*
+
+# exe
+*.exe
+src-tauri/bin/*.exe
+src-tauri/kb/*
+
+# build
+target/
+**/target/
+
+# tmp
+temp/
+data/test.pcap
+data/test.details.txt
+__pycache__/
+*.py[cod]
+
+# agent
+.agent/*
+.codex/*
+.kiro/*
+.shared/*
+
+# android host build artifacts
+mobile/android-host/.gradle/
+mobile/android-host/**/build/
+mobile/android-host/local.properties
+mobile/android-host/*.iml
+mobile/android-host/captures/
+mobile/android-host/.externalNativeBuild/
+mobile/android-host/.cxx/
+mobile/android-host/gradle-*.zip
+mobile/android-host/app/src/main/jniLibs/**/libffi_bridge.so
+
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+fshark/build/
+fshark/dist/
+fshark/wheels/
+*.egg-info
+
+# Virtual environments
+venv/
+.venv
+.env
+
+# Other
+.DS_Store

@@ -1,0 +1,64 @@
+{
+  "store": {
+    "entry": "الاشتراك",
+    "title": "مركز الاشتراك",
+    "refresh": "تحديث",
+    "restore": "استعادة المشتريات",
+    "manage": "إدارة الاشتراك",
+    "openProduct": "فتح Microsoft Store",
+    "plan": {
+      "pro_month": "Pro شهري",
+      "pro_year": "Pro سنوي"
+    },
+    "compare": {
+      "title": "مقارنة الخطط بنظرة سريعة",
+      "sub": "مجاني للفحص السريع، وPro للتشخيص الكامل والتصدير.",
+      "tag1": "خبير الإشارات بالذكاء الاصطناعي",
+      "tag2": "تشخيص احترافي بكفاءة",
+      "tag3": "مكتبة حالات LLM-Shark",
+      "tag4": "تعزيز كبير للكفاءة",
+      "free": {
+        "tier": "مجاني",
+        "price": "وصول أساسي",
+        "f1": "ملخص تشخيص سريع",
+        "f2": "سجل تقارير محدود",
+        "f3": "إعداد نموذج محلي",
+        "f4": "بدون تصدير"
+      },
+      "proMonth": {
+        "badge": "الأكثر شيوعًا",
+        "tier": "Pro (شهري)",
+        "price": "فوترة شهرية",
+        "f1": "تقرير كامل + مخططات Mermaid",
+        "f2": "جلسات غير محدودة",
+        "f3": "تصدير CSV/JSON",
+        "f4": "دعم ذو أولوية"
+      },
+      "proYear": {
+        "badge": "أفضل قيمة",
+        "tier": "Pro (سنوي)",
+        "price": "فوترة سنوية",
+        "f1": "تقرير كامل + مخططات Mermaid",
+        "f2": "جلسات غير محدودة",
+        "f3": "تصدير CSV/JSON",
+        "f4": "دعم ذو أولوية"
+      }
+    },
+    "priceUnknown": "السعر غير متاح",
+    "expireAt": "ينتهي في {date}",
+    "planTier": "الخطة: {tier}",
+    "planActive": "نشطة",
+    "planPurchase": "اشترك",
+    "purchaseFailed": "فشل الشراء: {reason}",
+    "statusLoading": "جارٍ التحقق من الاشتراك…",
+    "statusUnavailable": "المتجر غير متاح",
+    "listFailed": "فشل تحميل المنتجات: {reason}",
+    "statusActiveExpire": "نشطة ({plan}) · ينتهي في {date}",
+    "statusActive": "نشطة ({plan})",
+    "statusFree": "مجاني",
+    "restoreFailed": "فشلت الاستعادة: {reason}",
+    "restoreOk": "تمت الاستعادة",
+    "manageFailed": "فشل فتح إدارة الاشتراك: {reason}",
+    "openFailed": "فشل فتح المتجر: {reason}"
+  }
+}

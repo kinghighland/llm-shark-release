@@ -1,0 +1,64 @@
+{
+  "store": {
+    "entry": "會員中心",
+    "title": "會員中心",
+    "refresh": "刷新",
+    "restore": "恢復購買",
+    "manage": "管理訂閱",
+    "openProduct": "查看 Microsoft Store",
+    "plan": {
+      "pro_month": "Pro 月度",
+      "pro_year": "Pro 年度"
+    },
+    "compare": {
+      "title": "權益對比一覽",
+      "sub": "高頻分析更省時，低頻也能輕鬆入門。功能一致，僅次數限制與價格不同。",
+      "tag1": "AI 信令專家",
+      "tag2": "高效專業診斷",
+      "tag3": "流鯊案例庫",
+      "tag4": "極大提升效能",
+      "free": {
+        "tier": "免費",
+        "price": "¥0",
+        "f1": "每日 3 次分析（解析+診斷）",
+        "f2": "每日 10 次追問",
+        "f3": "適合輕度使用",
+        "f4": "可隨時升級"
+      },
+      "proMonth": {
+        "badge": "熱門",
+        "tier": "Pro（月度）",
+        "price": "訂閱價 / 月",
+        "f1": "分析不限次數",
+        "f2": "追問不限次數",
+        "f3": "適合高頻使用",
+        "f4": "支援月度訂閱"
+      },
+      "proYear": {
+        "badge": "更划算",
+        "tier": "Pro（年度）",
+        "price": "訂閱價 / 年",
+        "f1": "分析不限次數",
+        "f2": "追問不限次數",
+        "f3": "適合高頻使用",
+        "f4": "支援年度訂閱"
+      }
+    },
+    "priceUnknown": "價格暫不可用",
+    "expireAt": "到期時間 {date}",
+    "planTier": "方案：{tier}",
+    "planActive": "已啟用",
+    "planPurchase": "訂閱",
+    "purchaseFailed": "購買失敗：{reason}",
+    "statusLoading": "正在檢查訂閱…",
+    "statusUnavailable": "商店不可用",
+    "listFailed": "取得商品失敗：{reason}",
+    "statusActiveExpire": "已啟用（{plan}），到期 {date}",
+    "statusActive": "已啟用（{plan}）",
+    "statusFree": "免費版",
+    "restoreFailed": "恢復購買失敗：{reason}",
+    "restoreOk": "恢復成功",
+    "manageFailed": "開啟訂閱管理失敗：{reason}",
+    "openFailed": "開啟商店失敗：{reason}"
+  }
+}

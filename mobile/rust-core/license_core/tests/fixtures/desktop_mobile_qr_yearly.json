@@ -1,0 +1,15 @@
+{
+  "payload": {
+    "daily_analysis_limit": 10,
+    "license_expire_at": "2026-04-18T09:13:54.499688400+00:00",
+    "license_id": "Tester",
+    "license_issued_at": "2026-04-11T09:13:54.499688400+00:00",
+    "nonce": "1775898834499-1",
+    "plan_tier": "yearly",
+    "qr_expires_at": "2026-04-11T09:18:54+00:00",
+    "qr_issued_at": "2026-04-11T09:13:54.499688400+00:00",
+    "signature": "DLD19SkY+ovMGw6EO/BQYC2qzHomNRgGvnn/b+fJpi8RWKmbEyW8zTUOdmOsRfSaQsvr3YhfwCcjFk9EbqKdCgdE13Lf9KLsVQ2OerDS9yLKXkCfltTU3UTYQryWJ0cm6vnFw4L8BDmUUCqdrj/35RKCSpUiWG1UCRM5YLXp4TGpjFOnBkqHhgRAUrpJsoPYg8nEMM8MlFNje/QCvv4L5R486W+qVK4eXHEVQoOO9Nch/Kdm8TnvfMAhp1J5LRa4QtUyeyBe6vlxe6PstPhmoFkzaR4B9tnTp0CXlYytskWM/9ysUYVGTG/UP/pBnSDDBO+4eQMizk99YJN4E9RUjw==",
+    "topn_limit": 10
+  },
+  "public_key_pem": "-----BEGIN RSA PUBLIC KEY-----\nMIIBCgKCAQEAw6XwMXqyvZqP7oXmIlS4k61ApBHcpt7HImXGksqIHW57YzGymZGr\njiMMAZ20tLkQ+tK6cdz2mF02QjOrtQ9d8xcyyZMvwmhx0Mb8YYNLcN+TLi777I09\nKZQjzvixZF4gu/W+MTSRwFVTe0C9vg8A8U5sWoDDnRxw60ntlUv4W9ddQzSInrVE\n7Db8gzrJG05XsgQBhXFoC9gjiw2JC4BvEQWAVjdlQyYQTCRVVvcJjYvpBd0nMYWE\n+Wetisql0YfC8IHYkHbY8wOi5jM8OsVJFvXNqzsb8jUdCRoB40ipRiQYFljfJ6pd\nmZ0S/54ybX1rqpTPD6xeGLE2SmFIlpcYQwIDAQAB\n-----END RSA PUBLIC KEY-----\n"
+}

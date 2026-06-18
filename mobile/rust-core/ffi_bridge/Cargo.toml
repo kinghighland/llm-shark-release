@@ -1,0 +1,34 @@
+[package]
+name = "ffi_bridge"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "staticlib", "rlib"]
+
+[dependencies]
+base64 = "0.22"
+case_crypto_core = { path = "../case_crypto_core" }
+case_search_core = { path = "../case_search_core" }
+chrono = { version = "0.4", default-features = false, features = ["clock", "std"] }
+license_core = { path = "../license_core" }
+policy_core = { path = "../policy_core" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+uniffi = "0.28"
+jni = { version = "0.21", optional = true }
+reqwest = { version = "0.12", features = ["json", "stream", "rustls-tls"], default-features = false, optional = true }
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "time"], optional = true }
+futures-util = { version = "0.3", optional = true }
+
+[features]
+jni = ["dep:jni", "dep:reqwest", "dep:tokio", "dep:futures-util"]
+
+[dev-dependencies]
+rand = "0.8"
+rsa = "0.9"
+sha2 = "0.10"
+signature = "2"
+
+[build-dependencies]
+uniffi_build = "0.28"

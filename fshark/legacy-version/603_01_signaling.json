@@ -1,0 +1,586 @@
+[
+  {
+    "frame": 1,
+    "timestamp": "10:39:37.648",
+    "src": "100.109.89.242",
+    "dst": "100.73.127.216",
+    "protocol": "S1AP",
+    "message": "Extended service request",
+    "cause": null,
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "S1AP"
+    ]
+  },
+  {
+    "frame": 2,
+    "timestamp": "10:39:37.650",
+    "src": "100.73.127.216",
+    "dst": "100.109.89.242",
+    "protocol": "S1AP",
+    "message": "UEContextModificationRequest",
+    "cause": null,
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "S1AP"
+    ]
+  },
+  {
+    "frame": 3,
+    "timestamp": "10:39:37.673",
+    "src": "100.109.89.242",
+    "dst": "100.73.127.216",
+    "protocol": "S1AP",
+    "message": "UEContextModificationRequest",
+    "cause": null,
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "S1AP"
+    ]
+  },
+  {
+    "frame": 4,
+    "timestamp": "10:39:37.675",
+    "src": "100.109.89.242",
+    "dst": "100.73.127.216",
+    "protocol": "S1AP",
+    "message": "UEContextReleaseRequest",
+    "cause": "radioNetwork: ue-not-available-for-ps-service",
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "S1AP"
+    ]
+  },
+  {
+    "frame": 5,
+    "timestamp": "10:39:37.687",
+    "src": "100.73.127.216",
+    "dst": "100.109.89.242",
+    "protocol": "S1AP",
+    "message": "UEContextReleaseCommand",
+    "cause": "radioNetwork: ue-not-available-for-ps-service",
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "S1AP"
+    ]
+  },
+  {
+    "frame": 6,
+    "timestamp": "10:39:37.707",
+    "src": "100.109.89.242",
+    "dst": "100.73.127.216",
+    "protocol": "S1AP",
+    "message": "UEContextReleaseCommand",
+    "cause": null,
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "S1AP"
+    ]
+  },
+  {
+    "frame": 18,
+    "timestamp": "10:39:44.760",
+    "src": "223.103.9.152",
+    "dst": "223.103.9.136",
+    "protocol": "GTPv2",
+    "message": "Modify Bearer Request (34)",
+    "cause": null,
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "UDP",
+      "GTPv2"
+    ]
+  },
+  {
+    "frame": 19,
+    "timestamp": "10:39:44.760",
+    "src": "223.103.9.152",
+    "dst": "223.103.9.136",
+    "protocol": "GTPv2",
+    "message": "Modify Bearer Request (34)",
+    "cause": null,
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "UDP",
+      "GTPv2"
+    ]
+  },
+  {
+    "frame": 20,
+    "timestamp": "10:39:44.767",
+    "src": "223.103.9.136",
+    "dst": "223.103.9.152",
+    "protocol": "GTPv2",
+    "message": "Modify Bearer Response (35)",
+    "cause": "Cause : Request accepted (16)",
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "UDP",
+      "GTPv2"
+    ]
+  },
+  {
+    "frame": 21,
+    "timestamp": "10:39:44.768",
+    "src": "223.103.9.136",
+    "dst": "223.103.9.152",
+    "protocol": "GTPv2",
+    "message": "Modify Bearer Response (35)",
+    "cause": "Cause : Request accepted (16)",
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "UDP",
+      "GTPv2"
+    ]
+  },
+  {
+    "frame": 22,
+    "timestamp": "10:39:44.981",
+    "src": "100.73.127.228",
+    "dst": "100.109.89.245",
+    "protocol": "SIP",
+    "message": "INVITE",
+    "cause": null,
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "UDP",
+      "GTP-U",
+      "IPv6",
+      "UDP",
+      "SIP"
+    ]
+  },
+  {
+    "frame": 23,
+    "timestamp": "10:39:45.077",
+    "src": "100.109.89.245",
+    "dst": "100.73.127.228",
+    "protocol": "SIP",
+    "message": "183 Session Progress",
+    "cause": null,
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "UDP",
+      "GTP-U",
+      "IPv6",
+      "UDP",
+      "SIP"
+    ]
+  },
+  {
+    "frame": 24,
+    "timestamp": "10:39:45.143",
+    "src": "223.103.9.200",
+    "dst": "223.103.9.142",
+    "protocol": "GTPv2",
+    "message": "Create Bearer Request (95)",
+    "cause": null,
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "UDP",
+      "GTPv2"
+    ]
+  },
+  {
+    "frame": 25,
+    "timestamp": "10:39:45.144",
+    "src": "223.103.9.200",
+    "dst": "223.103.9.142",
+    "protocol": "GTPv2",
+    "message": "Create Bearer Request (95)",
+    "cause": null,
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "UDP",
+      "GTPv2"
+    ]
+  },
+  {
+    "frame": 26,
+    "timestamp": "10:39:45.149",
+    "src": "223.103.9.136",
+    "dst": "223.103.9.152",
+    "protocol": "GTPv2",
+    "message": "Create Bearer Request (95)",
+    "cause": null,
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "UDP",
+      "GTPv2"
+    ]
+  },
+  {
+    "frame": 27,
+    "timestamp": "10:39:45.151",
+    "src": "100.73.127.216",
+    "dst": "100.109.89.245",
+    "protocol": "S1AP",
+    "message": "E-RABSetupRequest",
+    "cause": null,
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "S1AP"
+    ]
+  },
+  {
+    "frame": 28,
+    "timestamp": "10:39:45.242",
+    "src": "100.109.89.245",
+    "dst": "100.73.127.216",
+    "protocol": "S1AP",
+    "message": "E-RABSetupRequest",
+    "cause": null,
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "S1AP"
+    ]
+  },
+  {
+    "frame": 29,
+    "timestamp": "10:39:45.244",
+    "src": "100.109.89.245",
+    "dst": "100.73.127.216",
+    "protocol": "S1AP",
+    "message": "Activate dedicated EPS bearer context accept",
+    "cause": null,
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "S1AP"
+    ]
+  },
+  {
+    "frame": 30,
+    "timestamp": "10:39:45.246",
+    "src": "223.103.9.152",
+    "dst": "223.103.9.136",
+    "protocol": "GTPv2",
+    "message": "Create Bearer Response (96)",
+    "cause": "Cause : Request accepted (16)",
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "UDP",
+      "GTPv2"
+    ]
+  },
+  {
+    "frame": 31,
+    "timestamp": "10:39:45.261",
+    "src": "223.103.9.142",
+    "dst": "223.103.9.200",
+    "protocol": "GTPv2",
+    "message": "Create Bearer Response (96)",
+    "cause": "Cause : Request accepted (16)",
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "UDP",
+      "GTPv2"
+    ]
+  },
+  {
+    "frame": 32,
+    "timestamp": "10:39:45.262",
+    "src": "223.103.9.142",
+    "dst": "223.103.9.200",
+    "protocol": "GTPv2",
+    "message": "Create Bearer Response (96)",
+    "cause": "Cause : Request accepted (16)",
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "UDP",
+      "GTPv2"
+    ]
+  },
+  {
+    "frame": 34,
+    "timestamp": "10:39:45.536",
+    "src": "100.73.127.228",
+    "dst": "100.109.89.245",
+    "protocol": "SIP",
+    "message": "PRACK",
+    "cause": null,
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "UDP",
+      "GTP-U",
+      "IPv6",
+      "UDP",
+      "SIP"
+    ]
+  },
+  {
+    "frame": 36,
+    "timestamp": "10:39:45.597",
+    "src": "100.109.89.245",
+    "dst": "100.73.127.228",
+    "protocol": "SIP",
+    "message": "200 OK",
+    "cause": null,
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "UDP",
+      "GTP-U",
+      "IPv6",
+      "UDP",
+      "SIP"
+    ]
+  },
+  {
+    "frame": 39,
+    "timestamp": "10:39:45.842",
+    "src": "100.73.127.228",
+    "dst": "100.109.89.245",
+    "protocol": "SIP",
+    "message": "UPDATE",
+    "cause": null,
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "UDP",
+      "GTP-U",
+      "IPv6",
+      "UDP",
+      "SIP"
+    ]
+  },
+  {
+    "frame": 40,
+    "timestamp": "10:39:45.957",
+    "src": "100.109.89.245",
+    "dst": "100.73.127.228",
+    "protocol": "SIP",
+    "message": "200 OK",
+    "cause": null,
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "UDP",
+      "GTP-U",
+      "IPv6",
+      "UDP",
+      "SIP"
+    ]
+  },
+  {
+    "frame": 41,
+    "timestamp": "10:39:45.997",
+    "src": "100.109.89.245",
+    "dst": "100.73.127.228",
+    "protocol": "SIP",
+    "message": "180 Ringing",
+    "cause": null,
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "UDP",
+      "GTP-U",
+      "IPv6",
+      "UDP",
+      "SIP"
+    ]
+  },
+  {
+    "frame": 47,
+    "timestamp": "10:39:49.577",
+    "src": "100.109.89.245",
+    "dst": "100.73.127.228",
+    "protocol": "SIP",
+    "message": "603 Decline",
+    "cause": null,
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "UDP",
+      "GTP-U",
+      "IPv6",
+      "UDP",
+      "SIP"
+    ]
+  },
+  {
+    "frame": 48,
+    "timestamp": "10:39:49.590",
+    "src": "100.73.127.228",
+    "dst": "100.109.89.245",
+    "protocol": "SIP",
+    "message": "ACK",
+    "cause": null,
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "UDP",
+      "GTP-U",
+      "IPv6",
+      "UDP",
+      "SIP"
+    ]
+  },
+  {
+    "frame": 49,
+    "timestamp": "10:39:49.618",
+    "src": "223.103.9.200",
+    "dst": "223.103.9.142",
+    "protocol": "GTPv2",
+    "message": "Delete Bearer Request (99)",
+    "cause": null,
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "UDP",
+      "GTPv2"
+    ]
+  },
+  {
+    "frame": 50,
+    "timestamp": "10:39:49.618",
+    "src": "223.103.9.200",
+    "dst": "223.103.9.142",
+    "protocol": "GTPv2",
+    "message": "Delete Bearer Request (99)",
+    "cause": null,
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "UDP",
+      "GTPv2"
+    ]
+  },
+  {
+    "frame": 51,
+    "timestamp": "10:39:49.631",
+    "src": "223.103.9.136",
+    "dst": "223.103.9.152",
+    "protocol": "GTPv2",
+    "message": "Delete Bearer Request (99)",
+    "cause": null,
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "UDP",
+      "GTPv2"
+    ]
+  },
+  {
+    "frame": 52,
+    "timestamp": "10:39:49.632",
+    "src": "100.73.127.216",
+    "dst": "100.109.89.245",
+    "protocol": "S1AP",
+    "message": "Deactivate EPS bearer context request",
+    "cause": "Cause: Regular deactivation (36)",
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "S1AP"
+    ]
+  },
+  {
+    "frame": 53,
+    "timestamp": "10:39:49.632",
+    "src": "100.73.127.216",
+    "dst": "100.109.89.245",
+    "protocol": "S1AP",
+    "message": "E-RABReleaseCommand",
+    "cause": "nas: normal-release",
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "S1AP"
+    ]
+  },
+  {
+    "frame": 54,
+    "timestamp": "10:39:49.712",
+    "src": "100.109.89.245",
+    "dst": "100.73.127.216",
+    "protocol": "S1AP",
+    "message": "E-RABReleaseCommand",
+    "cause": null,
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "S1AP"
+    ]
+  },
+  {
+    "frame": 55,
+    "timestamp": "10:39:49.716",
+    "src": "100.109.89.245",
+    "dst": "100.73.127.216",
+    "protocol": "S1AP",
+    "message": "Deactivate EPS bearer context accept",
+    "cause": null,
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "S1AP"
+    ]
+  },
+  {
+    "frame": 56,
+    "timestamp": "10:39:49.718",
+    "src": "223.103.9.152",
+    "dst": "223.103.9.136",
+    "protocol": "GTPv2",
+    "message": "Delete Bearer Response (100)",
+    "cause": "Cause : Request accepted (16)",
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "UDP",
+      "GTPv2"
+    ]
+  },
+  {
+    "frame": 57,
+    "timestamp": "10:39:49.730",
+    "src": "223.103.9.142",
+    "dst": "223.103.9.200",
+    "protocol": "GTPv2",
+    "message": "Delete Bearer Response (100)",
+    "cause": "Cause : Request accepted (16)",
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "UDP",
+      "GTPv2"
+    ]
+  },
+  {
+    "frame": 58,
+    "timestamp": "10:39:49.731",
+    "src": "223.103.9.142",
+    "dst": "223.103.9.200",
+    "protocol": "GTPv2",
+    "message": "Delete Bearer Response (100)",
+    "cause": "Cause : Request accepted (16)",
+    "details": {},
+    "underlying_protocols": [
+      "IPv4",
+      "UDP",
+      "GTPv2"
+    ]
+  }
+]

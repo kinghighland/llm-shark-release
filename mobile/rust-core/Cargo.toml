@@ -1,0 +1,3 @@
+[workspace]
+members = ["license_core", "policy_core", "ffi_bridge", "case_crypto_core", "case_search_core"]
+resolver = "2"

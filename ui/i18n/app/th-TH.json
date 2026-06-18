@@ -1,0 +1,194 @@
+{
+  "app": {
+    "pickPcap": "เลือก PCAP",
+    "analyze": "วินิจฉัย",
+    "notLoaded": "ยังไม่โหลด",
+    "pickedFileHint": "เลือกไฟล์แล้ว คลิก “วินิจฉัย” เพื่อดึงสรุปและตัดสินใจว่าจะดำเนินการต่อหรือไม่",
+    "documentTitleWithFile": "การวินิจฉัย LLM - {file}"
+  },
+  "top": {
+    "about": "เกี่ยวกับ",
+    "settings": "การตั้งค่า",
+    "theme": "ธีม",
+    "language": "ภาษา"
+  },
+  "sidebar": {
+    "toggle": "ยุบ/ขยาย"
+  },
+  "sessions": {
+    "title": "เซสชัน",
+    "new": "เซสชันใหม่",
+    "sessionN": "เซสชัน {n}",
+    "rename": "เปลี่ยนชื่อ",
+    "delete": "ลบ",
+    "unnamed": "เซสชันไม่มีชื่อ",
+    "renamePromptTitle": "เปลี่ยนชื่อเซสชัน",
+    "deleteConfirm": "ลบเซสชันนี้หรือไม่?"
+  },
+  "chat": {
+    "title": "แชต",
+    "placeholder": "ถามคำถาม…",
+    "send": "ส่ง",
+    "stop": "หยุด",
+    "needAnalyzeFirst": "คลิก “วินิจฉัย” ก่อนเพื่อสร้างบริบท แล้วจึงถามต่อ"
+  },
+  "report": {
+    "title": "รายงาน"
+  },
+  "settings": {
+    "modelConfigTitle": "การตั้งค่าโมเดล (รองรับ OpenAI)",
+    "endpoint": "Endpoint",
+    "apiKey": "API Key",
+    "apiKeyPlaceholder": "ไม่บังคับ (เช่น โมเดลภายในเครื่อง)",
+    "toggleApiKeyTitle": "แสดง/ซ่อน",
+    "show": "แสดง",
+    "hide": "ซ่อน",
+    "model": "Model",
+    "validate": "ตรวจสอบ",
+    "validating": "กำลังตรวจสอบ…",
+    "validateOk": "ตรวจสอบสำเร็จ",
+    "validateOkWithDetail": "ตรวจสอบสำเร็จ: {detail}",
+    "validateFail": "ตรวจสอบล้มเหลว: {reason}",
+    "temperature": "Temperature",
+    "theme": "Theme",
+    "themeDark": "มืด",
+    "themeLight": "สว่าง",
+    "stream": "สตรีม",
+    "useKb": "ใช้ฐานความรู้",
+    "caseLibraryTitle": "คลังเคส",
+    "useCaseLibrary": "ใช้คลังเคส",
+    "kbUserPath": "พาธไฟล์ KB",
+    "kbUserPathPlaceholder": "ไม่บังคับ: เลือกไฟล์ .md เคส (ข้อความล้วน แก้ไขได้)",
+    "wiresharkTitle": "Wireshark",
+    "tsharkPath": "พาธ tshark.exe",
+    "tsharkPathPlaceholder": "ให้ตรวจจับก่อน หากไม่พบให้เลือก tshark.exe (Wireshark)",
+    "detect": "ตรวจจับ",
+    "choose": "เลือก…",
+    "tsharkDetected": "ตรวจพบ tshark: {path}",
+    "tsharkNotFound": "ไม่พบ tshark โปรดติดตั้ง Wireshark หรือเลือก tshark.exe ด้วยตนเอง",
+    "saveCfg": "บันทึก",
+    "loadCfg": "โหลด",
+    "cfgNoSaved": "ไม่มีการตั้งค่าที่บันทึกไว้",
+    "cfgLoaded": "โหลดแล้ว",
+    "cfgSaved": "บันทึกแล้ว",
+    "cfgParseFail": "แยกวิเคราะห์การตั้งค่าไม่สำเร็จ",
+    "promptAuto": "ใช้ prompt.md ภายนอกอัตโนมัติ (ถ้ามีจะแทนที่ภายใน)",
+    "promptPath": "พาธไฟล์พรอมป์",
+    "promptPathPlaceholder": "ไม่บังคับ: เลือก prompt.md (ข้อความล้วน แก้ไขได้)"
+  },
+  "license": {
+    "title": "ไลเซนส์",
+    "exportFeature": "ส่งออกลายนิ้วมือเครื่อง",
+    "importLicense": "นำเข้าไฟล์ไลเซนส์",
+    "buyPerpetual": "ซื้อไลเซนส์ 3 ปี",
+    "buyYearly": "ซื้อไลเซนส์ 1 ปี",
+    "softwareUpdate": "อัปเดตซอฟต์แวร์",
+    "statusUnknown": "ไลเซนส์: ไม่ทราบ",
+    "statusAuthed": "ไลเซนส์: เปิดใช้งานแล้ว",
+    "statusAuthedWithDetail": "ไลเซนส์: เปิดใช้งานแล้ว ({detail})",
+    "statusUnAuthed": "ไลเซนส์: ไม่ได้เปิดใช้งาน ({reason})",
+    "detailExpire": "หมดอายุ {exp}",
+    "exportDialogTitle": "ส่งออกลายนิ้วมือเครื่อง"
+  },
+  "common": {
+    "copy": "คัดลอก",
+    "yes": "ใช่",
+    "no": "ไม่",
+    "unknown": "?",
+    "confirm": "ยืนยัน",
+    "copied": "คัดลอกแล้ว",
+    "close": "ปิด",
+    "loading": "กำลังโหลด..."
+  },
+  "errors": {
+    "pathEmpty": "พาธว่าง",
+    "noShellOpen": "ไม่พบ shell.open โปรดคัดลอกพาธแล้วเปิดใน File Explorer",
+    "noTauriApiSummary": "ไม่พบ Tauri API (window.__TAURI__) โปรดใช้แอปเดสก์ท็อปและเปิด build.withGlobalTauri ใน tauri.conf.json",
+    "noTauriApiStatus": "ไม่พบ Tauri API ไม่สามารถวิเคราะห์ได้",
+    "noDialogSave": "ไม่พบ dialog.save ไม่สามารถส่งออกไฟล์ได้",
+    "needAnalyzeToAsk": "โปรดวินิจฉัยก่อน (สร้างรายงาน) แล้วจึงถามต่อ",
+    "streamRunning": "กำลังสตรีม โปรดรอสักครู่",
+    "noEventApi": "ไม่พบ event API ไม่สามารถสตรีมได้",
+    "uiRuntimeError": "ข้อผิดพลาดรันไทม์ของ UI: {message} (ไฟล์: {file}, บรรทัด: {line})",
+    "scriptLoadFail": "โหลด/รันสคริปต์ล้มเหลว: {src}",
+    "unhandledPromise": "Promise ที่ไม่ได้จัดการ: {reason}"
+  },
+  "about": {
+    "title": "เกี่ยวกับ",
+    "subtitle": "เครื่องมือวินิจฉัยสัญญาณแบบสนทนา, Flowshark ที่ขับเคลื่อนด้วย AI",
+    "version": "เวอร์ชัน",
+    "runtime": "รันไทม์",
+    "developer": "ผู้พัฒนา",
+    "developerName": "flowshark studio",
+    "copyright": "ลิขสิทธิ์",
+    "copyrightValue": "© 2026",
+    "copyInfo": "คัดลอกข้อมูล",
+    "dialogText": "LLM-Shark\n\nเครื่องมือวินิจฉัยสัญญาณแบบสนทนา, Flowshark ที่ขับเคลื่อนด้วย AI"
+  },
+  "dialogs": {
+    "openPcapTitle": "เลือกไฟล์ PCAP",
+    "openKbTitle": "เลือกไฟล์คลังเคส",
+    "openTsharkTitle": "เลือก tshark.exe",
+    "importLicenseTitle": "นำเข้าไฟล์ไลเซนส์",
+    "openPromptTitle": "เลือก prompt.md",
+    "promptMarkdown": "Markdown ของพรอมป์"
+  },
+  "mermaid": {
+    "notLoaded": "ไม่พบไลบรารี Mermaid ไม่สามารถเรนเดอร์ไดอะแกรมในแชตได้",
+    "zoomIn": "ขยาย",
+    "zoomOut": "ย่อ",
+    "fit": "พอดี",
+    "syntaxError": "ไวยากรณ์ Mermaid ผิดพลาด{extra}",
+    "versionHint": "(mermaid {v}; ตัวดูออนไลน์อาจต่างกัน)",
+    "renderFailSuppressed": "เรนเดอร์ Mermaid ล้มเหลว (ซ่อนกราฟข้อผิดพลาด): {msg} {ver}",
+    "renderFail": "เรนเดอร์ Mermaid ล้มเหลว: {msg}\n\n{code}",
+    "renderFailSummary": "เรนเดอร์ Mermaid ในแชตล้มเหลว ({count}): {first}"
+  },
+  "markdown": {
+    "renderFail": "เรนเดอร์ Markdown ล้มเหลว: {msg}"
+  },
+  "summary": {
+    "expand": "ขยาย",
+    "collapse": "ยุบ"
+  },
+  "sig": {
+    "markdownTableHeader": "| Frame | Time | Protocol | Message | Cause | Src | Dst |\n|---:|---|---|---|---|---|---|",
+    "noData": "ไม่มีข้อมูลสัญญาณให้โหลด",
+    "allShown": "แสดงรายการสัญญาณทั้งหมดแล้ว",
+    "fullHint": "สัญญาณทั้งหมด: {count} รายการ\nคุณสามารถโหลดหน้าถัดไปหรือเปิดไฟล์ CSV/JSON โดยตรงได้",
+    "nextPage": "โหลดหน้าถัดไป ({pageSize})",
+    "appendTable": "เพิ่มตารางสัญญาณ:\n\n{table}",
+    "sequenceDiagramTitle": "ไดอะแกรมลำดับสัญญาณ:",
+    "keyTableTitle": "ตารางสัญญาณสำคัญ:",
+    "appendTableTitle": "เพิ่มตารางสัญญาณ:",
+    "fullTitle": "สัญญาณทั้งหมด:",
+    "pageHeader": "รายการ {start}-{end} / ทั้งหมด {total}",
+    "onlyFirstN": "แสดง {n} รายการแรก (รวม {total})",
+    "openCsv": "เปิด CSV",
+    "openJson": "เปิด JSON",
+    "openDir": "เปิดโฟลเดอร์",
+    "copyCsvPath": "คัดลอกพาธ CSV"
+  },
+  "statusBar": {
+    "template": "ผู้โทร/ผู้รับ: {a} -> {b}  เริ่ม/ระยะเวลา: {start} / {dur}  ประเภท: {callType}  เรียกสาย: {has180}  รับสาย: {has200}  ยกเลิก: {hasCancel}  หลุด: {dropped}  เคส: {kbCount}",
+    "labels": {
+      "number": "หมายเลข",
+      "time": "เริ่ม",
+      "duration": "ระยะเวลา",
+      "ringing": "เรียกสาย",
+      "offhook": "รับสาย",
+      "answered": "รับสายแล้ว",
+      "cancel": "ยกเลิก",
+      "dropped": "หลุด",
+      "cases": "เคส"
+    }
+  },
+  "analyze": {
+    "fetchingSummary": "กำลังดึงสรุป…",
+    "tooLarge": "ไฟล์เกินขนาดที่กำหนด ({size}) หยุดการวิเคราะห์แล้ว",
+    "detectedProtocols": "ตรวจพบโปรโตคอล: {protocols}",
+    "notAnalyzable": "สรุปชี้ว่าควรหยุดการวินิจฉัย ({reason})",
+    "summaryOk": "ผ่านการตรวจสรุปแล้ว เริ่มการวิเคราะห์…",
+    "defaultPrompt": "ปฏิบัติตามข้อกำหนดของพรอมป์อย่างเคร่งครัดและเริ่มงานวินิจฉัย"
+  }
+}

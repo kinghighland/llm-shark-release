@@ -1,0 +1,194 @@
+{
+  "app": {
+    "pickPcap": "Pilih PCAP",
+    "analyze": "Diagnosa",
+    "notLoaded": "Belum dimuat",
+    "pickedFileHint": "Berkas dipilih. Klik “Diagnosa” untuk mengambil ringkasan dan memutuskan apakah lanjut.",
+    "documentTitleWithFile": "Diagnosa LLM - {file}"
+  },
+  "top": {
+    "about": "Tentang",
+    "settings": "Pengaturan",
+    "theme": "Tema",
+    "language": "Bahasa"
+  },
+  "sidebar": {
+    "toggle": "Lipat/Perluas"
+  },
+  "sessions": {
+    "title": "Sesi",
+    "new": "Sesi baru",
+    "sessionN": "Sesi {n}",
+    "rename": "Ganti nama",
+    "delete": "Hapus",
+    "unnamed": "Sesi tanpa nama",
+    "renamePromptTitle": "Ganti nama sesi",
+    "deleteConfirm": "Hapus sesi ini?"
+  },
+  "chat": {
+    "title": "Chat",
+    "placeholder": "Ajukan pertanyaan…",
+    "send": "Kirim",
+    "stop": "Hentikan",
+    "needAnalyzeFirst": "Klik “Diagnosa” dulu untuk membuat konteks, lalu ajukan pertanyaan."
+  },
+  "report": {
+    "title": "Laporan"
+  },
+  "settings": {
+    "modelConfigTitle": "Konfigurasi model (kompatibel dengan OpenAI)",
+    "endpoint": "Endpoint",
+    "apiKey": "Kunci API",
+    "apiKeyPlaceholder": "Opsional (mis. model lokal)",
+    "toggleApiKeyTitle": "Tampilkan/Sembunyikan",
+    "show": "Tampilkan",
+    "hide": "Sembunyikan",
+    "model": "Model",
+    "validate": "Validasi",
+    "validating": "Memvalidasi…",
+    "validateOk": "Validasi berhasil",
+    "validateOkWithDetail": "Validasi berhasil: {detail}",
+    "validateFail": "Validasi gagal: {reason}",
+    "temperature": "Temperatur",
+    "theme": "Tema",
+    "themeDark": "Gelap",
+    "themeLight": "Terang",
+    "stream": "Streaming",
+    "useKb": "Gunakan basis pengetahuan",
+    "caseLibraryTitle": "Pustaka kasus",
+    "useCaseLibrary": "Gunakan pustaka kasus",
+    "kbUserPath": "Path berkas KB",
+    "kbUserPathPlaceholder": "Opsional: pilih berkas kasus .md (teks biasa, dapat diedit)",
+    "wiresharkTitle": "Wireshark",
+    "tsharkPath": "Path tshark.exe",
+    "tsharkPathPlaceholder": "Utamakan “Deteksi”. Jika tidak ditemukan, pilih tshark.exe (Wireshark)",
+    "detect": "Deteksi",
+    "choose": "Pilih…",
+    "tsharkDetected": "tshark terdeteksi: {path}",
+    "tsharkNotFound": "tshark tidak ditemukan. Instal Wireshark atau pilih tshark.exe secara manual.",
+    "saveCfg": "Simpan",
+    "loadCfg": "Muat",
+    "cfgNoSaved": "Tidak ada konfigurasi tersimpan",
+    "cfgLoaded": "Dimuat",
+    "cfgSaved": "Tersimpan",
+    "cfgParseFail": "Gagal mengurai konfigurasi",
+    "promptAuto": "Gunakan prompt.md eksternal secara otomatis (jika ada, menggantikan yang internal)",
+    "promptPath": "Path berkas prompt",
+    "promptPathPlaceholder": "Opsional: pilih prompt.md (teks biasa, dapat diedit)"
+  },
+  "license": {
+    "title": "Lisensi",
+    "exportFeature": "Ekspor sidik jari mesin",
+    "importLicense": "Impor berkas lisensi",
+    "buyPerpetual": "Beli lisensi 3 tahun",
+    "buyYearly": "Beli lisensi 1 tahun",
+    "softwareUpdate": "Pembaruan perangkat lunak",
+    "statusUnknown": "Lisensi: Tidak diketahui",
+    "statusAuthed": "Lisensi: Aktif",
+    "statusAuthedWithDetail": "Lisensi: Aktif ({detail})",
+    "statusUnAuthed": "Lisensi: Tidak aktif ({reason})",
+    "detailExpire": "Berakhir {exp}",
+    "exportDialogTitle": "Ekspor sidik jari mesin"
+  },
+  "common": {
+    "copy": "Salin",
+    "yes": "Ya",
+    "no": "Tidak",
+    "unknown": "?",
+    "confirm": "Konfirmasi",
+    "copied": "Tersalin.",
+    "close": "Tutup",
+    "loading": "Memuat..."
+  },
+  "errors": {
+    "pathEmpty": "Path kosong",
+    "noShellOpen": "shell.open tidak tersedia. Salin path dan buka di File Explorer.",
+    "noTauriApiSummary": "API Tauri tidak terdeteksi (window.__TAURI__). Jalankan aplikasi desktop dan aktifkan build.withGlobalTauri di tauri.conf.json.",
+    "noTauriApiStatus": "API Tauri tidak terdeteksi. Analisis tidak dapat dilakukan.",
+    "noDialogSave": "dialog.save tidak tersedia. Ekspor tidak dapat dilakukan.",
+    "needAnalyzeToAsk": "Lakukan diagnosa dulu (buat laporan) sebelum bertanya",
+    "streamRunning": "Streaming sedang berjalan. Harap tunggu.",
+    "noEventApi": "API event tidak terdeteksi. Streaming tidak tersedia.",
+    "uiRuntimeError": "Kesalahan runtime UI: {message} (berkas: {file}, baris: {line})",
+    "scriptLoadFail": "Gagal memuat/menjalankan skrip: {src}",
+    "unhandledPromise": "Kesalahan Promise tidak tertangani: {reason}"
+  },
+  "about": {
+    "title": "Tentang",
+    "subtitle": "Alat diagnostik sinyal berbasis percakapan, Flowshark bertenaga AI",
+    "version": "Versi",
+    "runtime": "Runtime",
+    "developer": "Pengembang",
+    "developerName": "flowshark studio",
+    "copyright": "Hak cipta",
+    "copyrightValue": "© 2026",
+    "copyInfo": "Salin info",
+    "dialogText": "LLM-Shark\n\nAlat diagnostik sinyal berbasis percakapan, Flowshark bertenaga AI"
+  },
+  "dialogs": {
+    "openPcapTitle": "Pilih berkas PCAP",
+    "openKbTitle": "Pilih berkas pustaka kasus",
+    "openTsharkTitle": "Pilih tshark.exe",
+    "importLicenseTitle": "Impor berkas lisensi",
+    "openPromptTitle": "Pilih prompt.md",
+    "promptMarkdown": "Markdown prompt"
+  },
+  "mermaid": {
+    "notLoaded": "Pustaka Mermaid tidak terdeteksi. Diagram tidak dapat dirender di chat.",
+    "zoomIn": "Perbesar",
+    "zoomOut": "Perkecil",
+    "fit": "Sesuaikan",
+    "syntaxError": "Kesalahan sintaks Mermaid{extra}",
+    "versionHint": "(mermaid {v}; penampil online bisa berbeda)",
+    "renderFailSuppressed": "Gagal merender Mermaid (grafik error disembunyikan): {msg} {ver}",
+    "renderFail": "Gagal merender Mermaid: {msg}\n\n{code}",
+    "renderFailSummary": "Gagal merender Mermaid di chat ({count}): {first}"
+  },
+  "markdown": {
+    "renderFail": "Gagal merender Markdown: {msg}"
+  },
+  "summary": {
+    "expand": "Perluas",
+    "collapse": "Lipat"
+  },
+  "sig": {
+    "markdownTableHeader": "| Frame | Time | Protocol | Message | Cause | Src | Dst |\n|---:|---|---|---|---|---|---|",
+    "noData": "Tidak ada data sinyal untuk dimuat.",
+    "allShown": "Semua item sinyal ditampilkan.",
+    "fullHint": "Sinyal lengkap: {count} item.\nAnda dapat memuat halaman berikutnya atau membuka berkas CSV/JSON secara langsung.",
+    "nextPage": "Muat berikutnya ({pageSize})",
+    "appendTable": "Tambahkan tabel sinyal:\n\n{table}",
+    "sequenceDiagramTitle": "Diagram urutan sinyal:",
+    "keyTableTitle": "Tabel sinyal kunci:",
+    "appendTableTitle": "Tambahkan tabel sinyal:",
+    "fullTitle": "Sinyal lengkap:",
+    "pageHeader": "Item {start}-{end} / Total {total}",
+    "onlyFirstN": "Menampilkan {n} item pertama (total {total}).",
+    "openCsv": "Buka CSV",
+    "openJson": "Buka JSON",
+    "openDir": "Buka folder",
+    "copyCsvPath": "Salin path CSV"
+  },
+  "statusBar": {
+    "template": "Panggil/Dipanggil: {a} -> {b}  Mulai/Durasi: {start} / {dur}  Tipe: {callType}  Dering: {has180}  Terjawab: {has200}  Dibatalkan: {hasCancel}  Putus: {dropped}  Kasus: {kbCount}",
+    "labels": {
+      "number": "Nomor",
+      "time": "Mulai",
+      "duration": "Durasi",
+      "ringing": "Dering",
+      "offhook": "Diangkat",
+      "answered": "Terjawab",
+      "cancel": "Batalkan",
+      "dropped": "Putus",
+      "cases": "Kasus"
+    }
+  },
+  "analyze": {
+    "fetchingSummary": "Mengambil ringkasan…",
+    "tooLarge": "Berkas melebihi batas ukuran ({size}). Analisis dihentikan.",
+    "detectedProtocols": "Protokol terdeteksi: {protocols}",
+    "notAnalyzable": "Ringkasan menunjukkan diagnosa harus dihentikan ({reason}).",
+    "summaryOk": "Ringkasan disetujui. Memulai analisis…",
+    "defaultPrompt": "Ikuti persyaratan prompt secara ketat dan mulai tugas diagnosa."
+  }
+}

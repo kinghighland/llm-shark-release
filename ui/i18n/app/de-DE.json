@@ -1,0 +1,194 @@
+{
+  "app": {
+    "pickPcap": "PCAP wählen",
+    "analyze": "Diagnose",
+    "notLoaded": "Nicht geladen",
+    "pickedFileHint": "Datei gewählt. Klicken Sie auf „Diagnose“, um die Zusammenfassung zu holen und zu entscheiden.",
+    "documentTitleWithFile": "LLM-Diagnose - {file}"
+  },
+  "top": {
+    "about": "Über",
+    "settings": "Einstellungen",
+    "theme": "Theme",
+    "language": "Sprache"
+  },
+  "sidebar": {
+    "toggle": "Ein-/Ausklappen"
+  },
+  "sessions": {
+    "title": "Sitzungen",
+    "new": "Neue Sitzung",
+    "sessionN": "Sitzung {n}",
+    "rename": "Umbenennen",
+    "delete": "Löschen",
+    "unnamed": "Ohne Titel",
+    "renamePromptTitle": "Sitzung umbenennen",
+    "deleteConfirm": "Diese Sitzung löschen?"
+  },
+  "chat": {
+    "title": "Chat",
+    "placeholder": "Weiter fragen…",
+    "send": "Senden",
+    "stop": "Stop",
+    "needAnalyzeFirst": "Zuerst „Diagnose“ ausführen (Kontext erstellen), dann nachfragen."
+  },
+  "report": {
+    "title": "Bericht"
+  },
+  "settings": {
+    "modelConfigTitle": "Modelleinstellungen (OpenAI-kompatibel)",
+    "endpoint": "Endpoint",
+    "apiKey": "API-Key",
+    "apiKeyPlaceholder": "Optional (z. B. lokales Modell)",
+    "toggleApiKeyTitle": "Anzeigen/Ausblenden",
+    "show": "Anzeigen",
+    "hide": "Ausblenden",
+    "model": "Modell",
+    "validate": "Prüfen",
+    "validating": "Prüfe…",
+    "validateOk": "Prüfung erfolgreich",
+    "validateOkWithDetail": "Prüfung erfolgreich: {detail}",
+    "validateFail": "Prüfung fehlgeschlagen: {reason}",
+    "temperature": "Temperatur",
+    "theme": "Theme",
+    "themeDark": "Dunkel",
+    "themeLight": "Hell",
+    "stream": "Stream",
+    "useKb": "Wissensdatenbank nutzen",
+    "caseLibraryTitle": "Fallbibliothek",
+    "useCaseLibrary": "Fallbibliothek nutzen",
+    "kbUserPath": "KB-Dateipfad",
+    "kbUserPathPlaceholder": "Optional: eine .md Fallbibliothek-Datei auswählen (Klartext, editierbar)",
+    "wiresharkTitle": "Wireshark",
+    "tsharkPath": "tshark.exe-Pfad",
+    "tsharkPathPlaceholder": "Bevorzugt „Erkennen“. Falls nicht gefunden, tshark.exe (Wireshark) auswählen",
+    "detect": "Erkennen",
+    "choose": "Auswählen…",
+    "tsharkDetected": "tshark erkannt: {path}",
+    "tsharkNotFound": "tshark nicht gefunden. Wireshark installieren oder tshark.exe manuell auswählen.",
+    "saveCfg": "Speichern",
+    "loadCfg": "Laden",
+    "cfgNoSaved": "Keine gespeicherte Konfiguration",
+    "cfgLoaded": "Geladen",
+    "cfgSaved": "Gespeichert",
+    "cfgParseFail": "Konfiguration konnte nicht geparst werden",
+    "promptAuto": "Externe prompt.md automatisch verwenden (falls vorhanden, ersetzt die integrierte)",
+    "promptPath": "Pfad zur Prompt-Datei",
+    "promptPathPlaceholder": "Optional: prompt.md auswählen (Klartext, editierbar)"
+  },
+  "license": {
+    "title": "Lizenz",
+    "exportFeature": "Maschinen-Fingerprint exportieren",
+    "importLicense": "Lizenzdatei importieren",
+    "buyPerpetual": "3‑Jahreslizenz kaufen",
+    "buyYearly": "1‑Jahreslizenz kaufen",
+    "softwareUpdate": "Software-Updates",
+    "statusUnknown": "Lizenz: Unbekannt",
+    "statusAuthed": "Lizenz: Aktiviert",
+    "statusAuthedWithDetail": "Lizenz: Aktiviert ({detail})",
+    "statusUnAuthed": "Lizenz: Nicht aktiviert ({reason})",
+    "detailExpire": "Gültig bis {exp}",
+    "exportDialogTitle": "Maschinen-Fingerprint exportieren"
+  },
+  "common": {
+    "copy": "Kopieren",
+    "yes": "Ja",
+    "no": "Nein",
+    "unknown": "?",
+    "confirm": "Bestätigen",
+    "copied": "Kopiert.",
+    "close": "Schließen",
+    "loading": "Lädt..."
+  },
+  "errors": {
+    "pathEmpty": "Pfad ist leer",
+    "noShellOpen": "shell.open nicht verfügbar. Pfad kopieren und im Explorer öffnen.",
+    "noTauriApiSummary": "Tauri-API nicht erkannt (window.__TAURI__). Als Desktop-App starten und build.withGlobalTauri in tauri.conf.json aktivieren.",
+    "noTauriApiStatus": "Tauri-API nicht erkannt. Analyse nicht möglich.",
+    "noDialogSave": "dialog.save nicht verfügbar. Export nicht möglich.",
+    "needAnalyzeToAsk": "Erst Diagnose ausführen (Report erzeugen), dann nachfragen",
+    "streamRunning": "Streaming läuft. Bitte warten.",
+    "noEventApi": "Event-API nicht erkannt. Streaming nicht verfügbar.",
+    "uiRuntimeError": "UI-Laufzeitfehler: {message} (Datei: {file}, Zeile: {line})",
+    "scriptLoadFail": "Skript konnte nicht geladen/ausgeführt werden: {src}",
+    "unhandledPromise": "Unbehandelter Promise-Fehler: {reason}"
+  },
+  "about": {
+    "title": "Über",
+    "subtitle": "Konversationelles Signalisierungs-Diagnose-Tool, KI-gestützter Flowshark",
+    "version": "Version",
+    "runtime": "Laufzeit",
+    "developer": "Entwickler",
+    "developerName": "flowshark studio",
+    "copyright": "Copyright",
+    "copyrightValue": "© 2026",
+    "copyInfo": "Infos kopieren",
+    "dialogText": "LLM-Shark\n\nKonversationelles Signalisierungs-Diagnose-Tool, KI-gestützter Flowshark"
+  },
+  "dialogs": {
+    "openPcapTitle": "PCAP-Datei wählen",
+    "openKbTitle": "Falldatei auswählen",
+    "openTsharkTitle": "tshark.exe auswählen",
+    "importLicenseTitle": "Lizenzdatei importieren",
+    "openPromptTitle": "prompt.md auswählen",
+    "promptMarkdown": "Prompt-Markdown"
+  },
+  "mermaid": {
+    "notLoaded": "Mermaid-Bibliothek nicht erkannt. Diagramme können nicht gerendert werden.",
+    "zoomIn": "Zoom",
+    "zoomOut": "Verkleinern",
+    "fit": "Anpassen",
+    "syntaxError": "Mermaid-Syntaxfehler{extra}",
+    "versionHint": "(mermaid {v}; Online-Viewer kann abweichen)",
+    "renderFailSuppressed": "Mermaid-Render fehlgeschlagen (Fehlergrafik unterdrückt): {msg} {ver}",
+    "renderFail": "Mermaid-Render fehlgeschlagen: {msg}\n\n{code}",
+    "renderFailSummary": "Mermaid-Render im Chat fehlgeschlagen ({count}): {first}"
+  },
+  "markdown": {
+    "renderFail": "Markdown-Render fehlgeschlagen: {msg}"
+  },
+  "summary": {
+    "expand": "Aufklappen",
+    "collapse": "Zuklappen"
+  },
+  "sig": {
+    "markdownTableHeader": "| Frame | Zeit | Protokoll | Nachricht | Ursache | Src | Dst |\n|---:|---|---|---|---|---|---|",
+    "noData": "Keine Signalisierungsdaten zum Laden.",
+    "allShown": "Alle Signalisierungseinträge werden angezeigt.",
+    "fullHint": "Vollständige Signalisierung: {count} Einträge.\nWeitere Seiten laden oder CSV/JSON direkt öffnen.",
+    "nextPage": "Nächste laden ({pageSize})",
+    "appendTable": "Signalisierungstabelle anhängen:\n\n{table}",
+    "sequenceDiagramTitle": "Signalisierungs-Sequenzdiagramm:",
+    "keyTableTitle": "Wichtige Signalisierungstabelle:",
+    "appendTableTitle": "Signalisierungstabelle anhängen:",
+    "fullTitle": "Vollständige Signalisierung:",
+    "pageHeader": "Einträge {start}-{end} / Gesamt {total}",
+    "onlyFirstN": "Zeige die ersten {n} (gesamt {total}).",
+    "openCsv": "CSV öffnen",
+    "openJson": "JSON öffnen",
+    "openDir": "Ordner öffnen",
+    "copyCsvPath": "CSV-Pfad kopieren"
+  },
+  "statusBar": {
+    "template": "Von/An: {a} -> {b}  Start/Dauer: {start} / {dur}  Typ: {callType}  Klingeln: {has180}  Angenommen: {has200}  Abbruch: {hasCancel}  Abbruch nach Annahme: {dropped}  Fälle: {kbCount}",
+    "labels": {
+      "number": "Nummer",
+      "time": "Zeit",
+      "duration": "Dauer",
+      "ringing": "Klingeln",
+      "offhook": "Abgehoben",
+      "answered": "Angenommen",
+      "cancel": "Abbruch",
+      "dropped": "Abbruch nach Annahme",
+      "cases": "Fälle"
+    }
+  },
+  "analyze": {
+    "fetchingSummary": "Zusammenfassung wird geladen…",
+    "tooLarge": "Datei überschreitet das Größenlimit ({size}). Analyse gestoppt.",
+    "detectedProtocols": "Erkannte Protokolle: {protocols}",
+    "notAnalyzable": "Zusammenfassung: Diagnose wird gestoppt ({reason}).",
+    "summaryOk": "Zusammenfassung OK. Analyse startet…",
+    "defaultPrompt": "Befolge strikt die Vorgaben des Prompts und starte die Diagnoseaufgabe."
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "app": {
+    "pickPcap": "انتخاب PCAP",
+    "analyze": "عیب‌یابی",
+    "notLoaded": "بارگذاری نشده",
+    "pickedFileHint": "فایل انتخاب شد. برای دریافت خلاصه و تصمیم‌گیری، روی «عیب‌یابی» کلیک کنید.",
+    "documentTitleWithFile": "عیب‌یابی LLM - {file}"
+  },
+  "top": {
+    "about": "درباره",
+    "settings": "تنظیمات",
+    "theme": "پوسته",
+    "language": "زبان"
+  },
+  "sidebar": {
+    "toggle": "جمع/باز"
+  },
+  "sessions": {
+    "title": "جلسه‌ها",
+    "new": "جلسه جدید",
+    "sessionN": "جلسه {n}",
+    "rename": "تغییر نام",
+    "delete": "حذف",
+    "unnamed": "بی‌نام",
+    "renamePromptTitle": "تغییر نام جلسه",
+    "deleteConfirm": "این جلسه حذف شود؟"
+  },
+  "chat": {
+    "title": "گفتگو",
+    "placeholder": "سؤال بعدی…",
+    "send": "ارسال",
+    "stop": "توقف",
+    "needAnalyzeFirst": "ابتدا «عیب‌یابی» را اجرا کنید (زمینه ساخته شود)، سپس سؤال بپرسید."
+  },
+  "report": {
+    "title": "گزارش"
+  },
+  "settings": {
+    "modelConfigTitle": "تنظیمات مدل (سازگار با OpenAI)",
+    "endpoint": "Endpoint",
+    "apiKey": "API Key",
+    "apiKeyPlaceholder": "اختیاری (مثلاً مدل محلی)",
+    "toggleApiKeyTitle": "نمایش/پنهان",
+    "show": "نمایش",
+    "hide": "پنهان",
+    "model": "Model",
+    "validate": "اعتبارسنجی",
+    "validating": "در حال اعتبارسنجی…",
+    "validateOk": "اعتبارسنجی موفق بود",
+    "validateOkWithDetail": "اعتبارسنجی موفق بود: {detail}",
+    "validateFail": "اعتبارسنجی ناموفق بود: {reason}",
+    "temperature": "Temperature",
+    "theme": "پوسته",
+    "themeDark": "تیره",
+    "themeLight": "روشن",
+    "stream": "جریان",
+    "useKb": "استفاده از دانش",
+    "caseLibraryTitle": "کتابخانه نمونه‌ها",
+    "useCaseLibrary": "استفاده از کتابخانه نمونه‌ها",
+    "kbUserPath": "مسیر فایل KB",
+    "kbUserPathPlaceholder": "اختیاری: یک فایل کتابخانه نمونه‌ها با پسوند .md انتخاب کنید",
+    "wiresharkTitle": "Wireshark",
+    "tsharkPath": "مسیر tshark.exe",
+    "tsharkPathPlaceholder": "ابتدا «تشخیص» را امتحان کنید. اگر پیدا نشد، tshark.exe (Wireshark) را انتخاب کنید",
+    "detect": "تشخیص",
+    "choose": "انتخاب…",
+    "tsharkDetected": "tshark شناسایی شد: {path}",
+    "tsharkNotFound": "tshark پیدا نشد. Wireshark را نصب کنید یا tshark.exe را دستی انتخاب کنید.",
+    "saveCfg": "ذخیره",
+    "loadCfg": "بارگذاری",
+    "cfgNoSaved": "پیکربندی ذخیره‌شده‌ای نیست",
+    "cfgLoaded": "بارگذاری شد",
+    "cfgSaved": "ذخیره شد",
+    "cfgParseFail": "تجزیهٔ پیکربندی ناموفق بود",
+    "promptAuto": "استفاده خودکار از prompt.md خارجی (در صورت وجود، جایگزین نسخه داخلی می‌شود)",
+    "promptPath": "مسیر فایل پرامپت",
+    "promptPathPlaceholder": "اختیاری: یک prompt.md انتخاب کنید (متن ساده، قابل ویرایش)"
+  },
+  "license": {
+    "title": "مجوز",
+    "exportFeature": "خروجی اثر انگشت دستگاه",
+    "importLicense": "وارد کردن فایل مجوز",
+    "buyPerpetual": "خرید مجوز ۳ ساله",
+    "buyYearly": "خرید مجوز یک‌ساله",
+    "softwareUpdate": "به‌روزرسانی‌های نرم‌افزار",
+    "statusUnknown": "مجوز: نامشخص",
+    "statusAuthed": "مجوز: فعال",
+    "statusAuthedWithDetail": "مجوز: فعال ({detail})",
+    "statusUnAuthed": "مجوز: غیرفعال ({reason})",
+    "detailExpire": "انقضا {exp}",
+    "exportDialogTitle": "خروجی اثرانگشت دستگاه"
+  },
+  "common": {
+    "copy": "کپی",
+    "yes": "بله",
+    "no": "خیر",
+    "unknown": "?",
+    "confirm": "تأیید",
+    "copied": "کپی شد.",
+    "close": "بستن",
+    "loading": "در حال بارگذاری..."
+  },
+  "errors": {
+    "pathEmpty": "مسیر خالی است",
+    "noShellOpen": "shell.open در دسترس نیست. مسیر را کپی کنید و در File Explorer باز کنید.",
+    "noTauriApiSummary": "Tauri API شناسایی نشد (window.__TAURI__). برنامه را به‌صورت دسکتاپ اجرا کنید و build.withGlobalTauri را در tauri.conf.json فعال کنید.",
+    "noTauriApiStatus": "Tauri API شناسایی نشد. تحلیل ممکن نیست.",
+    "noDialogSave": "dialog.save در دسترس نیست. خروجی ممکن نیست.",
+    "needAnalyzeToAsk": "ابتدا عیب‌یابی کنید (گزارش بسازید) سپس سؤال بپرسید",
+    "streamRunning": "در حال خروجی… لطفاً صبر کنید.",
+    "noEventApi": "Event API شناسایی نشد. خروجی جریانی در دسترس نیست.",
+    "uiRuntimeError": "خطای UI: {message} (فایل: {file}، خط: {line})",
+    "scriptLoadFail": "بارگذاری/اجرای اسکریپت ناموفق بود: {src}",
+    "unhandledPromise": "خطای Promise بدون مدیریت: {reason}"
+  },
+  "about": {
+    "title": "درباره",
+    "subtitle": "ابزار عیب‌یابی سیگنالینگ به‌صورت گفتگو، Flowshark مجهز به هوش مصنوعی",
+    "version": "نسخه",
+    "runtime": "محیط اجرا",
+    "developer": "توسعه‌دهنده",
+    "developerName": "flowshark studio",
+    "copyright": "کپی‌رایت",
+    "copyrightValue": "© 2026",
+    "copyInfo": "کپی اطلاعات",
+    "dialogText": "LLM-Shark\n\nابزار عیب‌یابی سیگنالینگ به‌صورت گفتگو، Flowshark مجهز به هوش مصنوعی"
+  },
+  "dialogs": {
+    "openPcapTitle": "انتخاب فایل PCAP",
+    "openKbTitle": "انتخاب فایل کتابخانهٔ موارد",
+    "openTsharkTitle": "انتخاب tshark.exe",
+    "importLicenseTitle": "وارد کردن فایل مجوز",
+    "openPromptTitle": "انتخاب prompt.md",
+    "promptMarkdown": "Prompt Markdown"
+  },
+  "mermaid": {
+    "notLoaded": "کتابخانه Mermaid شناسایی نشد. رسم نمودار ممکن نیست.",
+    "zoomIn": "بزرگ‌نمایی",
+    "zoomOut": "کوچک‌نمایی",
+    "fit": "اندازه مناسب",
+    "syntaxError": "خطای نگارشی Mermaid{extra}",
+    "versionHint": "(mermaid {v}؛ نسخه آنلاین ممکن است متفاوت باشد)",
+    "renderFailSuppressed": "رندر Mermaid ناموفق بود (نمایش خطا پنهان شد): {msg} {ver}",
+    "renderFail": "رندر Mermaid ناموفق بود: {msg}\n\n{code}",
+    "renderFailSummary": "رندر Mermaid در گفتگو ناموفق بود ({count}): {first}"
+  },
+  "markdown": {
+    "renderFail": "رندر Markdown ناموفق بود: {msg}"
+  },
+  "summary": {
+    "expand": "باز کردن",
+    "collapse": "جمع کردن"
+  },
+  "sig": {
+    "markdownTableHeader": "| فریم | زمان | پروتکل | پیام | علت | Src | Dst |\n|---:|---|---|---|---|---|---|",
+    "noData": "داده‌ای برای سیگنالینگ وجود ندارد.",
+    "allShown": "همه موارد سیگنالینگ نمایش داده شد.",
+    "fullHint": "سیگنالینگ کامل: {count} مورد.\nمی‌توانید صفحات بعدی را بارگذاری کنید یا CSV/JSON را مستقیم باز کنید.",
+    "nextPage": "بارگذاری بعدی ({pageSize})",
+    "appendTable": "افزودن جدول سیگنالینگ:\n\n{table}",
+    "sequenceDiagramTitle": "نمودار توالی سیگنالینگ:",
+    "keyTableTitle": "جدول سیگنالینگ کلیدی:",
+    "appendTableTitle": "افزودن جدول سیگنالینگ:",
+    "fullTitle": "سیگنالینگ کامل:",
+    "pageHeader": "موارد {start}-{end} / کل {total}",
+    "onlyFirstN": "نمایش {n} مورد اول (کل {total}).",
+    "openCsv": "باز کردن CSV",
+    "openJson": "باز کردن JSON",
+    "openDir": "باز کردن پوشه",
+    "copyCsvPath": "کپی مسیر CSV"
+  },
+  "statusBar": {
+    "template": "از/به: {a} -> {b}  شروع/مدت: {start} / {dur}  نوع: {callType}  180: {has180}  200: {has200}  Cancel: {hasCancel}  قطع: {dropped}  نمونه‌ها: {kbCount}",
+    "labels": {
+      "number": "شماره",
+      "time": "زمان",
+      "duration": "مدت",
+      "ringing": "زنگ",
+      "offhook": "برداشتن گوشی",
+      "answered": "پاسخ",
+      "cancel": "لغو",
+      "dropped": "قطع",
+      "cases": "نمونه‌ها"
+    }
+  },
+  "analyze": {
+    "fetchingSummary": "در حال دریافت خلاصه…",
+    "tooLarge": "فایل از حد مجاز ({size}) بزرگ‌تر است. تحلیل متوقف شد.",
+    "detectedProtocols": "پروتکل‌های شناسایی‌شده: {protocols}",
+    "notAnalyzable": "خلاصه توصیه می‌کند عیب‌یابی متوقف شود ({reason}).",
+    "summaryOk": "خلاصه OK. شروع تحلیل…",
+    "defaultPrompt": "الزامات پرامپت را به‌طور دقیق رعایت کنید و وظیفهٔ عیب‌یابی را آغاز کنید."
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "store": {
+    "entry": "会员中心",
+    "title": "会员中心",
+    "refresh": "刷新",
+    "restore": "恢复购买",
+    "manage": "管理订阅",
+    "openProduct": "查看 Microsoft Store",
+    "plan": {
+      "pro_month": "Pro 月度",
+      "pro_year": "Pro 年度"
+    },
+    "compare": {
+      "title": "权益对比一览",
+      "sub": "高频分析更省时，低频也能轻松入门。功能一致，仅次数限制与价格不同。",
+      "tag1": "AI 信令专家",
+      "tag2": "高效专业诊断",
+      "tag3": "流鲨案例库",
+      "tag4": "极大提升效能",
+      "free": {
+        "tier": "免费",
+        "price": "¥0",
+        "f1": "每日 3 次分析（解析+诊断）",
+        "f2": "每日 10 次追问",
+        "f3": "适合轻度使用",
+        "f4": "可随时升级"
+      },
+      "proMonth": {
+        "badge": "热门",
+        "tier": "Pro（月度）",
+        "price": "订阅价 / 月",
+        "f1": "分析不限次数",
+        "f2": "追问不限次数",
+        "f3": "适合高频使用",
+        "f4": "支持月度订阅"
+      },
+      "proYear": {
+        "badge": "更划算",
+        "tier": "Pro（年度）",
+        "price": "订阅价 / 年",
+        "f1": "分析不限次数",
+        "f2": "追问不限次数",
+        "f3": "适合高频使用",
+        "f4": "支持年度订阅"
+      }
+    },
+    "priceUnknown": "价格暂不可用",
+    "expireAt": "到期时间 {date}",
+    "planTier": "方案：{tier}",
+    "planActive": "已激活",
+    "planPurchase": "订阅",
+    "purchaseFailed": "购买失败：{reason}",
+    "statusLoading": "正在检查订阅…",
+    "statusUnavailable": "商店不可用",
+    "listFailed": "获取商品失败：{reason}",
+    "statusActiveExpire": "已激活（{plan}），到期 {date}",
+    "statusActive": "已激活（{plan}）",
+    "statusLicensed": "已授权",
+    "statusTrial": "试用授权",
+    "statusFree": "免费版",
+    "restoreFailed": "恢复购买失败：{reason}",
+    "restoreOk": "恢复成功",
+    "manageFailed": "打开订阅管理失败：{reason}",
+    "openFailed": "打开商店失败：{reason}"
+  }
+}

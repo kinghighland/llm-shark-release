@@ -1,0 +1,64 @@
+{
+  "store": {
+    "entry": "멤버십",
+    "title": "멤버십 센터",
+    "refresh": "새로 고침",
+    "restore": "구매 복원",
+    "manage": "구독 관리",
+    "openProduct": "Microsoft Store 열기",
+    "plan": {
+      "pro_month": "Pro 월간",
+      "pro_year": "Pro 연간"
+    },
+    "compare": {
+      "title": "요금제 한눈에 비교",
+      "sub": "무료는 빠른 확인용, Pro는 전체 진단과 내보내기 지원.",
+      "tag1": "AI 시그널링 전문가",
+      "tag2": "효율적인 프로 진단",
+      "tag3": "LLM-Shark 사례 라이브러리",
+      "tag4": "효율성 대폭 향상",
+      "free": {
+        "tier": "무료",
+        "price": "기본 액세스",
+        "f1": "빠른 진단 요약",
+        "f2": "제한된 보고서 기록",
+        "f3": "로컬 모델 설정",
+        "f4": "내보내기 불가"
+      },
+      "proMonth": {
+        "badge": "인기",
+        "tier": "Pro (월)",
+        "price": "월간 청구",
+        "f1": "전체 보고서 + Mermaid 다이어그램",
+        "f2": "무제한 세션",
+        "f3": "CSV/JSON 내보내기",
+        "f4": "우선 지원"
+      },
+      "proYear": {
+        "badge": "최고의 가치",
+        "tier": "Pro (년)",
+        "price": "연간 청구",
+        "f1": "전체 보고서 + Mermaid 다이어그램",
+        "f2": "무제한 세션",
+        "f3": "CSV/JSON 내보내기",
+        "f4": "우선 지원"
+      }
+    },
+    "priceUnknown": "가격을 사용할 수 없음",
+    "expireAt": "{date}에 만료",
+    "planTier": "플랜: {tier}",
+    "planActive": "활성",
+    "planPurchase": "구독",
+    "purchaseFailed": "구매 실패: {reason}",
+    "statusLoading": "구독 확인 중…",
+    "statusUnavailable": "스토어를 사용할 수 없음",
+    "listFailed": "제품 불러오기 실패: {reason}",
+    "statusActiveExpire": "활성 ({plan}) · {date} 만료",
+    "statusActive": "활성 ({plan})",
+    "statusFree": "무료",
+    "restoreFailed": "복원 실패: {reason}",
+    "restoreOk": "복원됨",
+    "manageFailed": "구독 관리 열기 실패: {reason}",
+    "openFailed": "스토어 열기 실패: {reason}"
+  }
+}

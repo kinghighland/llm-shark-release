@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LLM-Shark</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script defer src="./vendor/marked.min.js"></script>
+  <script defer src="./vendor/purify.min.js"></script>
+  <script defer src="./vendor/mermaid.min.js"></script>
+  <script defer src="./vendor/svg-pan-zoom.min.js"></script>
+</head>
+
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="sideTop">
+        <button id="sidebarToggle" class="iconBtn iconBtnGhost" data-i18n-title="sidebar.toggle">
+          <span class="icon">≡</span>
+        </button>
+        <div class="brand">LLM‑Shark</div>
+      </div>
+
+
+      <div class="sessionsHead">
+        <div class="sessionsTitle" data-i18n="sessions.title">会话</div>
+        <button id="newSession" class="iconBtn" data-i18n-title="sessions.new"><span class="icon">＋</span></button>
+      </div>
+      <div id="sessionList" class="sessionList"></div>
+    </aside>
+
+    <main class="main">
+      <header class="topBar">
+        <div class="topBarLeft">
+          <button id="btnAbout" class="iconBtn" data-i18n-title="top.about"><span class="icon">ⓘ</span></button>
+          <button id="btnTopSettings" class="iconBtn" data-i18n-title="top.settings"><span class="icon">⚙</span></button>
+          <button id="btnMobileQr" class="iconBtn" dataa_i18n-title="top.mobileQr">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
+              <path fill="currentColor"
+                  d="M3 3h8v8H3V3zm2 2v4h4V5H5zm10-2h8v8h-8V3zm2 2v4h4V5h-4zM3 13h8v8H3v-8zm2 2v4h4v-4H5zm10-2h2v2h-2v-2zm2 2h2v2h-2v-2zm-2 2h2v2h-2v-2zm2 2h2v2h-2v-2zm-4 0h2v2h-2v-2zm6-4h2v2h-2v-2zm0 4h2v2h-2v-2z" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="topBarCenter">
+          <div class="pcapInline">
+            <button id="pickPcap" class="compactBtn" data-i18n="app.pickPcap">选择 PCAP</button>
+            <input id="pcapPath" class="pcapPathInput" readonly title="" />
+            <button id="btnAnalyze" class="compactBtn" disabled data-i18n="app.analyze">诊断</button>
+          </div>
+        </div>
+
+        <div class="topBarRight">
+          <button id="btnStoreCenter" class="iconBtn" data-i18n-title="store.entry"><span class="icon">$</span></button>
+          <button id="btnThemeToggle" class="iconBtn" data-i18n-title="top.theme"><span class="icon">◐</span></button>
+          <div class="langPicker">
+            <button id="btnLangToggle" class="langBtn" type="button" data-i18n-title="top.language">
+              <img id="langFlag" class="langFlag" alt="" />
+              <span id="langLabel" class="langLabel">中</span>
+              <span class="langCaret">▾</span>
+            </button>
+            <div id="langMenu" class="langMenu langMenuHidden" role="menu"></div>
+          </div>
+        </div>
+      </header>
+
+      <div id="viewApp" class="view">
+        <section class="card statusCard">
+          <div id="statusBar" class="statusBar" data-i18n="app.notLoaded">未加载</div>
+        </section>
+
+        <div id="workspace" class="workspace">
+          <section class="card reportCard">
+            <h2 data-i18n="report.title">报告</h2>
+            <div id="reportMessages" class="chatMessages reportMessages"></div>
+          </section>
+
+          <div id="dockSplitter" class="dockSplitter" role="separator" aria-orientation="vertical"></div>
+
+          <section id="dock" class="card dockCard">
+            <div class="dockHead">
+              <h2 data-i18n="chat.title">对话</h2>
+              <button id="dockToggle" class="iconBtn iconBtnGhost" data-i18n-title="sidebar.toggle"><span
+                  class="icon">≡</span></button>
+            </div>
+
+            <div class="dockBody">
+              <div id="chatMessages" class="chatMessages"></div>
+              <div class="chatInputRow">
+                <textarea id="chatInput" rows="2" data-i18n-placeholder="chat.placeholder"
+                  placeholder="继续追问…"></textarea>
+                <button id="chatAction" class="chatAction" data-i18n="chat.send">发送</button>
+              </div>
+            </div>
+          </section>
+        </div>
+
+
+      </div>
+
+      <div id="viewSettings" class="view viewHidden">
+        <section class="card">
+          <h2 data-i18n="settings.modelConfigTitle">模型配置（OpenAI-compatible）</h2>
+          <div class="grid">
+            <label><span data-i18n="settings.endpoint">Endpoint</span> <input id="endpoint"
+                placeholder="https://api.xxx.com/v1" /></label>
+
+            <label>
+              <span data-i18n="settings.model">Model</span>
+              <div class="inputWithBtn">
+                <input id="model" placeholder="gpt-4o-mini / Qwen2.5..." />
+              </div>
+            </label>
+
+            <label><span data-i18n="settings.apiKey">API Key</span>
+              <div class="inputWithBtn">
+                <input id="apiKey" type="password" data-i18n-placeholder="settings.apiKeyPlaceholder"
+                  placeholder="可留空（如本地模型）" autocomplete="off" />
+                <button id="toggleApiKey" type="button" class="iconBtnSm" data-i18n-title="settings.toggleApiKeyTitle"
+                  title="显示/隐藏" data-i18n="settings.show">显示</button>
+                <button id="btnValidateLlm" type="button" class="iconBtnSm" data-i18n="settings.validate">验证</button>
+              </div>
+            </label>
+
+            <div id="validateStatus" class="hint validateCell"></div>
+
+            <div id="sfPromo" class="sfPromo gridSpan2"></div>
+
+            <label>
+              <span data-i18n="settings.promptPath">提示词文件路径</span>
+              <div class="inputWithBtn">
+                <input id="promptPath" data-i18n-placeholder="settings.promptPathPlaceholder"
+                  placeholder="可选：选择一个 prompt.md（明文可编辑）" />
+                <button id="pickPrompt" type="button" class="iconBtnSm" data-i18n="settings.choose">选择…</button>
+              </div>
+            </label>
+
+            <label class="checkInline checkInlineCenter">
+              <input id="promptAuto" type="checkbox" checked />
+              <span data-i18n="settings.promptAuto">自动使用外置 prompt.md（存在则替换内置）</span>
+            </label>
+          </div>
+
+          <hr />
+
+          <h2 data-i18n="settings.wiresharkTitle">Wireshark</h2>
+          <div class="grid">
+            <label>
+              <span data-i18n="settings.tsharkPath">tshark.exe 路径</span>
+              <div class="inputWithBtn">
+                <input id="tsharkPath" data-i18n-placeholder="settings.tsharkPathPlaceholder"
+                  placeholder="优先检测，检测不到再选择 tshark.exe（Wireshark）" />
+                <button id="detectTshark" type="button" class="iconBtnSm" data-i18n="settings.detect">检测</button>
+                <button id="pickTshark" type="button" class="iconBtnSm" data-i18n="settings.choose">选择…</button>
+              </div>
+              <span id="tsharkHint" class="hint"></span>
+            </label>
+          </div>
+
+          <hr />
+
+          <h2 data-i18n="settings.caseLibraryTitle">案例库</h2>
+          <div class="grid">
+            <label class="checkInline">
+              <input id="useKb" type="checkbox" checked />
+              <span data-i18n="settings.useCaseLibrary">使用案例库</span>
+            </label>
+            <label>
+              <span data-i18n="settings.kbUserPath">用户案例库路径</span>
+              <div class="inputWithBtn">
+                <input id="kbUserPath" data-i18n-placeholder="settings.kbUserPathPlaceholder"
+                  placeholder="可选：选择一个 .md 案例知识库文件（明文可编辑）" />
+                <button id="pickKbUser" type="button" class="iconBtnSm" data-i18n="settings.choose">选择…</button>
+              </div>
+            </label>
+          </div>
+
+
+          <div id="licenseSection">
+            <hr />
+
+            <h2 data-i18n="license.title">授权</h2>
+            <div class="licenseGrid">
+              <div class="licenseActions">
+                <button id="btnExportFeature" type="button" data-i18n="license.exportFeature">导出机器特征</button>
+                <button id="btnImportLicense" type="button" data-i18n="license.importLicense">导入授权文件</button>
+              </div>
+              <div class="licenseMeta">
+                <span id="licenseStatus" class="hint" data-i18n="license.statusUnknown">授权状态：未知</span>
+                <div class="licenseLinks" aria-label="license links">
+                  <button id="btnBuyPerpetual" type="button" class="linkBtn"
+                    data-i18n="license.buyPerpetual">购买三年授权</button>
+                  <button id="btnBuyYearly" type="button" class="linkBtn" data-i18n="license.buyYearly">购买一年授权</button>
+                  <button id="btnSoftwareUpdate" type="button" class="linkBtn"
+                    data-i18n="license.softwareUpdate">软件更新</button>
+                </div>
+              </div>
+            </div>
+
+            <hr />
+          </div>
+
+          <div class="settingsFooter">
+            <div class="settingsFooterActions">
+              <button id="saveCfg" type="button" data-i18n="settings.saveCfg">保存配置</button>
+              <button id="loadCfg" type="button" data-i18n="settings.loadCfg">加载配置</button>
+            </div>
+            <span id="cfgHint" class="hint"></span>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <div id="aboutOverlay" class="overlay overlayHidden" role="dialog" aria-modal="true">
+    <div class="overlayInner aboutOverlayInner">
+      <div class="overlayHead">
+        <h2 data-i18n="about.title">关于</h2>
+        <button id="aboutClose" type="button" class="iconBtn" data-i18n-title="common.close" title="Close"><span
+            class="icon">✕</span></button>
+      </div>
+      <section class="card aboutCard">
+        <div class="aboutHeadRow">
+          <img class="aboutLogo" src="./assets/flowshark.png" alt="flowshark" />
+          <div class="aboutHeadText">
+            <div class="aboutTitle">LLM‑Shark</div>
+            <div class="aboutSub" data-i18n="about.subtitle">对话式信令诊断工具，AI 赋能的流鲨软件</div>
+          </div>
+        </div>
+        <div class="aboutGrid">
+          <div class="aboutKey" data-i18n="about.version">版本</div>
+          <div id="aboutVersion" class="aboutVal">-</div>
+          <div class="aboutKey" data-i18n="about.runtime">运行环境</div>
+          <div id="aboutRuntime" class="aboutVal">-</div>
+          <div class="aboutKey" data-i18n="about.developer">开发者</div>
+          <div class="aboutVal" data-i18n="about.developerName">flowshark studio</div>
+          <div class="aboutKey" data-i18n="about.copyright">版权</div>
+          <div class="aboutVal" data-i18n="about.copyrightValue">© 2026</div>
+        </div>
+        <div class="aboutActions">
+          <button id="aboutCopyInfo" type="button" data-i18n="about.copyInfo">复制信息</button>
+          <button id="aboutClose2" type="button" data-i18n="common.close">关闭</button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div id="qrOverlay" class="overlay overlayHidden" role="dialog" aria-modal="true">
+    <div class="overlayInner qrOverlayInner">
+      <div class="overlayHead">
+        <h2 data-i18n="qr.title">手机授权二维码</h2>
+        <button id="qrClose" type="button" class="iconBtn" data-i18n-title="common.close"><span class="icon">✕</span></button>
+      </div>
+      <section class="card qrCard">
+        <div id="qrExpires" class="hint" data-i18n="qr.loading">生成中...</div>
+        <div id="qrSvgWrap" class="qrSvgWrap"></div>
+        <div class="qrActions">
+          <button id="btnQrRefresh" type="button" data-i18n="qr.refresh">刷新二维码</button>
+          <button id="qrClose2" type="button" data-i18n="common.close">关闭</button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div id="storeOverlay" class="overlay overlayHidden" role="dialog" aria-modal="true">
+    <div class="overlayInner storeOverlayInner">
+      <div class="overlayHead">
+        <div class="overlayTitleRow">
+          <h2 data-i18n="store.title">会员中心</h2>
+          <div id="storeStatusText" class="storeStatusBadge hint"></div>
+        </div>
+        <button id="storeClose" type="button" class="iconBtn" data-i18n-title="common.close"><span class="icon">✕</span></button>
+      </div>
+      <section class="card storeCard">
+        <div class="storeHero">
+          <div class="storeHeroText">
+            <div class="storeHeroTitle" data-i18n="store.compare.title">Compare plans at a glance</div>
+            <div class="storeHeroSub" data-i18n="store.compare.sub">Free for quick checks, Pro for full diagnostics and exports.</div>
+          </div>
+          <div class="storeHeroMeta">
+            <div class="storeActions">
+              <button id="storeRefresh" type="button" class="iconBtnSm" data-i18n="store.refresh">刷新</button>
+              <button id="storeRestore" type="button" class="iconBtnSm" data-i18n="store.restore">恢复购买</button>
+            </div>
+          </div>
+        </div>
+        <div id="storeCompare" class="storeCompare" aria-hidden="false">
+          <div class="storeCompareGrid">
+            <div class="storeCompareCard">
+              <div class="storeCardHeader">
+                <div class="storeCompareTier" data-i18n="store.compare.free.tier">Free</div>
+                <div class="storeComparePrice">
+                  <span class="storeComparePriceValue">$0</span>
+                  <span class="storeComparePriceLabel" data-i18n="store.compare.free.price">Basic access</span>
+                </div>
+              </div>
+              <ul class="storeCompareList">
+                <li data-i18n="store.compare.free.f1">Quick diagnosis summary</li>
+                <li data-i18n="store.compare.free.f2">Limited report history</li>
+                <li data-i18n="store.compare.free.f3">Local model setup</li>
+                <li data-i18n="store.compare.free.f4">No export</li>
+              </ul>
+              <button type="button" class="primaryBtn storeCardBtn" disabled data-i18n="store.planFree">Current Plan</button>
+            </div>
+            <div class="storeCompareCard storeCompareCardPro">
+              <div class="storeCompareBadge" data-i18n="store.compare.proMonth.badge">Popular</div>
+              <div class="storeCardHeader">
+                <div class="storeCompareTier" data-i18n="store.compare.proMonth.tier">Pro (month)</div>
+                <div class="storeComparePrice">
+                  <span id="storeProMonthPrice" class="storeComparePriceValue"></span>
+                  <span class="storeComparePriceLabel" data-i18n="store.compare.proMonth.price">Monthly billing</span>
+                </div>
+              </div>
+              <ul class="storeCompareList">
+                <li data-i18n="store.compare.proMonth.f1">Full report + Mermaid diagrams</li>
+                <li data-i18n="store.compare.proMonth.f2">Unlimited sessions</li>
+                <li data-i18n="store.compare.proMonth.f3">CSV/JSON export</li>
+                <li data-i18n="store.compare.proMonth.f4">Priority support</li>
+              </ul>
+              <button type="button" class="primaryBtn storeCardBtn" data-store-plan="pro_month" data-i18n="store.planPurchase">Subscribe</button>
+            </div>
+            <div class="storeCompareCard storeCompareCardPro">
+              <div class="storeBadgeRow">
+                <div id="storeProYearSaving" class="storeComparePriceSaving" style="display:none;"></div>
+                <div id="storeProYearBadge" class="storeCompareBadge" data-i18n="store.compare.proYear.badge">Best value</div>
+              </div>
+              <div class="storeCardHeader">
+                <div class="storeCompareTier" data-i18n="store.compare.proYear.tier">Pro (year)</div>
+                <div class="storeComparePrice">
+                  <span id="storeProYearPrice" class="storeComparePriceValue"></span>
+                  <span class="storeComparePriceLabel" data-i18n="store.compare.proYear.price">Yearly billing</span>
+                </div>
+              </div>
+              <ul class="storeCompareList">
+                <li data-i18n="store.compare.proYear.f1">Full report + Mermaid diagrams</li>
+                <li data-i18n="store.compare.proYear.f2">Unlimited sessions</li>
+                <li data-i18n="store.compare.proYear.f3">CSV/JSON export</li>
+                <li data-i18n="store.compare.proYear.f4">Priority support</li>
+              </ul>
+              <button type="button" class="primaryBtn storeCardBtn" data-store-plan="pro_year" data-i18n="store.planPurchase">Subscribe</button>
+            </div>
+          </div>
+          <div class="storeTagGrid" aria-hidden="false">
+            <div class="storeTagCard"><span class="storeTagIcon">🧭</span><span class="storeTagText" data-i18n="store.compare.tag1">AI Signaling Expert</span></div>
+            <div class="storeTagCard"><span class="storeTagIcon">⚡</span><span class="storeTagText" data-i18n="store.compare.tag2">Efficient Pro Diagnostics</span></div>
+            <div class="storeTagCard"><span class="storeTagIcon">🧪</span><span class="storeTagText" data-i18n="store.compare.tag3">LLM-Shark Case Library</span></div>
+            <div class="storeTagCard"><span class="storeTagIcon">🚀</span><span class="storeTagText" data-i18n="store.compare.tag4">Major Efficiency Boost</span></div>
+          </div>
+        </div>
+        <div class="storeLinks">
+          <button id="storeManage" type="button" class="linkBtn" data-i18n="store.manage">管理订阅</button>
+          <button id="storeOpenPage" type="button" class="linkBtn" data-i18n="store.openProduct">查看 Microsoft Store</button>
+        </div>
+        <div id="storeMessage" class="hint storeMessage"></div>
+      </section>
+    </div>
+  </div>
+
+  <div id="trialOverlay" class="overlay overlayHidden" role="dialog" aria-modal="true">
+    <div class="overlayInner trialOverlayInner">
+      <section class="card trialDialog">
+        <div class="trialDialogTitle">临时试用大模型服务</div>
+        <div class="trialDialogText">当前将使用一个内置的临时试用的大模型服务，建议用户尽快通过邀请链接申请并切换到私有的模型服务。</div>
+        <div class="trialDialogActions">
+          <button id="trialOpenInvite" type="button" class="iconBtnSm">打开邀请链接</button>
+          <button id="trialUseTemp" type="button" class="iconBtnSm trialPrimaryBtn">使用临时服务</button>
+          <button id="trialCancel" type="button" class="iconBtnSm">取消</button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script defer src="./main.js"></script>
+</body>
+
+</html>

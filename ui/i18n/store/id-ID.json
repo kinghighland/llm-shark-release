@@ -1,0 +1,64 @@
+{
+  "store": {
+    "entry": "Langganan",
+    "title": "Pusat langganan",
+    "refresh": "Segarkan",
+    "restore": "Pulihkan pembelian",
+    "manage": "Kelola langganan",
+    "openProduct": "Buka Microsoft Store",
+    "plan": {
+      "pro_month": "Pro bulanan",
+      "pro_year": "Pro tahunan"
+    },
+    "compare": {
+      "title": "Bandingkan paket sekilas",
+      "sub": "Gratis untuk pemeriksaan cepat, Pro untuk diagnosis lengkap dan ekspor.",
+      "tag1": "Ahli Sinyal AI",
+      "tag2": "Diagnostik Pro Efisien",
+      "tag3": "Perpustakaan Kasus LLM-Shark",
+      "tag4": "Peningkatan Efisiensi Besar",
+      "free": {
+        "tier": "Gratis",
+        "price": "Akses dasar",
+        "f1": "Ringkasan diagnosis cepat",
+        "f2": "Riwayat laporan terbatas",
+        "f3": "Konfigurasi model lokal",
+        "f4": "Tanpa ekspor"
+      },
+      "proMonth": {
+        "badge": "Populer",
+        "tier": "Pro (bulan)",
+        "price": "Penagihan bulanan",
+        "f1": "Laporan lengkap + diagram Mermaid",
+        "f2": "Sesi tanpa batas",
+        "f3": "Ekspor CSV/JSON",
+        "f4": "Dukungan prioritas"
+      },
+      "proYear": {
+        "badge": "Nilai terbaik",
+        "tier": "Pro (tahun)",
+        "price": "Penagihan tahunan",
+        "f1": "Laporan lengkap + diagram Mermaid",
+        "f2": "Sesi tanpa batas",
+        "f3": "Ekspor CSV/JSON",
+        "f4": "Dukungan prioritas"
+      }
+    },
+    "priceUnknown": "Harga tidak tersedia",
+    "expireAt": "Berakhir {date}",
+    "planTier": "Paket: {tier}",
+    "planActive": "Aktif",
+    "planPurchase": "Berlangganan",
+    "purchaseFailed": "Pembelian gagal: {reason}",
+    "statusLoading": "Memeriksa langganan…",
+    "statusUnavailable": "Store tidak tersedia",
+    "listFailed": "Gagal memuat produk: {reason}",
+    "statusActiveExpire": "Aktif ({plan}) · Berakhir {date}",
+    "statusActive": "Aktif ({plan})",
+    "statusFree": "Gratis",
+    "restoreFailed": "Pemulihan gagal: {reason}",
+    "restoreOk": "Dipulihkan",
+    "manageFailed": "Gagal membuka pengelolaan: {reason}",
+    "openFailed": "Gagal membuka store: {reason}"
+  }
+}

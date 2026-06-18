@@ -1,0 +1,194 @@
+{
+  "app": {
+    "pickPcap": "Chọn PCAP",
+    "analyze": "Chẩn đoán",
+    "notLoaded": "Chưa tải",
+    "pickedFileHint": "Đã chọn tệp. Nhấp “Chẩn đoán” để lấy tóm tắt và quyết định có tiếp tục không.",
+    "documentTitleWithFile": "Chẩn đoán LLM - {file}"
+  },
+  "top": {
+    "about": "Giới thiệu",
+    "settings": "Cài đặt",
+    "theme": "Giao diện",
+    "language": "Ngôn ngữ"
+  },
+  "sidebar": {
+    "toggle": "Thu gọn/Mở rộng"
+  },
+  "sessions": {
+    "title": "Phiên",
+    "new": "Phiên mới",
+    "sessionN": "Phiên {n}",
+    "rename": "Đổi tên",
+    "delete": "Xóa",
+    "unnamed": "Phiên chưa đặt tên",
+    "renamePromptTitle": "Đổi tên phiên",
+    "deleteConfirm": "Xóa phiên này?"
+  },
+  "chat": {
+    "title": "Trò chuyện",
+    "placeholder": "Hỏi thêm…",
+    "send": "Gửi",
+    "stop": "Dừng",
+    "needAnalyzeFirst": "Vui lòng nhấp “Chẩn đoán” trước để tạo ngữ cảnh rồi hãy hỏi tiếp."
+  },
+  "report": {
+    "title": "Báo cáo"
+  },
+  "settings": {
+    "modelConfigTitle": "Cấu hình mô hình (tương thích OpenAI)",
+    "endpoint": "Endpoint",
+    "apiKey": "API Key",
+    "apiKeyPlaceholder": "Tùy chọn (vd: mô hình cục bộ)",
+    "toggleApiKeyTitle": "Hiện/Ẩn",
+    "show": "Hiện",
+    "hide": "Ẩn",
+    "model": "Model",
+    "validate": "Xác thực",
+    "validating": "Đang xác thực…",
+    "validateOk": "Xác thực thành công",
+    "validateOkWithDetail": "Xác thực thành công: {detail}",
+    "validateFail": "Xác thực thất bại: {reason}",
+    "temperature": "Temperature",
+    "theme": "Theme",
+    "themeDark": "Tối",
+    "themeLight": "Sáng",
+    "stream": "Stream",
+    "useKb": "Dùng kho kiến thức",
+    "caseLibraryTitle": "Thư viện ca",
+    "useCaseLibrary": "Dùng thư viện ca",
+    "kbUserPath": "Đường dẫn tệp KB",
+    "kbUserPathPlaceholder": "Tùy chọn: chọn tệp .md ca (văn bản thuần, có thể chỉnh sửa)",
+    "wiresharkTitle": "Wireshark",
+    "tsharkPath": "Đường dẫn tshark.exe",
+    "tsharkPathPlaceholder": "Ưu tiên “Phát hiện”. Nếu không thấy, hãy chọn tshark.exe (Wireshark)",
+    "detect": "Phát hiện",
+    "choose": "Chọn…",
+    "tsharkDetected": "Đã phát hiện tshark: {path}",
+    "tsharkNotFound": "Không tìm thấy tshark. Hãy cài Wireshark hoặc chọn tshark.exe thủ công.",
+    "saveCfg": "Lưu",
+    "loadCfg": "Tải",
+    "cfgNoSaved": "Không có cấu hình đã lưu",
+    "cfgLoaded": "Đã tải",
+    "cfgSaved": "Đã lưu",
+    "cfgParseFail": "Không phân tích được cấu hình",
+    "promptAuto": "Tự động dùng prompt.md bên ngoài (nếu có sẽ thay thế bản nội bộ)",
+    "promptPath": "Đường dẫn tệp prompt",
+    "promptPathPlaceholder": "Tùy chọn: chọn prompt.md (văn bản thuần, có thể chỉnh sửa)"
+  },
+  "license": {
+    "title": "Giấy phép",
+    "exportFeature": "Xuất dấu vân tay máy",
+    "importLicense": "Nhập tệp giấy phép",
+    "buyPerpetual": "Mua giấy phép 3 năm",
+    "buyYearly": "Mua giấy phép 1 năm",
+    "softwareUpdate": "Cập nhật phần mềm",
+    "statusUnknown": "Giấy phép: Không rõ",
+    "statusAuthed": "Giấy phép: Đã kích hoạt",
+    "statusAuthedWithDetail": "Giấy phép: Đã kích hoạt ({detail})",
+    "statusUnAuthed": "Giấy phép: Chưa kích hoạt ({reason})",
+    "detailExpire": "Hết hạn {exp}",
+    "exportDialogTitle": "Xuất dấu vân tay máy"
+  },
+  "common": {
+    "copy": "Sao chép",
+    "yes": "Có",
+    "no": "Không",
+    "unknown": "?",
+    "confirm": "Xác nhận",
+    "copied": "Đã sao chép.",
+    "close": "Đóng",
+    "loading": "Đang tải..."
+  },
+  "errors": {
+    "pathEmpty": "Đường dẫn trống",
+    "noShellOpen": "Không có shell.open. Hãy sao chép đường dẫn và mở trong File Explorer.",
+    "noTauriApiSummary": "Không phát hiện Tauri API (window.__TAURI__). Hãy chạy bằng ứng dụng desktop và bật build.withGlobalTauri trong tauri.conf.json.",
+    "noTauriApiStatus": "Không phát hiện Tauri API. Không thể phân tích.",
+    "noDialogSave": "Không có dialog.save. Không thể xuất.",
+    "needAnalyzeToAsk": "Hãy chẩn đoán trước (tạo báo cáo) rồi mới hỏi",
+    "streamRunning": "Đang xuất nội dung. Vui lòng đợi.",
+    "noEventApi": "Không có event API. Không thể stream.",
+    "uiRuntimeError": "Lỗi runtime UI: {message} (tệp: {file}, dòng: {line})",
+    "scriptLoadFail": "Tải/chạy script thất bại: {src}",
+    "unhandledPromise": "Promise chưa được xử lý: {reason}"
+  },
+  "about": {
+    "title": "Giới thiệu",
+    "subtitle": "Công cụ chẩn đoán tín hiệu hội thoại, Flowshark được AI hỗ trợ",
+    "version": "Phiên bản",
+    "runtime": "Runtime",
+    "developer": "Nhà phát triển",
+    "developerName": "flowshark studio",
+    "copyright": "Bản quyền",
+    "copyrightValue": "© 2026",
+    "copyInfo": "Sao chép thông tin",
+    "dialogText": "LLM-Shark\n\nCông cụ chẩn đoán tín hiệu hội thoại, Flowshark được AI hỗ trợ"
+  },
+  "dialogs": {
+    "openPcapTitle": "Chọn tệp PCAP",
+    "openKbTitle": "Chọn tệp thư viện ca",
+    "openTsharkTitle": "Chọn tshark.exe",
+    "importLicenseTitle": "Nhập tệp giấy phép",
+    "openPromptTitle": "Chọn prompt.md",
+    "promptMarkdown": "Markdown prompt"
+  },
+  "mermaid": {
+    "notLoaded": "Không phát hiện thư viện Mermaid. Không thể vẽ sơ đồ trong chat.",
+    "zoomIn": "Phóng to",
+    "zoomOut": "Thu nhỏ",
+    "fit": "Vừa khung",
+    "syntaxError": "Lỗi cú pháp Mermaid{extra}",
+    "versionHint": "(mermaid {v}; bản online có thể khác)",
+    "renderFailSuppressed": "Render Mermaid thất bại (ẩn đồ thị lỗi): {msg} {ver}",
+    "renderFail": "Render Mermaid thất bại: {msg}\n\n{code}",
+    "renderFailSummary": "Render Mermaid trong chat thất bại ({count}): {first}"
+  },
+  "markdown": {
+    "renderFail": "Render Markdown thất bại: {msg}"
+  },
+  "summary": {
+    "expand": "Mở rộng",
+    "collapse": "Thu gọn"
+  },
+  "sig": {
+    "markdownTableHeader": "| Frame | Time | Protocol | Message | Cause | Src | Dst |\n|---:|---|---|---|---|---|---|",
+    "noData": "Không có dữ liệu tín hiệu để tải.",
+    "allShown": "Đã hiển thị tất cả tín hiệu.",
+    "fullHint": "Tín hiệu đầy đủ: {count} mục.\nBạn có thể tải thêm trang hoặc mở tệp CSV/JSON trực tiếp.",
+    "nextPage": "Tải trang tiếp theo ({pageSize})",
+    "appendTable": "Thêm bảng tín hiệu:\n\n{table}",
+    "sequenceDiagramTitle": "Sơ đồ chuỗi tín hiệu:",
+    "keyTableTitle": "Bảng tín hiệu chính:",
+    "appendTableTitle": "Thêm bảng tín hiệu:",
+    "fullTitle": "Tín hiệu đầy đủ:",
+    "pageHeader": "Mục {start}-{end} / Tổng {total}",
+    "onlyFirstN": "Chỉ hiển thị {n} mục đầu (tổng {total}).",
+    "openCsv": "Mở CSV",
+    "openJson": "Mở JSON",
+    "openDir": "Mở thư mục",
+    "copyCsvPath": "Sao chép đường dẫn CSV"
+  },
+  "statusBar": {
+    "template": "Gọi/Gọi đến: {a} -> {b}  Bắt đầu/Thời lượng: {start} / {dur}  Loại: {callType}  Đổ chuông: {has180}  Trả lời: {has200}  Hủy: {hasCancel}  Rớt: {dropped}  Ca: {kbCount}",
+    "labels": {
+      "number": "Số",
+      "time": "Bắt đầu",
+      "duration": "Thời lượng",
+      "ringing": "Đổ chuông",
+      "offhook": "Nhấc máy",
+      "answered": "Trả lời",
+      "cancel": "Hủy",
+      "dropped": "Rớt",
+      "cases": "Ca"
+    }
+  },
+  "analyze": {
+    "fetchingSummary": "Đang lấy tóm tắt…",
+    "tooLarge": "Tệp vượt quá giới hạn ({size}). Đã dừng phân tích.",
+    "detectedProtocols": "Giao thức phát hiện: {protocols}",
+    "notAnalyzable": "Tóm tắt cho biết cần dừng chẩn đoán ({reason}).",
+    "summaryOk": "Tóm tắt đạt. Bắt đầu phân tích…",
+    "defaultPrompt": "Tuân thủ nghiêm ngặt yêu cầu của prompt và bắt đầu nhiệm vụ chẩn đoán."
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "llm": {
+    "timeout_seconds": 300
+  },
+  "summary": {
+    "include_keys": [
+      "analyzable",
+      "call",
+      "packet_count",
+      "parser_observation",
+      "protocols",
+      "signaling_count",
+      "sip",
+      "time_range",
+      "too_large"
+    ]
+  },
+  "timeline_compact": {
+    "max_items": 30,
+    "fields": [
+      "frame",
+      "timestamp",
+      "protocol",
+      "interface",
+      "network_element",
+      "message",
+      "cause"
+    ]
+  },
+  "abnormal_candidates": {
+    "max_items": 3,
+    "fields": [
+      "candidate_id",
+      "frame",
+      "timestamp",
+      "protocol",
+      "interface",
+      "network_element",
+      "message",
+      "cause",
+      "reason_tags",
+      "score_hint"
+    ],
+    "reason_tags_max_items": 3
+  },
+  "context_windows": {
+    "max_items": 2,
+    "before_max_items": 2,
+    "after_max_items": 2,
+    "signal_fields": [
+      "frame",
+      "timestamp",
+      "protocol",
+      "message",
+      "cause"
+    ]
+  },
+  "flow_hints": {
+    "max_items": 3,
+    "include_parser_note": true,
+    "candidate_fields": [
+      "flow_type",
+      "evidence",
+      "score_hint"
+    ],
+    "evidence_max_items": 2
+  },
+  "kb_hits": {
+    "enabled": true,
+    "include_trace": false,
+    "max_hits": 5,
+    "query_summary_fields": [
+      "error_code",
+      "call_side",
+      "call_type",
+      "has_cancel",
+      "has_180"
+    ],
+    "hit_fields": [
+      "dna_id",
+      "case_numbers",
+      "issue_location",
+      "diagnosis",
+      "root_cause",
+      "signal_count"
+    ]
+  },
+  "meta": {
+    "include_keys": [
+      "parser_profile",
+      "generated_at",
+      "filter",
+      "max_size_kb"
+    ]
+  }
+}

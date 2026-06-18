@@ -1,0 +1,13 @@
+namespace ffi_bridge {
+  string ffi_mobile_qr_public_key_pem();
+  string ffi_generate_ck_b64();
+  string ffi_wrap_ck(string request_json);
+  string ffi_unwrap_ck(string request_json);
+  string ffi_encrypt_case_plaintext(string request_json);
+  string ffi_decrypt_candidate_cases(string request_json);
+  string ffi_validate_license(string request_json);
+  string ffi_build_policy(string request_json);
+  string ffi_parse_kb_cases(string kb_text);
+  string ffi_search_cases(string request_json);
+  string ffi_decrypt_and_parse_kb(string enc_b64);
+};

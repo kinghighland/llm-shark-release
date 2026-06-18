@@ -1,0 +1,194 @@
+{
+  "app": {
+    "pickPcap": "Alege PCAP",
+    "analyze": "Diagnostic",
+    "notLoaded": "Neîncărcat",
+    "pickedFileHint": "Fișier selectat. Apasă “Diagnostic” pentru a obține rezumatul și a decide dacă continui.",
+    "documentTitleWithFile": "Diagnostic LLM - {file}"
+  },
+  "top": {
+    "about": "Despre",
+    "settings": "Setări",
+    "theme": "Temă",
+    "language": "Limbă"
+  },
+  "sidebar": {
+    "toggle": "Restrânge/Extinde"
+  },
+  "sessions": {
+    "title": "Sesiuni",
+    "new": "Sesiune nouă",
+    "sessionN": "Sesiunea {n}",
+    "rename": "Redenumește",
+    "delete": "Șterge",
+    "unnamed": "Sesiune fără nume",
+    "renamePromptTitle": "Redenumire sesiune",
+    "deleteConfirm": "Ștergi această sesiune?"
+  },
+  "chat": {
+    "title": "Chat",
+    "placeholder": "Pune o întrebare…",
+    "send": "Trimite",
+    "stop": "Oprește",
+    "needAnalyzeFirst": "Apasă mai întâi “Diagnostic” pentru a crea context, apoi întreabă."
+  },
+  "report": {
+    "title": "Raport"
+  },
+  "settings": {
+    "modelConfigTitle": "Configurație model (compatibil OpenAI)",
+    "endpoint": "Endpoint",
+    "apiKey": "Cheie API",
+    "apiKeyPlaceholder": "Opțional (ex.: model local)",
+    "toggleApiKeyTitle": "Afișează/Ascunde",
+    "show": "Afișează",
+    "hide": "Ascunde",
+    "model": "Model",
+    "validate": "Validează",
+    "validating": "Se validează…",
+    "validateOk": "Validare reușită",
+    "validateOkWithDetail": "Validare reușită: {detail}",
+    "validateFail": "Validare eșuată: {reason}",
+    "temperature": "Temperatură",
+    "theme": "Temă",
+    "themeDark": "Întunecat",
+    "themeLight": "Deschis",
+    "stream": "Flux",
+    "useKb": "Folosește baza de cunoștințe",
+    "caseLibraryTitle": "Bibliotecă de cazuri",
+    "useCaseLibrary": "Folosește biblioteca de cazuri",
+    "kbUserPath": "Cale fișier KB",
+    "kbUserPathPlaceholder": "Opțional: alege un fișier .md (text simplu, editabil)",
+    "wiresharkTitle": "Wireshark",
+    "tsharkPath": "Cale către tshark.exe",
+    "tsharkPathPlaceholder": "Întâi “Detectează”. Dacă nu se găsește, alege tshark.exe (Wireshark)",
+    "detect": "Detectează",
+    "choose": "Alege…",
+    "tsharkDetected": "tshark detectat: {path}",
+    "tsharkNotFound": "tshark nu a fost găsit. Instalează Wireshark sau alege manual tshark.exe.",
+    "saveCfg": "Salvează",
+    "loadCfg": "Încarcă",
+    "cfgNoSaved": "Nu există configurări salvate",
+    "cfgLoaded": "Încărcat",
+    "cfgSaved": "Salvat",
+    "cfgParseFail": "Nu s-a putut analiza configurația",
+    "promptAuto": "Folosește automat prompt.md extern (dacă există, înlocuiește internul)",
+    "promptPath": "Cale fișier prompt",
+    "promptPathPlaceholder": "Opțional: alege prompt.md (text simplu, editabil)"
+  },
+  "license": {
+    "title": "Licență",
+    "exportFeature": "Exportă amprenta mașinii",
+    "importLicense": "Importă fișierul de licență",
+    "buyPerpetual": "Cumpără licență pe 3 ani",
+    "buyYearly": "Cumpără licență pe 1 an",
+    "softwareUpdate": "Actualizări software",
+    "statusUnknown": "Licență: Necunoscută",
+    "statusAuthed": "Licență: Activă",
+    "statusAuthedWithDetail": "Licență: Activă ({detail})",
+    "statusUnAuthed": "Licență: Inactivă ({reason})",
+    "detailExpire": "Expiră {exp}",
+    "exportDialogTitle": "Exportă amprenta mașinii"
+  },
+  "common": {
+    "copy": "Copiază",
+    "yes": "Da",
+    "no": "Nu",
+    "unknown": "?",
+    "confirm": "Confirmă",
+    "copied": "Copiat.",
+    "close": "Închide",
+    "loading": "Se încarcă..."
+  },
+  "errors": {
+    "pathEmpty": "Cale goală",
+    "noShellOpen": "shell.open nu este disponibil. Copiază calea și deschide în Explorer.",
+    "noTauriApiSummary": "API Tauri nu a fost detectată (window.__TAURI__). Rulează aplicația desktop și activează build.withGlobalTauri în tauri.conf.json.",
+    "noTauriApiStatus": "API Tauri nu a fost detectată. Analiza nu este posibilă.",
+    "noDialogSave": "dialog.save nu este disponibil. Exportul nu este posibil.",
+    "needAnalyzeToAsk": "Fă mai întâi diagnosticul (generează raportul) înainte de a întreba",
+    "streamRunning": "Fluxul este în derulare. Te rugăm să aștepți.",
+    "noEventApi": "API de evenimente nu a fost detectată. Streamingul nu este disponibil.",
+    "uiRuntimeError": "Eroare runtime UI: {message} (fișier: {file}, linia: {line})",
+    "scriptLoadFail": "Încărcarea/rularea scriptului a eșuat: {src}",
+    "unhandledPromise": "Eroare Promise necontrolată: {reason}"
+  },
+  "about": {
+    "title": "Despre",
+    "subtitle": "Instrument de diagnosticare a semnalizării conversaționale, Flowshark cu AI",
+    "version": "Versiune",
+    "runtime": "Runtime",
+    "developer": "Dezvoltator",
+    "developerName": "flowshark studio",
+    "copyright": "Copyright",
+    "copyrightValue": "© 2026",
+    "copyInfo": "Copiază informațiile",
+    "dialogText": "LLM-Shark\n\nInstrument de diagnosticare a semnalizării conversaționale, Flowshark cu AI"
+  },
+  "dialogs": {
+    "openPcapTitle": "Alege fișier PCAP",
+    "openKbTitle": "Alege fișier bibliotecă de cazuri",
+    "openTsharkTitle": "Alege tshark.exe",
+    "importLicenseTitle": "Importă fișier de licență",
+    "openPromptTitle": "Alege prompt.md",
+    "promptMarkdown": "Markdown prompt"
+  },
+  "mermaid": {
+    "notLoaded": "Biblioteca Mermaid nu a fost detectată. Nu se pot reda diagrame în chat.",
+    "zoomIn": "Mărește",
+    "zoomOut": "Micșorează",
+    "fit": "Potrivește",
+    "syntaxError": "Eroare de sintaxă Mermaid{extra}",
+    "versionHint": "(mermaid {v}; versiunea online poate diferi)",
+    "renderFailSuppressed": "Redare Mermaid eșuată (grafic de eroare suprimat): {msg} {ver}",
+    "renderFail": "Redare Mermaid eșuată: {msg}\n\n{code}",
+    "renderFailSummary": "Redare Mermaid eșuată în chat ({count}): {first}"
+  },
+  "markdown": {
+    "renderFail": "Redare Markdown eșuată: {msg}"
+  },
+  "summary": {
+    "expand": "Extinde",
+    "collapse": "Restrânge"
+  },
+  "sig": {
+    "markdownTableHeader": "| Frame | Time | Protocol | Message | Cause | Src | Dst |\n|---:|---|---|---|---|---|---|",
+    "noData": "Nu există date de semnalizare de încărcat.",
+    "allShown": "Toate elementele de semnalizare sunt afișate.",
+    "fullHint": "Semnalizare completă: {count} elemente.\nPoți încărca pagini suplimentare sau deschide fișierul CSV/JSON direct.",
+    "nextPage": "Încarcă următoarele ({pageSize})",
+    "appendTable": "Adaugă tabel de semnalizare:\n\n{table}",
+    "sequenceDiagramTitle": "Diagramă secvență semnalizare:",
+    "keyTableTitle": "Tabel semnalizare cheie:",
+    "appendTableTitle": "Adaugă tabel de semnalizare:",
+    "fullTitle": "Semnalizare completă:",
+    "pageHeader": "Elemente {start}-{end} / Total {total}",
+    "onlyFirstN": "Se afișează primele {n} elemente (total {total}).",
+    "openCsv": "Deschide CSV",
+    "openJson": "Deschide JSON",
+    "openDir": "Deschide folder",
+    "copyCsvPath": "Copiază calea CSV"
+  },
+  "statusBar": {
+    "template": "Apelant/Apelat: {a} -> {b}  Start/Durată: {start} / {dur}  Tip: {callType}  Sunet: {has180}  Răspuns: {has200}  Anulat: {hasCancel}  Întrerupt: {dropped}  Cazuri: {kbCount}",
+    "labels": {
+      "number": "Număr",
+      "time": "Start",
+      "duration": "Durată",
+      "ringing": "Sunet",
+      "offhook": "Ridicat",
+      "answered": "Răspuns",
+      "cancel": "Anulează",
+      "dropped": "Întrerupt",
+      "cases": "Cazuri"
+    }
+  },
+  "analyze": {
+    "fetchingSummary": "Se obține rezumatul…",
+    "tooLarge": "Fișierul depășește limita de dimensiune ({size}). Analiza a fost oprită.",
+    "detectedProtocols": "Protocoale detectate: {protocols}",
+    "notAnalyzable": "Rezumatul indică oprirea diagnosticului ({reason}).",
+    "summaryOk": "Rezumat acceptat. Se pornește analiza…",
+    "defaultPrompt": "Respectă strict cerințele promptului și începe sarcina de diagnostic."
+  }
+}

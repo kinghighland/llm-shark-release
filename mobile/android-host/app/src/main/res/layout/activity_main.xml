@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ============== 选项面板 ============== -->
+    <ScrollView
+        android:id="@+id/optionsPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- ============== 必选项区域 ============== -->
+            <TextView
+                android:id="@+id/callInfoTitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/callInfoTitle"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingBottom="8dp" />
+
+            <!-- 呼叫侧 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/callSideLabelText"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/callSide" />
+                <Spinner
+                    android:id="@+id/callSideSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <!-- SIP 183/180/200 两态复选框 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+                <CheckBox
+                    android:id="@+id/has183Check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/checkboxSip183" />
+                <CheckBox
+                    android:id="@+id/has180Check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/checkboxSip180" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/has200InviteCheck"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/checkboxSip200" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <!-- SIP 半接通/SIP ACK/CANCEL/BYE 下拉框 (每行一个) -->
+            <Spinner
+                android:id="@+id/halfConnectedSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp" />
+            <Spinner
+                android:id="@+id/hasAck200Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp" />
+
+            <Spinner
+                android:id="@+id/hasCancelSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp" />
+
+            <Spinner
+                android:id="@+id/hasByeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp" />
+
+            <!-- SIP 响应码 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/responseCodeLabelText"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/responseCode" />
+                <EditText
+                    android:id="@+id/sipResponseCodeInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/responseCodeHint"
+                    android:inputType="number"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- SIP 文本 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/sipTextLabelText"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sipText" />
+                <EditText
+                    android:id="@+id/sipTextInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/sipTextHint"
+                    android:inputType="text"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- SIP 中间应答 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/provisionalCodeLabelText"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/provisionalCode" />
+                <EditText
+                    android:id="@+id/sipProvisionalCodeInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/provisionalCodeHint"
+                    android:inputType="number"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <!-- ============== 可选项区域 ============== -->
+            <TextView
+                android:id="@+id/auxInfoTitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/auxInfoTitle"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp" />
+
+            <!-- 移动管理 / 补充业务 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+                <Spinner
+                    android:id="@+id/mmEventSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"/>
+                <Spinner
+                    android:id="@+id/supplementaryServiceSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"/>
+            </LinearLayout>
+
+            <!-- SIP 重传 / SIP 放音 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+                <Spinner
+                    android:id="@+id/sipRetransSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"/>
+                <Spinner
+                    android:id="@+id/mediaTypeSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"/>
+            </LinearLayout>
+
+            <!-- ============== 高级可选项区域 ============== -->
+            <TextView
+                android:id="@+id/dsmTitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dsmTitle"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/dsmStateSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- ============== 呼叫描述区域 ============== -->
+            <TextView
+                android:id="@+id/callDescTitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/callDescTitle"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/callDescriptionInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/callDescHint"
+                android:inputType="textMultiLine"
+                android:maxLines="4"
+                android:maxLength="500"
+                android:textSize="14sp" />
+
+            <!-- ============== 操作按钮区域 ============== -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:id="@+id/diagOpTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/diagOpTitle"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/usageCountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="@string/usageTrialCount"
+                    android:textSize="12sp"
+                    android:textColor="?android:attr/textColorSecondary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/btnSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/btnSearch" />
+
+                <Button
+                    android:id="@+id/btnDiagnose"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:enabled="false"
+                    android:text="@string/btnDiagnose" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/searchResultText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/searchResultDefault"
+                android:textSize="14sp"
+                android:paddingTop="4dp" />
+
+            <!-- ============== 授权区域 (暂时隐藏) ============== -->
+            <!--
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="授权管理"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp" />
+            -->
+
+            <!-- ============== 状态显示区域 ============== -->
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:text="@string/statusWaiting"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- ============== 聊天面板 ============== -->
+    <LinearLayout
+        android:id="@+id/chatPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- 标题栏 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:background="?android:attr/colorBackgroundFloating">
+
+            <Button
+                android:id="@+id/btnExecuteDiagnosis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnExecuteDiagnosis"
+                android:textSize="12sp"
+                android:enabled="true" />
+
+            <TextView
+                android:id="@+id/roundCountText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/chatRoundCountDefault"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnEndChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnEndChat"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnClearChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnClearChat"
+                android:textSize="12sp"
+                android:layout_marginStart="4dp" />
+        </LinearLayout>
+
+        <!-- 消息列表 -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chatRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:clipToPadding="false" />
+
+        <!-- 输入区域 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:background="?android:attr/colorBackgroundFloating">
+
+            <EditText
+                android:id="@+id/chatInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/chatInputHint"
+                android:inputType="textMultiLine"
+                android:maxLines="4"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnSend"
+                android:enabled="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- ============== 设置面板 ============== -->
+    <ScrollView
+        android:id="@+id/settingsPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- 返回按钮 (ActionBar中显示) -->
+            <Button
+                android:id="@+id/btnBackFromSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menuBack"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/settingsApiTitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settingsApiTitle"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <!-- API Endpoint -->
+            <TextView
+                android:id="@+id/settingsEndpointLabelText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settingsEndpoint" />
+            <EditText
+                android:id="@+id/endpointInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/settingsEndpointHint"
+                android:inputType="textUri"
+                android:textSize="14sp" />
+
+            <!-- Model -->
+            <TextView
+                android:id="@+id/settingsModelLabelText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settingsModel"
+                android:paddingTop="8dp" />
+            <EditText
+                android:id="@+id/modelInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/settingsModelHint"
+                android:inputType="text"
+                android:textSize="14sp" />
+
+            <!-- API Key -->
+            <TextView
+                android:id="@+id/settingsApiKeyLabelText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settingsApiKey"
+                android:paddingTop="8dp" />
+            <EditText
+                android:id="@+id/apiKeyInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/settingsApiKeyHint"
+                android:inputType="textPassword"
+                android:textSize="14sp" />
+
+            <!-- 操作按钮 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="16dp">
+
+                <Button
+                    android:id="@+id/btnValidateApi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/btnValidateApi" />
+
+                <Button
+                    android:id="@+id/btnSaveConfig"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/btnSaveConfig" />
+            </LinearLayout>
+
+            <!-- 验证状态 -->
+            <TextView
+                android:id="@+id/validateStatusText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:textSize="12sp" />
+
+            <!-- 快捷操作 -->
+            <TextView
+                android:id="@+id/settingsQuickOpTitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settingsQuickOpTitle"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingTop="24dp"
+                android:paddingBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnAutoFill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btnAutoFill"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/trialServiceHintText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="@string/settingsTrialHint"
+                android:textSize="12sp"
+                android:textColor="?android:attr/textColorSecondary" />
+
+            <Button
+                android:id="@+id/btnOpenInvite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btnOpenInvite"
+                android:textSize="12sp"/>
+
+            <!-- 提示信息 -->
+            <TextView
+                android:id="@+id/newUserHintText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="@string/settingsNewUserHint"
+                android:textSize="12sp"
+                android:textColor="?android:attr/textColorSecondary" />
+
+            <!-- ============== 语言设置区域 ============== -->
+            <TextView
+                android:id="@+id/settingsLanguageTitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settingsLanguageTitle"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingTop="24dp"
+                android:paddingBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/settingsLanguageLabelText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settingsLanguage" />
+
+                <Spinner
+                    android:id="@+id/languageSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/languageRestartHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="@string/settingsLanguageRestartHint"
+                android:textSize="12sp"
+                android:textColor="?android:attr/textColorSecondary" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- ============== 关于面板 ============== -->
+    <ScrollView
+        android:id="@+id/aboutPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Logo 图标 -->
+            <ImageView
+                android:id="@+id/aboutLogoImage"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/flowshark"
+                android:contentDescription="@string/aboutLogoDesc" />
+
+            <TextView
+                android:id="@+id/aboutTitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/aboutTitle"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/aboutSubtitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/aboutSubtitle"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:paddingBottom="16dp" />
+
+            <TextView
+                android:id="@+id/aboutTaglineText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/aboutTagline"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/aboutVersionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/aboutVersionDefault"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:paddingBottom="4dp" />
+
+            <TextView
+                android:id="@+id/aboutDeveloperText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/aboutDeveloper"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:paddingBottom="24dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/aboutDesktopTitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/aboutDesktopTitle"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/aboutDesktopDescText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/aboutDesktopDesc"
+                android:textSize="14sp"
+                android:paddingBottom="16dp" />
+
+            <TextView
+                android:id="@+id/aboutStoreHintText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/aboutStoreHint"
+                android:textSize="14sp"
+                android:paddingBottom="16dp" />
+
+            <TextView
+                android:id="@+id/aboutStoreLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="https://apps.microsoft.com/detail/9NJQ6N01CF65"
+                android:textSize="14sp"
+                android:textColor="?android:attr/colorPrimary"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

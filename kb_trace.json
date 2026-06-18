@@ -1,0 +1,51 @@
+[
+  {
+    "step": "init",
+    "criteria": null,
+    "before": 1700,
+    "after": 1700,
+    "applied": true
+  },
+  {
+    "step": "error_code",
+    "criteria": "603",
+    "before": 1700,
+    "after": 62,
+    "applied": true
+  },
+  {
+    "step": "has_180",
+    "criteria": "true",
+    "before": 62,
+    "after": 28,
+    "applied": true
+  },
+  {
+    "step": "has_200_invite",
+    "criteria": "false",
+    "before": 28,
+    "after": 27,
+    "applied": true
+  },
+  {
+    "step": "has_ack_200",
+    "criteria": "false",
+    "before": 27,
+    "after": 27,
+    "applied": true
+  },
+  {
+    "step": "has_cancel",
+    "criteria": "false",
+    "before": 27,
+    "after": 4,
+    "applied": true
+  },
+  {
+    "step": "sort_and_truncate",
+    "criteria": "max_results=10",
+    "before": 4,
+    "after": 4,
+    "applied": true
+  }
+]

@@ -1,0 +1,64 @@
+{
+  "store": {
+    "entry": "Abonelik",
+    "title": "Abonelik merkezi",
+    "refresh": "Yenile",
+    "restore": "Satın alımları geri yükle",
+    "manage": "Aboneliği yönet",
+    "openProduct": "Microsoft Store’u aç",
+    "plan": {
+      "pro_month": "Pro aylık",
+      "pro_year": "Pro yıllık"
+    },
+    "compare": {
+      "title": "Planları bir bakışta karşılaştırın",
+      "sub": "Ücretsiz hızlı kontroller için, Pro tam teşhis ve dışa aktarım için.",
+      "tag1": "Yapay zekâ sinyal uzmanı",
+      "tag2": "Verimli profesyonel teşhis",
+      "tag3": "LLM-Shark vaka kütüphanesi",
+      "tag4": "Büyük verimlilik artışı",
+      "free": {
+        "tier": "Ücretsiz",
+        "price": "Temel erişim",
+        "f1": "Günde 3 analiz",
+        "f2": "Günde 10 takip sorusu",
+        "f3": "Hafif kullanım için ideal",
+        "f4": "İstediğiniz zaman yükseltin"
+      },
+      "proMonth": {
+        "badge": "Popüler",
+        "tier": "Pro (ay)",
+        "price": "Aylık faturalama",
+        "f1": "Sınırsız analiz",
+        "f2": "Sınırsız takip sorusu",
+        "f3": "Yoğun kullanım için ideal",
+        "f4": "Aylık abonelik"
+      },
+      "proYear": {
+        "badge": "En iyi değer",
+        "tier": "Pro (yıl)",
+        "price": "Yıllık faturalama",
+        "f1": "Sınırsız analiz",
+        "f2": "Sınırsız takip sorusu",
+        "f3": "Yoğun kullanım için ideal",
+        "f4": "Yıllık abonelik"
+      }
+    },
+    "priceUnknown": "Fiyat kullanılamıyor",
+    "expireAt": "Bitiş {date}",
+    "planTier": "Plan: {tier}",
+    "planActive": "Etkin",
+    "planPurchase": "Abone ol",
+    "purchaseFailed": "Satın alma başarısız: {reason}",
+    "statusLoading": "Abonelik kontrol ediliyor…",
+    "statusUnavailable": "Store kullanılamıyor",
+    "listFailed": "Ürünler alınamadı: {reason}",
+    "statusActiveExpire": "Etkin ({plan}) · Bitiş {date}",
+    "statusActive": "Etkin ({plan})",
+    "statusFree": "Ücretsiz",
+    "restoreFailed": "Geri yükleme başarısız: {reason}",
+    "restoreOk": "Geri yüklendi",
+    "manageFailed": "Abonelik yönetimi açılamadı: {reason}",
+    "openFailed": "Mağaza açılamadı: {reason}"
+  }
+}

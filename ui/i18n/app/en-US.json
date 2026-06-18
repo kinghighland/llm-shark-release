@@ -1,0 +1,203 @@
+{
+  "app": {
+    "pickPcap": "Choose PCAP",
+    "analyze": "Diagnose",
+    "notLoaded": "Not loaded",
+    "pickedFileHint": "File selected. Click “Diagnose” to fetch the summary and decide whether to continue.",
+    "documentTitleWithFile": "LLM Diagnose - {file}"
+  },
+  "top": {
+    "about": "About",
+    "settings": "Settings",
+    "theme": "Theme",
+    "language": "Language",
+    "mobileQr": "Mobile Auth"
+  },
+  "qr": {
+    "title": "Mobile Authorization QR Code",
+    "expiresAt": "Expires at {time}",
+    "refresh": "Refresh QR Code",
+    "loading": "Generating...",
+    "generateFail": "Failed to generate QR code: {reason}"
+  },
+  "sidebar": {
+    "toggle": "Collapse/Expand"
+  },
+  "sessions": {
+    "title": "Sessions",
+    "new": "New session",
+    "sessionN": "Session {n}",
+    "rename": "Rename",
+    "delete": "Delete",
+    "unnamed": "Untitled session",
+    "renamePromptTitle": "Rename session",
+    "deleteConfirm": "Delete this session?"
+  },
+  "chat": {
+    "title": "Chat",
+    "placeholder": "Ask a follow-up…",
+    "send": "Send",
+    "stop": "Stop",
+    "needAnalyzeFirst": "Click “Diagnose” first to create context, then ask follow-up questions.",
+    "noPcapPaidOnly": "No-PCAP chat is available only for subscription or full license users."
+  },
+  "report": {
+    "title": "Report"
+  },
+  "settings": {
+    "modelConfigTitle": "Model settings (OpenAI-compatible)",
+    "endpoint": "Endpoint",
+    "apiKey": "API Key",
+    "apiKeyPlaceholder": "Optional (e.g. local model)",
+    "toggleApiKeyTitle": "Show/Hide",
+    "show": "Show",
+    "hide": "Hide",
+    "model": "Model",
+    "validate": "Validate",
+    "validating": "Validating…",
+    "validateOk": "Validation succeeded",
+    "validateOkWithDetail": "Validation succeeded: {detail}",
+    "validateFail": "Validation failed: {reason}",
+    "temperature": "Temperature",
+    "theme": "Theme",
+    "themeDark": "Dark",
+    "themeLight": "Light",
+    "stream": "Stream",
+    "useKb": "Use knowledge base",
+    "caseLibraryTitle": "Case Library",
+    "useCaseLibrary": "Use case library",
+    "kbUserPath": "KB file path",
+    "kbUserPathPlaceholder": "Optional: choose a .md case library file (plain text, editable)",
+    "wiresharkTitle": "Wireshark",
+    "tsharkPath": "tshark.exe path",
+    "tsharkPathPlaceholder": "Prefer “Detect”. If not found, choose tshark.exe (Wireshark)",
+    "detect": "Detect",
+    "choose": "Choose…",
+    "tsharkDetected": "tshark detected: {path}",
+    "tsharkNotFound": "tshark not found. Install Wireshark or choose tshark.exe manually.",
+    "saveCfg": "Save",
+    "loadCfg": "Load",
+    "cfgNoSaved": "No saved config",
+    "cfgLoaded": "Loaded",
+    "cfgSaved": "Saved",
+    "cfgParseFail": "Failed to parse config",
+    "promptAuto": "Use external prompt.md automatically (if present, overrides built-in)",
+    "promptPath": "Prompt file path",
+    "promptPathPlaceholder": "Optional: choose a prompt.md (plain text, editable)"
+  },
+  "license": {
+    "title": "License",
+    "exportFeature": "Export machine fingerprint",
+    "importLicense": "Import license file",
+    "buyPerpetual": "Buy 3-years license",
+    "buyYearly": "Buy 1-year license",
+    "softwareUpdate": "Software updates",
+    "statusUnknown": "License: Unknown",
+    "statusAuthed": "License: Activated",
+    "statusAuthedWithDetail": "License: Activated ({detail})",
+    "statusUnAuthed": "License: Not activated ({reason})",
+    "detailExpire": "Expires {exp}",
+    "exportDialogTitle": "Export machine fingerprint"
+  },
+  "common": {
+    "copy": "Copy",
+    "yes": "Yes",
+    "no": "No",
+    "unknown": "?",
+    "confirm": "Confirm",
+    "copied": "Copied.",
+    "close": "Close",
+    "loading": "Loading..."
+  },
+  "errors": {
+    "pathEmpty": "Empty path",
+    "noShellOpen": "shell.open is unavailable. Copy the path and open it in File Explorer.",
+    "noTauriApiSummary": "Tauri API not detected (window.__TAURI__). Run via the desktop app and enable build.withGlobalTauri in tauri.conf.json.",
+    "noTauriApiStatus": "Tauri API not detected. Unable to analyze.",
+    "noDialogSave": "dialog.save is unavailable. Unable to export.",
+    "needAnalyzeToAsk": "Diagnose first (generate report) before asking follow-ups",
+    "streamRunning": "Streaming is in progress. Please wait.",
+    "noEventApi": "event API not detected. Streaming is unavailable.",
+    "uiRuntimeError": "UI runtime error: {message} (file: {file}, line: {line})",
+    "scriptLoadFail": "Script failed to load/execute: {src}",
+    "unhandledPromise": "Unhandled Promise error: {reason}"
+  },
+  "about": {
+    "title": "About",
+    "subtitle": "Conversational signaling diagnosis tool，AI powered flowshark",
+    "version": "Version",
+    "runtime": "Runtime",
+    "developer": "Developer",
+    "developerName": "flowshark studio",
+    "copyright": "Copyright",
+    "copyrightValue": "© 2026",
+    "copyInfo": "Copy info",
+    "dialogText": "LLM-Shark\n\nConversational signaling diagnosis tool，AI powered flowshark"
+  },
+  "dialogs": {
+    "openPcapTitle": "Choose PCAP file",
+    "openKbTitle": "Choose case library file",
+    "openTsharkTitle": "Choose tshark.exe",
+    "importLicenseTitle": "Import license file",
+    "openPromptTitle": "Choose prompt.md",
+    "promptMarkdown": "Prompt Markdown"
+  },
+  "mermaid": {
+    "notLoaded": "Mermaid library not detected. Unable to render diagrams in chat.",
+    "zoomIn": "Zoom",
+    "zoomOut": "Shrink",
+    "fit": "Fit",
+    "syntaxError": "Mermaid syntax error{extra}",
+    "versionHint": "(mermaid {v}; online viewer may differ)",
+    "renderFailSuppressed": "Mermaid render failed (error graphic suppressed): {msg} {ver}",
+    "renderFail": "Mermaid render failed: {msg}\n\n{code}",
+    "renderFailSummary": "Mermaid render failed in chat ({count}): {first}"
+  },
+  "markdown": {
+    "renderFail": "Markdown render failed: {msg}"
+  },
+  "summary": {
+    "expand": "Expand",
+    "collapse": "Collapse"
+  },
+  "sig": {
+    "markdownTableHeader": "| Frame | Time | Protocol | Message | Cause | Src | Dst |\n|---:|---|---|---|---|---|---|",
+    "noData": "No signaling data to load.",
+    "allShown": "All signaling items are shown.",
+    "fullHint": "Full signaling: {count} items.\nYou can load more pages, or open the CSV/JSON file directly.",
+    "nextPage": "Load next ({pageSize})",
+    "appendTable": "Append signaling table:\n\n{table}",
+    "sequenceDiagramTitle": "Signaling sequence diagram:",
+    "keyTableTitle": "Key signaling table:",
+    "appendTableTitle": "Append signaling table:",
+    "fullTitle": "Full signaling:",
+    "pageHeader": "Items {start}-{end} / Total {total}",
+    "onlyFirstN": "Showing first {n} items (total {total}).",
+    "openCsv": "Open CSV",
+    "openJson": "Open JSON",
+    "openDir": "Open folder",
+    "copyCsvPath": "Copy CSV path"
+  },
+  "statusBar": {
+    "template": "From/To: {a} -> {b}  Start/Duration: {start} / {dur}  Type: {callType}  Ringing: {has180}  Answered: {has200}  Cancel: {hasCancel}  Dropped: {dropped}  Cases: {kbCount}",
+    "labels": {
+      "number": "Number",
+      "time": "Start",
+      "duration": "Duration",
+      "ringing": "Ringing",
+      "offhook": "Off-hook",
+      "answered": "Answered",
+      "cancel": "Cancel",
+      "dropped": "Dropped",
+      "cases": "Cases"
+    }
+  },
+  "analyze": {
+    "fetchingSummary": "Fetching summary…",
+    "tooLarge": "File exceeds the size limit ({size}). Parsing stopped.",
+    "detectedProtocols": "Detected protocols: {protocols}",
+    "notAnalyzable": "Summary indicates diagnosis should stop ({reason}).",
+    "summaryOk": "Summary passed. Starting analysis…",
+    "defaultPrompt": "Strictly follow the prompt requirements and start the diagnostic task."
+  }
+}

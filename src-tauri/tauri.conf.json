@@ -1,0 +1,56 @@
+{
+  "build": {
+    "beforeDevCommand": "",
+    "beforeBuildCommand": "",
+    "devPath": "../ui",
+    "distDir": "../ui",
+    "withGlobalTauri": true
+  },
+  "package": {
+    "productName": "LLM-Shark",
+    "version": "1.1.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": true
+    },
+    "bundle": {
+      "active": true,
+      "identifier": "com.flowshark.llmshark",
+      "targets": ["msi"],
+      "icon": ["icons/icon.ico", "icons/icon.png"],
+      "resources": {
+        "../kb/flowshark.cases.kb.enc": "kb/",
+        "../kb/flowshark.cases.kb.en.enc": "kb/",
+        "../rust/parser/target/release/parser.exe": "bin/"
+      }
+    },
+    "security": {
+      "csp": "default-src 'self' data: blob: https:; connect-src 'self' https: http:; img-src 'self' data: blob: https:; style-src 'self' 'unsafe-inline' https:; script-src 'self' 'unsafe-inline' https:;"
+    },
+    "windows": [
+      {
+        "title": "LLM-Shark",
+        "width": 1200,
+        "height": 800,
+        "minWidth": 900,
+        "minHeight": 660,
+        "resizable": true
+      }
+    ]
+  },
+  "plugins": {
+    "commonStore": {
+      "debug": true,
+      "windows": {
+        "debug": true,
+        "appStoreId": "", 
+        "hwndTitleKeywords": ["llm-shark", "flowshark"],
+        "plans": [
+          { "planId": "pro_month", "storeIds": [""] },
+          { "planId": "pro_year", "storeIds": [""] }
+        ]
+      }
+    }
+  }
+}

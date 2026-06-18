@@ -1,0 +1,64 @@
+{
+  "store": {
+    "entry": "Assinatura",
+    "title": "Centro de subscrições",
+    "refresh": "Atualizar",
+    "restore": "Restaurar compras",
+    "manage": "Gerir subscrição",
+    "openProduct": "Abrir Microsoft Store",
+    "plan": {
+      "pro_month": "Pro mensal",
+      "pro_year": "Pro anual"
+    },
+    "compare": {
+      "title": "Compare planos num instante",
+      "sub": "Grátis para verificações rápidas, Pro para diagnóstico completo e exportações.",
+      "tag1": "Especialista em sinalização IA",
+      "tag2": "Diagnóstico profissional eficiente",
+      "tag3": "Biblioteca de casos LLM-Shark",
+      "tag4": "Grande ganho de eficiência",
+      "free": {
+        "tier": "Grátis",
+        "price": "Acesso básico",
+        "f1": "3 análises por dia",
+        "f2": "10 acompanhamentos por dia",
+        "f3": "Ideal para uso leve",
+        "f4": "Atualize a qualquer momento"
+      },
+      "proMonth": {
+        "badge": "Popular",
+        "tier": "Pro (mês)",
+        "price": "Cobrança mensal",
+        "f1": "Análises ilimitadas",
+        "f2": "Acompanhamentos ilimitados",
+        "f3": "Ideal para uso intenso",
+        "f4": "Subscrição mensal"
+      },
+      "proYear": {
+        "badge": "Melhor valor",
+        "tier": "Pro (ano)",
+        "price": "Cobrança anual",
+        "f1": "Análises ilimitadas",
+        "f2": "Acompanhamentos ilimitados",
+        "f3": "Ideal para uso intenso",
+        "f4": "Subscrição anual"
+      }
+    },
+    "priceUnknown": "Preço indisponível",
+    "expireAt": "Expira em {date}",
+    "planTier": "Plano: {tier}",
+    "planActive": "Ativo",
+    "planPurchase": "Subscrever",
+    "purchaseFailed": "Falha na compra: {reason}",
+    "statusLoading": "A verificar subscrição…",
+    "statusUnavailable": "Store indisponível",
+    "listFailed": "Falha ao carregar produtos: {reason}",
+    "statusActiveExpire": "Ativo ({plan}) · Expira em {date}",
+    "statusActive": "Ativo ({plan})",
+    "statusFree": "Grátis",
+    "restoreFailed": "Falha ao restaurar: {reason}",
+    "restoreOk": "Restaurado",
+    "manageFailed": "Falha ao abrir gestão: {reason}",
+    "openFailed": "Falha ao abrir a loja: {reason}"
+  }
+}

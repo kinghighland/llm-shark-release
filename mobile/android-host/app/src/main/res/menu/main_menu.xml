@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 选项面板：显示"设置"和"关于"按钮 -->
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/menuSettings"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/menuAbout"
+        app:showAsAction="always" />
+
+    <!-- 设置面板：显示"返回"按钮 -->
+    <item
+        android:id="@+id/action_back"
+        android:title="@string/menuBack"
+        app:showAsAction="always" />
+
+    <!-- 聊天面板：显示"返回"按钮 -->
+    <item
+        android:id="@+id/action_back_to_options"
+        android:title="@string/menuBack"
+        app:showAsAction="always" />
+
+    <!-- 关于面板：显示"返回"按钮 -->
+    <item
+        android:id="@+id/action_back_from_about"
+        android:title="@string/menuBack"
+        app:showAsAction="always" />
+
+</menu>

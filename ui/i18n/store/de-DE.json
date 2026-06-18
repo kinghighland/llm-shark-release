@@ -1,0 +1,64 @@
+{
+  "store": {
+    "entry": "Mitgliedschaft",
+    "title": "Mitgliedercenter",
+    "refresh": "Aktualisieren",
+    "restore": "Käufe wiederherstellen",
+    "manage": "Abonnement verwalten",
+    "openProduct": "Microsoft Store öffnen",
+    "plan": {
+      "pro_month": "Pro monatlich",
+      "pro_year": "Pro jährlich"
+    },
+    "compare": {
+      "title": "Tarife auf einen Blick",
+      "sub": "Kostenlos für schnelle Checks, Pro für volle Diagnose und Exporte.",
+      "tag1": "KI-Signalisierungs-Experte",
+      "tag2": "Effiziente Profi-Diagnose",
+      "tag3": "LLM-Shark Fallbibliothek",
+      "tag4": "Deutlicher Effizienzgewinn",
+      "free": {
+        "tier": "Kostenlos",
+        "price": "Basiszugang",
+        "f1": "3 Analysen pro Tag",
+        "f2": "10 Nachfragen pro Tag",
+        "f3": "Ideal für leichte Nutzung",
+        "f4": "Jederzeit upgraden"
+      },
+      "proMonth": {
+        "badge": "Beliebt",
+        "tier": "Pro (Monat)",
+        "price": "Monatliche Abrechnung",
+        "f1": "Unbegrenzte Analysen",
+        "f2": "Unbegrenzte Nachfragen",
+        "f3": "Ideal für intensive Nutzung",
+        "f4": "Monatliches Abonnement"
+      },
+      "proYear": {
+        "badge": "Beste Wahl",
+        "tier": "Pro (Jahr)",
+        "price": "Jährliche Abrechnung",
+        "f1": "Unbegrenzte Analysen",
+        "f2": "Unbegrenzte Nachfragen",
+        "f3": "Ideal für intensive Nutzung",
+        "f4": "Jährliches Abonnement"
+      }
+    },
+    "priceUnknown": "Preis nicht verfügbar",
+    "expireAt": "Läuft ab am {date}",
+    "planTier": "Tarif: {tier}",
+    "planActive": "Aktiv",
+    "planPurchase": "Abonnieren",
+    "purchaseFailed": "Kauf fehlgeschlagen: {reason}",
+    "statusLoading": "Abonnement wird geprüft…",
+    "statusUnavailable": "Store nicht verfügbar",
+    "listFailed": "Produkte konnten nicht geladen werden: {reason}",
+    "statusActiveExpire": "Aktiv ({plan}) · Läuft ab am {date}",
+    "statusActive": "Aktiv ({plan})",
+    "statusFree": "Kostenlos",
+    "restoreFailed": "Wiederherstellung fehlgeschlagen: {reason}",
+    "restoreOk": "Wiederhergestellt",
+    "manageFailed": "Öffnen der Verwaltung fehlgeschlagen: {reason}",
+    "openFailed": "Store konnte nicht geöffnet werden: {reason}"
+  }
+}

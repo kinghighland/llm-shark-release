@@ -1,0 +1,11 @@
+[package]
+name = "case_crypto_core"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+aes-gcm = "0.10"
+base64 = "0.22"
+serde = { version = "1", features = ["derive"] }
+thiserror = "2"
+zeroize = "1"

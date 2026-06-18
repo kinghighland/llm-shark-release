@@ -1,0 +1,194 @@
+{
+  "app": {
+    "pickPcap": "選擇 PCAP",
+    "analyze": "診斷",
+    "notLoaded": "未載入",
+    "pickedFileHint": "已選擇檔案，點擊「診斷」將自動取得摘要並判斷是否可繼續。",
+    "documentTitleWithFile": "LLM診斷 - {file}"
+  },
+  "top": {
+    "about": "關於",
+    "settings": "設定",
+    "theme": "主題",
+    "language": "語言"
+  },
+  "sidebar": {
+    "toggle": "收起/展開"
+  },
+  "sessions": {
+    "title": "會話",
+    "new": "新增會話",
+    "sessionN": "會話 {n}",
+    "rename": "改名",
+    "delete": "刪除",
+    "unnamed": "未命名會話",
+    "renamePromptTitle": "會話改名",
+    "deleteConfirm": "確定刪除該會話？"
+  },
+  "chat": {
+    "title": "對話",
+    "placeholder": "繼續追問…",
+    "send": "送出",
+    "stop": "中止",
+    "needAnalyzeFirst": "請先點擊「診斷」生成上下文，再繼續追問。"
+  },
+  "report": {
+    "title": "報告"
+  },
+  "settings": {
+    "modelConfigTitle": "模型設定（OpenAI-compatible）",
+    "endpoint": "Endpoint",
+    "apiKey": "API Key",
+    "apiKeyPlaceholder": "可留空（如本機模型）",
+    "toggleApiKeyTitle": "顯示/隱藏",
+    "show": "顯示",
+    "hide": "隱藏",
+    "model": "Model",
+    "validate": "驗證",
+    "validating": "驗證中…",
+    "validateOk": "驗證成功",
+    "validateOkWithDetail": "驗證成功：{detail}",
+    "validateFail": "驗證失敗：{reason}",
+    "temperature": "Temperature",
+    "theme": "Theme",
+    "themeDark": "夜間",
+    "themeLight": "白天",
+    "stream": "Stream",
+    "useKb": "使用知識庫",
+    "caseLibraryTitle": "案例庫",
+    "useCaseLibrary": "使用案例庫",
+    "kbUserPath": "使用者案例庫路徑",
+    "kbUserPathPlaceholder": "可選：選擇一個 .md 案例知識庫檔案（明文可編輯）",
+    "wiresharkTitle": "Wireshark",
+    "tsharkPath": "tshark.exe 路徑",
+    "tsharkPathPlaceholder": "優先檢測，檢測不到再選擇 tshark.exe（Wireshark）",
+    "detect": "檢測",
+    "choose": "選擇…",
+    "tsharkDetected": "已檢測到 tshark：{path}",
+    "tsharkNotFound": "未檢測到 tshark，請安裝 Wireshark 或手動選擇 tshark.exe",
+    "saveCfg": "儲存設定",
+    "loadCfg": "載入設定",
+    "cfgNoSaved": "沒有儲存的設定",
+    "cfgLoaded": "已載入",
+    "cfgSaved": "已儲存",
+    "cfgParseFail": "設定解析失敗",
+    "promptAuto": "自動使用外置 prompt.md（存在則替換內置）",
+    "promptPath": "提示詞檔案路徑",
+    "promptPathPlaceholder": "可選：選擇一個 prompt.md（明文可編輯）"
+  },
+  "license": {
+    "title": "授權",
+    "exportFeature": "匯出機器特徵",
+    "importLicense": "匯入授權檔案",
+    "buyPerpetual": "購買三年授權",
+    "buyYearly": "購買一年授權",
+    "softwareUpdate": "軟體更新",
+    "statusUnknown": "授權狀態：未知",
+    "statusAuthed": "授權狀態：已授權",
+    "statusAuthedWithDetail": "授權狀態：已授權（{detail}）",
+    "statusUnAuthed": "授權狀態：未授權（{reason}）",
+    "detailExpire": "有效期至 {exp}",
+    "exportDialogTitle": "匯出機器特徵"
+  },
+  "common": {
+    "copy": "複製",
+    "yes": "是",
+    "no": "否",
+    "unknown": "?",
+    "confirm": "確認",
+    "copied": "已複製。",
+    "close": "關閉",
+    "loading": "載入中..."
+  },
+  "errors": {
+    "pathEmpty": "路徑為空",
+    "noShellOpen": "未檢測到 shell.open，無法從應用內開啟檔案。可先複製路徑到檔案總管開啟。",
+    "noTauriApiSummary": "未檢測到 Tauri API（window.__TAURI__）。請確認已用桌面程式執行，並在 tauri.conf.json 的 build.withGlobalTauri 啟用全域 API。",
+    "noTauriApiStatus": "未檢測到 Tauri API，無法執行解析。",
+    "noDialogSave": "未檢測到 dialog.save，無法匯出檔案",
+    "needAnalyzeToAsk": "請先診斷（生成 report）後再追問",
+    "streamRunning": "正在輸出中，請稍候",
+    "noEventApi": "未檢測到 event API，無法串流輸出",
+    "uiRuntimeError": "UI 執行時錯誤: {message} (檔案: {file}, 行: {line})",
+    "scriptLoadFail": "腳本載入/執行失敗: {src}",
+    "unhandledPromise": "未捕獲的 Promise 錯誤: {reason}"
+  },
+  "about": {
+    "title": "關於",
+    "subtitle": "對話式信令診斷工具，AI 賦能的流鯊軟體",
+    "version": "版本",
+    "runtime": "執行環境",
+    "developer": "開發者",
+    "developerName": "flowshark studio",
+    "copyright": "版權",
+    "copyrightValue": "© 2026",
+    "copyInfo": "複製資訊",
+    "dialogText": "LLM-Shark\n\n對話式信令診斷工具，AI 賦能的流鯊軟體"
+  },
+  "dialogs": {
+    "openPcapTitle": "選擇 PCAP 檔案",
+    "openKbTitle": "選擇案例庫檔案",
+    "openTsharkTitle": "選擇 tshark.exe",
+    "importLicenseTitle": "匯入授權檔案",
+    "openPromptTitle": "選擇 prompt.md",
+    "promptMarkdown": "提示詞 Markdown"
+  },
+  "mermaid": {
+    "notLoaded": "未檢測到 mermaid 函式庫，無法在對話中繪圖。",
+    "zoomIn": "放大",
+    "zoomOut": "縮小",
+    "fit": "適配",
+    "syntaxError": "Mermaid 語法錯誤{extra}",
+    "versionHint": "（目前 mermaid {v}，線上網站可能版本不同）",
+    "renderFailSuppressed": "Mermaid 渲染失敗（已抑制錯誤圖形渲染）: {msg} {ver}",
+    "renderFail": "Mermaid 渲染失敗: {msg}\n\n{code}",
+    "renderFailSummary": "對話 Mermaid 渲染失敗({count}處): {first}"
+  },
+  "markdown": {
+    "renderFail": "Markdown 渲染失敗: {msg}"
+  },
+  "summary": {
+    "expand": "點擊展開",
+    "collapse": "點擊收起"
+  },
+  "sig": {
+    "markdownTableHeader": "| 幀 | 時間 | 協議 | 訊息 | 原因 | 源 | 目的 |\n|---:|---|---|---|---|---|---|",
+    "noData": "暫無可載入的信令資料。",
+    "allShown": "已顯示全部信令。",
+    "fullHint": "完整信令：共 {count} 條。\n你可以逐步載入後續頁，或直接開啟 CSV/JSON 檔案查看。",
+    "nextPage": "載入下一頁({pageSize})",
+    "appendTable": "追加信令表：\n\n{table}",
+    "sequenceDiagramTitle": "信令時序圖：",
+    "keyTableTitle": "關鍵信令表：",
+    "appendTableTitle": "追加信令表：",
+    "fullTitle": "完整信令：",
+    "pageHeader": "第 {start}-{end} 條 / 共 {total} 條",
+    "onlyFirstN": "僅展示前 {n} 條（總計 {total} 條）。",
+    "openCsv": "開啟 CSV",
+    "openJson": "開啟 JSON",
+    "openDir": "開啟目錄",
+    "copyCsvPath": "複製 CSV 路徑"
+  },
+  "statusBar": {
+    "template": "主叫/被叫: {a} -> {b}  起呼/時長: {start} / {dur}  類型: {callType}  回鈴: {has180}  接通: {has200}  取消: {hasCancel}  掉話: {dropped}  案例: {kbCount}條",
+    "labels": {
+      "number": "號碼",
+      "time": "起呼",
+      "duration": "時長",
+      "ringing": "回鈴",
+      "offhook": "摘機",
+      "answered": "接通",
+      "cancel": "取消",
+      "dropped": "掉話",
+      "cases": "案例"
+    }
+  },
+  "analyze": {
+    "fetchingSummary": "正在取得摘要…",
+    "tooLarge": "該檔案超過大小限制({size})，已停止解析。",
+    "detectedProtocols": "檢測到協議：{protocols}",
+    "notAnalyzable": "摘要判斷不適合繼續診斷（{reason}）。",
+    "summaryOk": "摘要通過，開始解析…",
+    "defaultPrompt": "嚴格按照提示詞的要求開始執行診斷任務"
+  }
+}

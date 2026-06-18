@@ -1,0 +1,194 @@
+{
+  "app": {
+    "pickPcap": "PCAP kiezen",
+    "analyze": "Diagnose",
+    "notLoaded": "Niet geladen",
+    "pickedFileHint": "Bestand geselecteerd. Klik op “Diagnose” om de samenvatting op te halen en te bepalen of je doorgaat.",
+    "documentTitleWithFile": "LLM-diagnose - {file}"
+  },
+  "top": {
+    "about": "Over",
+    "settings": "Instellingen",
+    "theme": "Thema",
+    "language": "Taal"
+  },
+  "sidebar": {
+    "toggle": "Inklappen/Uitklappen"
+  },
+  "sessions": {
+    "title": "Sessies",
+    "new": "Nieuwe sessie",
+    "sessionN": "Sessie {n}",
+    "rename": "Hernoemen",
+    "delete": "Verwijderen",
+    "unnamed": "Onbenoemde sessie",
+    "renamePromptTitle": "Sessie hernoemen",
+    "deleteConfirm": "Deze sessie verwijderen?"
+  },
+  "chat": {
+    "title": "Chat",
+    "placeholder": "Stel een vraag…",
+    "send": "Verzenden",
+    "stop": "Stoppen",
+    "needAnalyzeFirst": "Klik eerst op “Diagnose” om context te maken en stel daarna je vraag."
+  },
+  "report": {
+    "title": "Rapport"
+  },
+  "settings": {
+    "modelConfigTitle": "Modelconfiguratie (OpenAI-compatibel)",
+    "endpoint": "Endpoint",
+    "apiKey": "API-sleutel",
+    "apiKeyPlaceholder": "Optioneel (bijv. lokaal model)",
+    "toggleApiKeyTitle": "Tonen/Verbergen",
+    "show": "Tonen",
+    "hide": "Verbergen",
+    "model": "Model",
+    "validate": "Valideren",
+    "validating": "Bezig met valideren…",
+    "validateOk": "Validatie geslaagd",
+    "validateOkWithDetail": "Validatie geslaagd: {detail}",
+    "validateFail": "Validatie mislukt: {reason}",
+    "temperature": "Temperatuur",
+    "theme": "Thema",
+    "themeDark": "Donker",
+    "themeLight": "Licht",
+    "stream": "Stream",
+    "useKb": "Kennisbank gebruiken",
+    "caseLibraryTitle": "Casusbibliotheek",
+    "useCaseLibrary": "Casusbibliotheek gebruiken",
+    "kbUserPath": "Pad naar KB-bestand",
+    "kbUserPathPlaceholder": "Optioneel: kies een .md-casusbestand (platte tekst, bewerkbaar)",
+    "wiresharkTitle": "Wireshark",
+    "tsharkPath": "Pad naar tshark.exe",
+    "tsharkPathPlaceholder": "Eerst detecteren. Als niet gevonden, kies tshark.exe (Wireshark)",
+    "detect": "Detecteren",
+    "choose": "Kiezen…",
+    "tsharkDetected": "tshark gedetecteerd: {path}",
+    "tsharkNotFound": "tshark niet gevonden. Installeer Wireshark of kies tshark.exe handmatig.",
+    "saveCfg": "Opslaan",
+    "loadCfg": "Laden",
+    "cfgNoSaved": "Geen opgeslagen configuratie",
+    "cfgLoaded": "Geladen",
+    "cfgSaved": "Opgeslagen",
+    "cfgParseFail": "Configuratie kan niet worden gelezen",
+    "promptAuto": "Automatisch externe prompt.md gebruiken (als aanwezig, vervangt intern)",
+    "promptPath": "Pad naar promptbestand",
+    "promptPathPlaceholder": "Optioneel: kies een prompt.md (platte tekst, bewerkbaar)"
+  },
+  "license": {
+    "title": "Licentie",
+    "exportFeature": "Machinekenmerk exporteren",
+    "importLicense": "Licentiebestand importeren",
+    "buyPerpetual": "3-jarige licentie kopen",
+    "buyYearly": "1-jarige licentie kopen",
+    "softwareUpdate": "Software-updates",
+    "statusUnknown": "Licentie: Onbekend",
+    "statusAuthed": "Licentie: Geactiveerd",
+    "statusAuthedWithDetail": "Licentie: Geactiveerd ({detail})",
+    "statusUnAuthed": "Licentie: Niet geactiveerd ({reason})",
+    "detailExpire": "Verloopt op {exp}",
+    "exportDialogTitle": "Machinekenmerk exporteren"
+  },
+  "common": {
+    "copy": "Kopiëren",
+    "yes": "Ja",
+    "no": "Nee",
+    "unknown": "?",
+    "confirm": "Bevestigen",
+    "copied": "Gekopieerd.",
+    "close": "Sluiten",
+    "loading": "Laden..."
+  },
+  "errors": {
+    "pathEmpty": "Pad is leeg",
+    "noShellOpen": "shell.open niet beschikbaar. Kopieer het pad en open het in Verkenner.",
+    "noTauriApiSummary": "Tauri API niet gedetecteerd (window.__TAURI__). Gebruik de desktopapp en schakel build.withGlobalTauri in tauri.conf.json in.",
+    "noTauriApiStatus": "Tauri API niet gedetecteerd. Analyseren is niet mogelijk.",
+    "noDialogSave": "dialog.save niet beschikbaar. Exporteren is niet mogelijk.",
+    "needAnalyzeToAsk": "Diagnoseer eerst (genereer rapport) voordat je vragen stelt",
+    "streamRunning": "Stream actief. Even wachten.",
+    "noEventApi": "Event-API niet gedetecteerd. Streamen is niet beschikbaar.",
+    "uiRuntimeError": "UI-runtimefout: {message} (bestand: {file}, regel: {line})",
+    "scriptLoadFail": "Script laden/uitvoeren mislukt: {src}",
+    "unhandledPromise": "Niet-afgehandelde Promise-fout: {reason}"
+  },
+  "about": {
+    "title": "Over",
+    "subtitle": "Conversational signaling diagnostics tool, AI-enabled Flowshark",
+    "version": "Versie",
+    "runtime": "Runtime",
+    "developer": "Ontwikkelaar",
+    "developerName": "flowshark studio",
+    "copyright": "Copyright",
+    "copyrightValue": "© 2026",
+    "copyInfo": "Info kopiëren",
+    "dialogText": "LLM-Shark\n\nConversational signaling diagnostics tool, AI-enabled Flowshark"
+  },
+  "dialogs": {
+    "openPcapTitle": "PCAP-bestand kiezen",
+    "openKbTitle": "Casusbibliotheekbestand kiezen",
+    "openTsharkTitle": "tshark.exe kiezen",
+    "importLicenseTitle": "Licentiebestand importeren",
+    "openPromptTitle": "prompt.md kiezen",
+    "promptMarkdown": "Prompt-Markdown"
+  },
+  "mermaid": {
+    "notLoaded": "Mermaid-bibliotheek niet gedetecteerd. Diagrammen kunnen niet worden gerenderd in de chat.",
+    "zoomIn": "Inzoomen",
+    "zoomOut": "Uitzoomen",
+    "fit": "Passend maken",
+    "syntaxError": "Mermaid-syntaxfout{extra}",
+    "versionHint": "(mermaid {v}; online viewer kan afwijken)",
+    "renderFailSuppressed": "Mermaid-render mislukt (foutgrafiek onderdrukt): {msg} {ver}",
+    "renderFail": "Mermaid-render mislukt: {msg}\n\n{code}",
+    "renderFailSummary": "Mermaid-render mislukt in chat ({count}): {first}"
+  },
+  "markdown": {
+    "renderFail": "Markdown-render mislukt: {msg}"
+  },
+  "summary": {
+    "expand": "Uitklappen",
+    "collapse": "Inklappen"
+  },
+  "sig": {
+    "markdownTableHeader": "| Frame | Time | Protocol | Message | Cause | Src | Dst |\n|---:|---|---|---|---|---|---|",
+    "noData": "Geen signaalgegevens om te laden.",
+    "allShown": "Alle signaalitems worden weergegeven.",
+    "fullHint": "Volledige signalering: {count} items.\nJe kunt meer pagina's laden of het CSV/JSON-bestand direct openen.",
+    "nextPage": "Volgende laden ({pageSize})",
+    "appendTable": "Signaaltabel toevoegen:\n\n{table}",
+    "sequenceDiagramTitle": "Signaleringssequentiediagram:",
+    "keyTableTitle": "Tabel met kernsignalen:",
+    "appendTableTitle": "Signaaltabel toevoegen:",
+    "fullTitle": "Volledige signalering:",
+    "pageHeader": "Items {start}-{end} / Totaal {total}",
+    "onlyFirstN": "Toon de eerste {n} items (totaal {total}).",
+    "openCsv": "CSV openen",
+    "openJson": "JSON openen",
+    "openDir": "Map openen",
+    "copyCsvPath": "CSV-pad kopiëren"
+  },
+  "statusBar": {
+    "template": "Van/Aan: {a} -> {b}  Start/Duur: {start} / {dur}  Type: {callType}  Rinkelen: {has180}  Aangenomen: {has200}  Geannuleerd: {hasCancel}  Verbroken: {dropped}  Cases: {kbCount}",
+    "labels": {
+      "number": "Nummer",
+      "time": "Start",
+      "duration": "Duur",
+      "ringing": "Rinkelen",
+      "offhook": "Opgenomen",
+      "answered": "Beantwoord",
+      "cancel": "Annuleren",
+      "dropped": "Verbroken",
+      "cases": "Cases"
+    }
+  },
+  "analyze": {
+    "fetchingSummary": "Samenvatting ophalen…",
+    "tooLarge": "Bestand overschrijdt de limiet ({size}). Analyse gestopt.",
+    "detectedProtocols": "Gedetecteerde protocollen: {protocols}",
+    "notAnalyzable": "Samenvatting geeft aan dat diagnose moet stoppen ({reason}).",
+    "summaryOk": "Samenvatting goedgekeurd. Analyse starten…",
+    "defaultPrompt": "Volg strikt de vereisten van de prompt en start de diagnosetaak."
+  }
+}

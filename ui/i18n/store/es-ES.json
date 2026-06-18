@@ -1,0 +1,64 @@
+{
+  "store": {
+    "entry": "Suscripción",
+    "title": "Centro de suscripciones",
+    "refresh": "Actualizar",
+    "restore": "Restaurar compras",
+    "manage": "Gestionar suscripción",
+    "openProduct": "Abrir Microsoft Store",
+    "plan": {
+      "pro_month": "Pro mensual",
+      "pro_year": "Pro anual"
+    },
+    "compare": {
+      "title": "Comparar planes de un vistazo",
+      "sub": "Gratis para revisiones rápidas, Pro para diagnósticos completos y exportación.",
+      "tag1": "Experto en señalización IA",
+      "tag2": "Diagnóstico profesional eficiente",
+      "tag3": "Biblioteca de casos LLM-Shark",
+      "tag4": "Gran mejora de eficiencia",
+      "free": {
+        "tier": "Gratis",
+        "price": "Acceso básico",
+        "f1": "3 análisis por día",
+        "f2": "10 seguimientos por día",
+        "f3": "Ideal para uso ligero",
+        "f4": "Actualiza cuando quieras"
+      },
+      "proMonth": {
+        "badge": "Popular",
+        "tier": "Pro (mes)",
+        "price": "Facturación mensual",
+        "f1": "Análisis ilimitados",
+        "f2": "Seguimientos ilimitados",
+        "f3": "Ideal para uso intensivo",
+        "f4": "Suscripción mensual"
+      },
+      "proYear": {
+        "badge": "Mejor valor",
+        "tier": "Pro (año)",
+        "price": "Facturación anual",
+        "f1": "Análisis ilimitados",
+        "f2": "Seguimientos ilimitados",
+        "f3": "Ideal para uso intensivo",
+        "f4": "Suscripción anual"
+      }
+    },
+    "priceUnknown": "Precio no disponible",
+    "expireAt": "Expira el {date}",
+    "planTier": "Plan: {tier}",
+    "planActive": "Activo",
+    "planPurchase": "Suscribirse",
+    "purchaseFailed": "Compra fallida: {reason}",
+    "statusLoading": "Comprobando suscripción…",
+    "statusUnavailable": "Store no disponible",
+    "listFailed": "Error al cargar productos: {reason}",
+    "statusActiveExpire": "Activo ({plan}) · Expira el {date}",
+    "statusActive": "Activo ({plan})",
+    "statusFree": "Gratis",
+    "restoreFailed": "Restauración fallida: {reason}",
+    "restoreOk": "Restaurado",
+    "manageFailed": "Error al abrir la gestión: {reason}",
+    "openFailed": "Error al abrir la tienda: {reason}"
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "app": {
+    "pickPcap": "PCAP seç",
+    "analyze": "Teşhis",
+    "notLoaded": "Yüklenmedi",
+    "pickedFileHint": "Dosya seçildi. Özeti almak ve devam edip etmeyeceğine karar vermek için “Teşhis”e tıklayın.",
+    "documentTitleWithFile": "LLM Teşhis - {file}"
+  },
+  "top": {
+    "about": "Hakkında",
+    "settings": "Ayarlar",
+    "theme": "Tema",
+    "language": "Dil"
+  },
+  "sidebar": {
+    "toggle": "Daralt/Genişlet"
+  },
+  "sessions": {
+    "title": "Oturumlar",
+    "new": "Yeni oturum",
+    "sessionN": "Oturum {n}",
+    "rename": "Yeniden adlandır",
+    "delete": "Sil",
+    "unnamed": "Adsız oturum",
+    "renamePromptTitle": "Oturumu yeniden adlandır",
+    "deleteConfirm": "Bu oturum silinsin mi?"
+  },
+  "chat": {
+    "title": "Sohbet",
+    "placeholder": "Bir soru sor…",
+    "send": "Gönder",
+    "stop": "Durdur",
+    "needAnalyzeFirst": "Önce “Teşhis”e tıklayıp bağlamı oluşturun, sonra sorun."
+  },
+  "report": {
+    "title": "Rapor"
+  },
+  "settings": {
+    "modelConfigTitle": "Model ayarları (OpenAI uyumlu)",
+    "endpoint": "Endpoint",
+    "apiKey": "API Anahtarı",
+    "apiKeyPlaceholder": "İsteğe bağlı (ör. yerel model)",
+    "toggleApiKeyTitle": "Göster/Gizle",
+    "show": "Göster",
+    "hide": "Gizle",
+    "model": "Model",
+    "validate": "Doğrula",
+    "validating": "Doğrulanıyor…",
+    "validateOk": "Doğrulama başarılı",
+    "validateOkWithDetail": "Doğrulama başarılı: {detail}",
+    "validateFail": "Doğrulama başarısız: {reason}",
+    "temperature": "Sıcaklık",
+    "theme": "Tema",
+    "themeDark": "Koyu",
+    "themeLight": "Açık",
+    "stream": "Akış",
+    "useKb": "Bilgi tabanı kullan",
+    "caseLibraryTitle": "Vaka kütüphanesi",
+    "useCaseLibrary": "Vaka kütüphanesini kullan",
+    "kbUserPath": "KB dosya yolu",
+    "kbUserPathPlaceholder": "İsteğe bağlı: bir .md vaka dosyası seçin (düz metin, düzenlenebilir)",
+    "wiresharkTitle": "Wireshark",
+    "tsharkPath": "tshark.exe yolu",
+    "tsharkPathPlaceholder": "Önce “Algıla”. Bulunamazsa tshark.exe (Wireshark) seçin",
+    "detect": "Algıla",
+    "choose": "Seç…",
+    "tsharkDetected": "tshark bulundu: {path}",
+    "tsharkNotFound": "tshark bulunamadı. Wireshark kurun veya tshark.exe’yi elle seçin.",
+    "saveCfg": "Kaydet",
+    "loadCfg": "Yükle",
+    "cfgNoSaved": "Kayıtlı ayar yok",
+    "cfgLoaded": "Yüklendi",
+    "cfgSaved": "Kaydedildi",
+    "cfgParseFail": "Ayar ayrıştırma hatası",
+    "promptAuto": "Harici prompt.md dosyasını otomatik kullan (varsa dahiliyi değiştirir)",
+    "promptPath": "Prompt dosya yolu",
+    "promptPathPlaceholder": "İsteğe bağlı: bir prompt.md seçin (düz metin, düzenlenebilir)"
+  },
+  "license": {
+    "title": "Lisans",
+    "exportFeature": "Makine parmak izini dışa aktar",
+    "importLicense": "Lisans dosyasını içe aktar",
+    "buyPerpetual": "3 yıllık lisans satın al",
+    "buyYearly": "1 yıllık lisans satın al",
+    "softwareUpdate": "Yazılım güncellemeleri",
+    "statusUnknown": "Lisans: Bilinmiyor",
+    "statusAuthed": "Lisans: Etkin",
+    "statusAuthedWithDetail": "Lisans: Etkin ({detail})",
+    "statusUnAuthed": "Lisans: Etkin değil ({reason})",
+    "detailExpire": "Bitiş {exp}",
+    "exportDialogTitle": "Makine parmak izini dışa aktar"
+  },
+  "common": {
+    "copy": "Kopyala",
+    "yes": "Evet",
+    "no": "Hayır",
+    "unknown": "?",
+    "confirm": "Onayla",
+    "copied": "Kopyalandı.",
+    "close": "Kapat",
+    "loading": "Yükleniyor..."
+  },
+  "errors": {
+    "pathEmpty": "Yol boş",
+    "noShellOpen": "shell.open mevcut değil. Yolu kopyalayıp Dosya Gezgini’nde açın.",
+    "noTauriApiSummary": "Tauri API algılanamadı (window.__TAURI__). Masaüstü uygulamasıyla çalıştırın ve tauri.conf.json içindeki build.withGlobalTauri’yi etkinleştirin.",
+    "noTauriApiStatus": "Tauri API algılanamadı. Ayrıştırma yapılamaz.",
+    "noDialogSave": "dialog.save mevcut değil. Dışa aktarma yapılamaz.",
+    "needAnalyzeToAsk": "Soru sormadan önce teşhis (rapor oluşturma) yapın",
+    "streamRunning": "Akış devam ediyor. Lütfen bekleyin.",
+    "noEventApi": "Event API algılanamadı. Akış kullanılamaz.",
+    "uiRuntimeError": "UI çalışma zamanı hatası: {message} (dosya: {file}, satır: {line})",
+    "scriptLoadFail": "Betik yükleme/çalıştırma hatası: {src}",
+    "unhandledPromise": "Yakalanmamış Promise hatası: {reason}"
+  },
+  "about": {
+    "title": "Hakkında",
+    "subtitle": "Sohbet tabanlı sinyalleşme teşhis aracı, AI destekli Flowshark",
+    "version": "Sürüm",
+    "runtime": "Çalışma zamanı",
+    "developer": "Geliştirici",
+    "developerName": "flowshark studio",
+    "copyright": "Telif hakkı",
+    "copyrightValue": "© 2026",
+    "copyInfo": "Bilgiyi kopyala",
+    "dialogText": "LLM-Shark\n\nSohbet tabanlı sinyalleşme teşhis aracı, AI destekli Flowshark"
+  },
+  "dialogs": {
+    "openPcapTitle": "PCAP dosyası seç",
+    "openKbTitle": "Vaka kütüphanesi dosyası seç",
+    "openTsharkTitle": "tshark.exe seç",
+    "importLicenseTitle": "Lisans dosyası içe aktar",
+    "openPromptTitle": "prompt.md seç",
+    "promptMarkdown": "Prompt Markdown"
+  },
+  "mermaid": {
+    "notLoaded": "Mermaid kütüphanesi algılanamadı. Sohbette diyagram çizilemez.",
+    "zoomIn": "Yakınlaştır",
+    "zoomOut": "Uzaklaştır",
+    "fit": "Sığdır",
+    "syntaxError": "Mermaid sözdizimi hatası{extra}",
+    "versionHint": "(mermaid {v}; çevrimiçi görüntüleyici farklı olabilir)",
+    "renderFailSuppressed": "Mermaid çizimi başarısız (hata grafiği bastırıldı): {msg} {ver}",
+    "renderFail": "Mermaid çizimi başarısız: {msg}\n\n{code}",
+    "renderFailSummary": "Sohbette Mermaid çizimi başarısız ({count}): {first}"
+  },
+  "markdown": {
+    "renderFail": "Markdown çizimi başarısız: {msg}"
+  },
+  "summary": {
+    "expand": "Genişlet",
+    "collapse": "Daralt"
+  },
+  "sig": {
+    "markdownTableHeader": "| Frame | Time | Protocol | Message | Cause | Src | Dst |\n|---:|---|---|---|---|---|---|",
+    "noData": "Yüklenecek sinyalleşme verisi yok.",
+    "allShown": "Tüm sinyalleşme öğeleri gösteriliyor.",
+    "fullHint": "Tam sinyalleşme: {count} öğe.\nDaha fazla sayfa yükleyebilir veya CSV/JSON dosyasını doğrudan açabilirsiniz.",
+    "nextPage": "Sonraki sayfayı yükle ({pageSize})",
+    "appendTable": "Sinyalleşme tablosu ekle:\n\n{table}",
+    "sequenceDiagramTitle": "Sinyalleşme sıra diyagramı:",
+    "keyTableTitle": "Kritik sinyalleşme tablosu:",
+    "appendTableTitle": "Sinyalleşme tablosu ekle:",
+    "fullTitle": "Tam sinyalleşme:",
+    "pageHeader": "{start}-{end} öğe / Toplam {total}",
+    "onlyFirstN": "İlk {n} öğe gösteriliyor (toplam {total}).",
+    "openCsv": "CSV aç",
+    "openJson": "JSON aç",
+    "openDir": "Klasörü aç",
+    "copyCsvPath": "CSV yolunu kopyala"
+  },
+  "statusBar": {
+    "template": "Arayan/Aranan: {a} -> {b}  Başlangıç/Süre: {start} / {dur}  Tür: {callType}  Çalma: {has180}  Cevaplandı: {has200}  İptal: {hasCancel}  Koptu: {dropped}  Vaka: {kbCount}",
+    "labels": {
+      "number": "Numara",
+      "time": "Başlangıç",
+      "duration": "Süre",
+      "ringing": "Çalma",
+      "offhook": "Açıldı",
+      "answered": "Cevaplandı",
+      "cancel": "İptal",
+      "dropped": "Koptu",
+      "cases": "Vakalar"
+    }
+  },
+  "analyze": {
+    "fetchingSummary": "Özet alınıyor…",
+    "tooLarge": "Dosya boyut sınırını aşıyor ({size}). Analiz durduruldu.",
+    "detectedProtocols": "Algılanan protokoller: {protocols}",
+    "notAnalyzable": "Özet teşhisin durması gerektiğini gösteriyor ({reason}).",
+    "summaryOk": "Özet onaylandı. Analiz başlıyor…",
+    "defaultPrompt": "İpucu metninin gereksinimlerine sıkı şekilde uyun ve teşhis görevini başlatın."
+  }
+}

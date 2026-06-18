@@ -1,0 +1,64 @@
+{
+  "store": {
+    "entry": "Subskrypcja",
+    "title": "Centrum subskrypcji",
+    "refresh": "Odśwież",
+    "restore": "Przywróć zakupy",
+    "manage": "Zarządzaj subskrypcją",
+    "openProduct": "Otwórz Microsoft Store",
+    "plan": {
+      "pro_month": "Pro miesięczny",
+      "pro_year": "Pro roczny"
+    },
+    "compare": {
+      "title": "Porównaj plany na pierwszy rzut oka",
+      "sub": "Darmowy dla szybkich sprawdzeń, Pro dla pełnej diagnostyki i eksportu.",
+      "tag1": "Ekspert sygnalizacji AI",
+      "tag2": "Wydajna diagnoza profesjonalna",
+      "tag3": "Biblioteka przypadków LLM-Shark",
+      "tag4": "Znaczący wzrost efektywności",
+      "free": {
+        "tier": "Darmowy",
+        "price": "Podstawowy dostęp",
+        "f1": "3 analizy dziennie",
+        "f2": "10 dopytań dziennie",
+        "f3": "Idealne do lekkiego użycia",
+        "f4": "Możesz uaktualnić w każdej chwili"
+      },
+      "proMonth": {
+        "badge": "Popularny",
+        "tier": "Pro (miesiąc)",
+        "price": "Rozliczenie miesięczne",
+        "f1": "Nielimitowane analizy",
+        "f2": "Nielimitowane dopytania",
+        "f3": "Idealne do intensywnego użycia",
+        "f4": "Subskrypcja miesięczna"
+      },
+      "proYear": {
+        "badge": "Najlepsza wartość",
+        "tier": "Pro (rok)",
+        "price": "Rozliczenie roczne",
+        "f1": "Nielimitowane analizy",
+        "f2": "Nielimitowane dopytania",
+        "f3": "Idealne do intensywnego użycia",
+        "f4": "Subskrypcja roczna"
+      }
+    },
+    "priceUnknown": "Cena niedostępna",
+    "expireAt": "Wygasa {date}",
+    "planTier": "Plan: {tier}",
+    "planActive": "Aktywna",
+    "planPurchase": "Subskrybuj",
+    "purchaseFailed": "Zakup nieudany: {reason}",
+    "statusLoading": "Sprawdzanie subskrypcji…",
+    "statusUnavailable": "Store niedostępny",
+    "listFailed": "Nie udało się wczytać produktów: {reason}",
+    "statusActiveExpire": "Aktywna ({plan}) · Wygasa {date}",
+    "statusActive": "Aktywna ({plan})",
+    "statusFree": "Darmowa",
+    "restoreFailed": "Przywracanie nieudane: {reason}",
+    "restoreOk": "Przywrócono",
+    "manageFailed": "Nie udało się otworzyć zarządzania: {reason}",
+    "openFailed": "Nie udało się otworzyć sklepu: {reason}"
+  }
+}

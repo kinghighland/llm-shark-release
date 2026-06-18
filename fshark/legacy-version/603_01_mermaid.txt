@@ -1,0 +1,46 @@
+sequenceDiagram
+    participant UE
+    participant eNB
+    participant MME
+    participant PGW
+    participant SBC
+    participant IMS
+    participant SGW
+    eNB->>MME: 10:39:37.648 Extended service request
+    eNB->>MME: 10:39:37.650 UEContextModificationRequest
+    eNB->>MME: 10:39:37.673 UEContextModificationRequest
+    eNB->>MME: 10:39:37.675 UEContextReleaseRequest (radioNetwork: ue-not-available-for-ps-service)
+    MME-->>eNB: 10:39:37.687 UEContextReleaseCommand (radioNetwork: ue-not-available-for-ps-service)
+    MME-->>eNB: 10:39:37.707 UEContextReleaseCommand
+    MME->>PGW: 10:39:44.760 Modify Bearer Request (34)
+    MME->>PGW: 10:39:44.760 Modify Bearer Request (34)
+    PGW-->>MME: 10:39:44.767 Modify Bearer Response (35) (Cause : Request accepted (16))
+    PGW-->>MME: 10:39:44.768 Modify Bearer Response (35) (Cause : Request accepted (16))
+    UE->>SBC: 10:39:44.981 INVITE
+    SBC-->>UE: 10:39:45.077 183 Session Progress
+    MME->>PGW: 10:39:45.143 Create Bearer Request (95)
+    MME->>PGW: 10:39:45.144 Create Bearer Request (95)
+    MME->>PGW: 10:39:45.149 Create Bearer Request (95)
+    eNB->>MME: 10:39:45.151 E-RABSetupRequest
+    eNB->>MME: 10:39:45.242 E-RABSetupRequest
+    MME-->>eNB: 10:39:45.244 Activate dedicated EPS bearer context accept
+    PGW-->>MME: 10:39:45.246 Create Bearer Response (96) (Cause : Request accepted (16))
+    PGW-->>MME: 10:39:45.261 Create Bearer Response (96) (Cause : Request accepted (16))
+    PGW-->>MME: 10:39:45.262 Create Bearer Response (96) (Cause : Request accepted (16))
+    UE->>SBC: 10:39:45.536 PRACK
+    SBC-->>UE: 10:39:45.597 200 OK
+    UE->>SBC: 10:39:45.842 UPDATE
+    SBC-->>UE: 10:39:45.957 200 OK
+    SBC-->>UE: 10:39:45.997 180 Ringing
+    SBC-->>UE: 10:39:49.577 603 Decline
+    UE->>SBC: 10:39:49.590 ACK
+    MME->>PGW: 10:39:49.618 Delete Bearer Request (99)
+    MME->>PGW: 10:39:49.618 Delete Bearer Request (99)
+    MME->>PGW: 10:39:49.631 Delete Bearer Request (99)
+    eNB->>MME: 10:39:49.632 Deactivate EPS bearer context request (Cause: Regular deactivation (36))
+    MME-->>eNB: 10:39:49.632 E-RABReleaseCommand (nas: normal-release)
+    MME-->>eNB: 10:39:49.712 E-RABReleaseCommand
+    MME-->>eNB: 10:39:49.716 Deactivate EPS bearer context accept
+    PGW-->>MME: 10:39:49.718 Delete Bearer Response (100) (Cause : Request accepted (16))
+    PGW-->>MME: 10:39:49.730 Delete Bearer Response (100) (Cause : Request accepted (16))
+    PGW-->>MME: 10:39:49.731 Delete Bearer Response (100) (Cause : Request accepted (16))

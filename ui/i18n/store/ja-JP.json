@@ -1,0 +1,64 @@
+{
+  "store": {
+    "entry": "メンバーシップ",
+    "title": "メンバーシップセンター",
+    "refresh": "更新",
+    "restore": "購入を復元",
+    "manage": "サブスクリプションを管理",
+    "openProduct": "Microsoft Store を開く",
+    "plan": {
+      "pro_month": "Pro 月額",
+      "pro_year": "Pro 年額"
+    },
+    "compare": {
+      "title": "プランをひと目で比較",
+      "sub": "無料は簡易チェック向け、Pro は完全診断とエクスポート対応。",
+      "tag1": "AIシグナリング専門家",
+      "tag2": "効率的なプロ診断",
+      "tag3": "LLM-Shark ケースライブラリ",
+      "tag4": "大幅な効率向上",
+      "free": {
+        "tier": "無料",
+        "price": "基本アクセス",
+        "f1": "1日3回の分析",
+        "f2": "1日10回の追問",
+        "f3": "ライト利用に最適",
+        "f4": "いつでもアップグレード"
+      },
+      "proMonth": {
+        "badge": "人気",
+        "tier": "Pro（月額）",
+        "price": "月額課金",
+        "f1": "分析は無制限",
+        "f2": "追問は無制限",
+        "f3": "高頻度利用に最適",
+        "f4": "月額サブスクリプション"
+      },
+      "proYear": {
+        "badge": "お得",
+        "tier": "Pro（年額）",
+        "price": "年額課金",
+        "f1": "分析は無制限",
+        "f2": "追問は無制限",
+        "f3": "高頻度利用に最適",
+        "f4": "年額サブスクリプション"
+      }
+    },
+    "priceUnknown": "価格不明",
+    "expireAt": "{date} に期限切れ",
+    "planTier": "プラン: {tier}",
+    "planActive": "有効",
+    "planPurchase": "登録",
+    "purchaseFailed": "購入失敗: {reason}",
+    "statusLoading": "サブスクリプション確認中…",
+    "statusUnavailable": "ストア利用不可",
+    "listFailed": "商品読み込み失敗: {reason}",
+    "statusActiveExpire": "有効 ({plan}) · {date} まで",
+    "statusActive": "有効 ({plan})",
+    "statusFree": "無料",
+    "restoreFailed": "復元失敗: {reason}",
+    "restoreOk": "復元しました",
+    "manageFailed": "管理ページを開けませんでした: {reason}",
+    "openFailed": "ストアを開けませんでした: {reason}"
+  }
+}

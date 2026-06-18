@@ -1,0 +1,194 @@
+{
+  "app": {
+    "pickPcap": "اختيار PCAP",
+    "analyze": "تشخيص",
+    "notLoaded": "غير محمّل",
+    "pickedFileHint": "تم اختيار الملف. انقر «تشخيص» لجلب الملخص واتخاذ قرار المتابعة.",
+    "documentTitleWithFile": "تشخيص LLM - {file}"
+  },
+  "top": {
+    "about": "حول",
+    "settings": "الإعدادات",
+    "theme": "المظهر",
+    "language": "اللغة"
+  },
+  "sidebar": {
+    "toggle": "طي/توسيع"
+  },
+  "sessions": {
+    "title": "الجلسات",
+    "new": "جلسة جديدة",
+    "sessionN": "جلسة {n}",
+    "rename": "إعادة تسمية",
+    "delete": "حذف",
+    "unnamed": "بدون عنوان",
+    "renamePromptTitle": "إعادة تسمية الجلسة",
+    "deleteConfirm": "هل تريد حذف هذه الجلسة؟"
+  },
+  "chat": {
+    "title": "محادثة",
+    "placeholder": "اسأل متابعة…",
+    "send": "إرسال",
+    "stop": "إيقاف",
+    "needAnalyzeFirst": "نفّذ «تشخيص» أولاً لإنشاء السياق ثم اطرح الأسئلة."
+  },
+  "report": {
+    "title": "تقرير"
+  },
+  "settings": {
+    "modelConfigTitle": "إعدادات النموذج (متوافق مع OpenAI)",
+    "endpoint": "Endpoint",
+    "apiKey": "API Key",
+    "apiKeyPlaceholder": "اختياري (مثل نموذج محلي)",
+    "toggleApiKeyTitle": "إظهار/إخفاء",
+    "show": "إظهار",
+    "hide": "إخفاء",
+    "model": "Model",
+    "validate": "تحقق",
+    "validating": "جارٍ التحقق…",
+    "validateOk": "نجح التحقق",
+    "validateOkWithDetail": "نجح التحقق: {detail}",
+    "validateFail": "فشل التحقق: {reason}",
+    "temperature": "Temperature",
+    "theme": "المظهر",
+    "themeDark": "داكن",
+    "themeLight": "فاتح",
+    "stream": "تدفّق",
+    "useKb": "استخدام قاعدة المعرفة",
+    "caseLibraryTitle": "مكتبة الحالات",
+    "useCaseLibrary": "استخدام مكتبة الحالات",
+    "kbUserPath": "مسار ملف KB",
+    "kbUserPathPlaceholder": "اختياري: اختر ملف مكتبة حالات بصيغة .md",
+    "wiresharkTitle": "Wireshark",
+    "tsharkPath": "مسار tshark.exe",
+    "tsharkPathPlaceholder": "فضّل «كشف». إذا لم يُعثر عليه، اختر tshark.exe (Wireshark)",
+    "detect": "كشف",
+    "choose": "اختيار…",
+    "tsharkDetected": "تم كشف tshark: {path}",
+    "tsharkNotFound": "لم يتم العثور على tshark. ثبّت Wireshark أو اختر tshark.exe يدويًا.",
+    "saveCfg": "حفظ",
+    "loadCfg": "تحميل",
+    "cfgNoSaved": "لا توجد إعدادات محفوظة",
+    "cfgLoaded": "تم التحميل",
+    "cfgSaved": "تم الحفظ",
+    "cfgParseFail": "فشل في قراءة الإعدادات",
+    "promptAuto": "استخدم prompt.md الخارجي تلقائيًا (إن وُجد يستبدل المدمج)",
+    "promptPath": "مسار ملف الـ prompt",
+    "promptPathPlaceholder": "اختياري: اختر prompt.md (نص عادي قابل للتعديل)"
+  },
+  "license": {
+    "title": "الترخيص",
+    "exportFeature": "تصدير بصمة الجهاز",
+    "importLicense": "استيراد ملف الترخيص",
+    "buyPerpetual": "شراء ترخيص لمدة 3 سنوات",
+    "buyYearly": "شراء ترخيص لمدة سنة",
+    "softwareUpdate": "تحديثات البرنامج",
+    "statusUnknown": "الترخيص: غير معروف",
+    "statusAuthed": "الترخيص: مفعّل",
+    "statusAuthedWithDetail": "الترخيص: مفعّل ({detail})",
+    "statusUnAuthed": "الترخيص: غير مفعّل ({reason})",
+    "detailExpire": "ينتهي {exp}",
+    "exportDialogTitle": "تصدير بصمة الجهاز"
+  },
+  "common": {
+    "copy": "نسخ",
+    "yes": "نعم",
+    "no": "لا",
+    "unknown": "?",
+    "confirm": "تأكيد",
+    "copied": "تم النسخ.",
+    "close": "إغلاق",
+    "loading": "جارٍ التحميل..."
+  },
+  "errors": {
+    "pathEmpty": "المسار فارغ",
+    "noShellOpen": "shell.open غير متاح. انسخ المسار وافتحه في File Explorer.",
+    "noTauriApiSummary": "لم يتم العثور على Tauri API (window.__TAURI__). شغّل التطبيق المكتبي وفعّل build.withGlobalTauri في tauri.conf.json.",
+    "noTauriApiStatus": "لم يتم العثور على Tauri API. لا يمكن التحليل.",
+    "noDialogSave": "dialog.save غير متاح. لا يمكن التصدير.",
+    "needAnalyzeToAsk": "نفّذ التشخيص أولاً (إنشاء report) قبل طرح أسئلة متابعة",
+    "streamRunning": "جارٍ الإخراج… الرجاء الانتظار.",
+    "noEventApi": "لم يتم العثور على event API. التدفّق غير متاح.",
+    "uiRuntimeError": "خطأ في واجهة المستخدم: {message} (ملف: {file}، سطر: {line})",
+    "scriptLoadFail": "فشل تحميل/تنفيذ السكربت: {src}",
+    "unhandledPromise": "خطأ Promise غير معالَج: {reason}"
+  },
+  "about": {
+    "title": "حول",
+    "subtitle": "أداة تشخيص الإشارة بالمحادثة، Flowshark مدعوم بالذكاء الاصطناعي",
+    "version": "الإصدار",
+    "runtime": "بيئة التشغيل",
+    "developer": "المطور",
+    "developerName": "flowshark studio",
+    "copyright": "حقوق النشر",
+    "copyrightValue": "© 2026",
+    "copyInfo": "نسخ المعلومات",
+    "dialogText": "LLM-Shark\n\nأداة تشخيص الإشارة بالمحادثة، Flowshark مدعوم بالذكاء الاصطناعي"
+  },
+  "dialogs": {
+    "openPcapTitle": "اختيار ملف PCAP",
+    "openKbTitle": "اختيار ملف مكتبة الحالات",
+    "openTsharkTitle": "اختيار tshark.exe",
+    "importLicenseTitle": "استيراد ملف الترخيص",
+    "openPromptTitle": "اختيار prompt.md",
+    "promptMarkdown": "Prompt Markdown"
+  },
+  "mermaid": {
+    "notLoaded": "لم يتم العثور على مكتبة Mermaid. لا يمكن عرض المخططات.",
+    "zoomIn": "تكبير",
+    "zoomOut": "تصغير",
+    "fit": "ملاءمة",
+    "syntaxError": "خطأ صياغة Mermaid{extra}",
+    "versionHint": "(mermaid {v}؛ قد يختلف العارض عبر الإنترنت)",
+    "renderFailSuppressed": "فشل عرض Mermaid (تم إخفاء رسم الخطأ): {msg} {ver}",
+    "renderFail": "فشل عرض Mermaid: {msg}\n\n{code}",
+    "renderFailSummary": "فشل عرض Mermaid في المحادثة ({count}): {first}"
+  },
+  "markdown": {
+    "renderFail": "فشل عرض Markdown: {msg}"
+  },
+  "summary": {
+    "expand": "توسيع",
+    "collapse": "طي"
+  },
+  "sig": {
+    "markdownTableHeader": "| إطار | وقت | بروتوكول | رسالة | سبب | Src | Dst |\n|---:|---|---|---|---|---|---|",
+    "noData": "لا توجد بيانات إشارة للتحميل.",
+    "allShown": "تم عرض جميع عناصر الإشارة.",
+    "fullHint": "الإشارة الكاملة: {count} عنصرًا.\nيمكنك تحميل صفحات أخرى أو فتح CSV/JSON مباشرة.",
+    "nextPage": "تحميل التالي ({pageSize})",
+    "appendTable": "إضافة جدول الإشارة:\n\n{table}",
+    "sequenceDiagramTitle": "مخطط تسلسل الإشارة:",
+    "keyTableTitle": "جدول الإشارة الأساسي:",
+    "appendTableTitle": "إضافة جدول الإشارة:",
+    "fullTitle": "الإشارة الكاملة:",
+    "pageHeader": "العناصر {start}-{end} / الإجمالي {total}",
+    "onlyFirstN": "عرض أول {n} (الإجمالي {total}).",
+    "openCsv": "فتح CSV",
+    "openJson": "فتح JSON",
+    "openDir": "فتح المجلد",
+    "copyCsvPath": "نسخ مسار CSV"
+  },
+  "statusBar": {
+    "template": "من/إلى: {a} -> {b}  البدء/المدة: {start} / {dur}  النوع: {callType}  180: {has180}  200: {has200}  Cancel: {hasCancel}  انقطاع: {dropped}  حالات: {kbCount}",
+    "labels": {
+      "number": "رقم",
+      "time": "وقت",
+      "duration": "مدة",
+      "ringing": "رنين",
+      "offhook": "رفع السماعة",
+      "answered": "رد",
+      "cancel": "إلغاء",
+      "dropped": "انقطاع",
+      "cases": "حالات"
+    }
+  },
+  "analyze": {
+    "fetchingSummary": "جارٍ جلب الملخص…",
+    "tooLarge": "الملف يتجاوز حد الحجم ({size}). تم إيقاف التحليل.",
+    "detectedProtocols": "البروتوكولات المكتشفة: {protocols}",
+    "notAnalyzable": "يشير الملخص إلى إيقاف التشخيص ({reason}).",
+    "summaryOk": "الملخص جيد. جارٍ التحليل…",
+    "defaultPrompt": "اتبع متطلبات الـprompt بدقة وابدأ تنفيذ مهمة التشخيص."
+  }
+}

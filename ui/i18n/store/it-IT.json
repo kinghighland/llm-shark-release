@@ -1,0 +1,64 @@
+{
+  "store": {
+    "entry": "Abbonamento",
+    "title": "Centro abbonamenti",
+    "refresh": "Aggiorna",
+    "restore": "Ripristina acquisti",
+    "manage": "Gestisci abbonamento",
+    "openProduct": "Apri Microsoft Store",
+    "plan": {
+      "pro_month": "Pro mensile",
+      "pro_year": "Pro annuale"
+    },
+    "compare": {
+      "title": "Confronta i piani a colpo d’occhio",
+      "sub": "Gratis per controlli rapidi, Pro per diagnosi complete ed export.",
+      "tag1": "Esperto di segnalazione IA",
+      "tag2": "Diagnosi pro efficiente",
+      "tag3": "Archivio casi LLM-Shark",
+      "tag4": "Grande aumento di efficienza",
+      "free": {
+        "tier": "Gratis",
+        "price": "Accesso base",
+        "f1": "3 analisi al giorno",
+        "f2": "10 approfondimenti al giorno",
+        "f3": "Ideale per uso leggero",
+        "f4": "Aggiorna quando vuoi"
+      },
+      "proMonth": {
+        "badge": "Più scelto",
+        "tier": "Pro (mese)",
+        "price": "Fatturazione mensile",
+        "f1": "Analisi illimitate",
+        "f2": "Approfondimenti illimitati",
+        "f3": "Ideale per uso intensivo",
+        "f4": "Abbonamento mensile"
+      },
+      "proYear": {
+        "badge": "Miglior valore",
+        "tier": "Pro (anno)",
+        "price": "Fatturazione annuale",
+        "f1": "Analisi illimitate",
+        "f2": "Approfondimenti illimitati",
+        "f3": "Ideale per uso intensivo",
+        "f4": "Abbonamento annuale"
+      }
+    },
+    "priceUnknown": "Prezzo non disponibile",
+    "expireAt": "Scade il {date}",
+    "planTier": "Piano: {tier}",
+    "planActive": "Attivo",
+    "planPurchase": "Abbonati",
+    "purchaseFailed": "Acquisto non riuscito: {reason}",
+    "statusLoading": "Verifica abbonamento…",
+    "statusUnavailable": "Store non disponibile",
+    "listFailed": "Caricamento prodotti non riuscito: {reason}",
+    "statusActiveExpire": "Attivo ({plan}) · Scade il {date}",
+    "statusActive": "Attivo ({plan})",
+    "statusFree": "Gratuito",
+    "restoreFailed": "Ripristino non riuscito: {reason}",
+    "restoreOk": "Ripristinato",
+    "manageFailed": "Apertura gestione non riuscita: {reason}",
+    "openFailed": "Apertura store non riuscita: {reason}"
+  }
+}

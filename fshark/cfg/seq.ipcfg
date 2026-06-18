@@ -1,0 +1,9 @@
+# SIP Network Element IP Configuration
+# Fill in comma-separated IP addresses for each network element type.
+# Leave empty to rely on auto-detection from SIP headers.
+AS=
+SCSCF=
+MGCF=
+SBC=
+BGCF=
+ICSCF=

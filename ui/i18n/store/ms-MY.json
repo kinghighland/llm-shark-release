@@ -1,0 +1,64 @@
+{
+  "store": {
+    "entry": "Langganan",
+    "title": "Pusat langganan",
+    "refresh": "Segar semula",
+    "restore": "Pulihkan pembelian",
+    "manage": "Urus langganan",
+    "openProduct": "Buka Microsoft Store",
+    "plan": {
+      "pro_month": "Pro bulanan",
+      "pro_year": "Pro tahunan"
+    },
+    "compare": {
+      "title": "Bandingkan pelan sepintas lalu",
+      "sub": "Percuma untuk semakan pantas, Pro untuk diagnosis penuh dan eksport.",
+      "tag1": "Pakar Pensinyalan AI",
+      "tag2": "Diagnostik Pro yang Efisien",
+      "tag3": "Perpustakaan Kes LLM-Shark",
+      "tag4": "Peningkatan Kecekapan Besar",
+      "free": {
+        "tier": "Percuma",
+        "price": "Akses asas",
+        "f1": "Ringkasan diagnosis pantas",
+        "f2": "Sejarah laporan terhad",
+        "f3": "Tetapan model tempatan",
+        "f4": "Tiada eksport"
+      },
+      "proMonth": {
+        "badge": "Popular",
+        "tier": "Pro (bulan)",
+        "price": "Bil bulanan",
+        "f1": "Laporan penuh + diagram Mermaid",
+        "f2": "Sesi tanpa had",
+        "f3": "Eksport CSV/JSON",
+        "f4": "Sokongan keutamaan"
+      },
+      "proYear": {
+        "badge": "Nilai terbaik",
+        "tier": "Pro (tahun)",
+        "price": "Bil tahunan",
+        "f1": "Laporan penuh + diagram Mermaid",
+        "f2": "Sesi tanpa had",
+        "f3": "Eksport CSV/JSON",
+        "f4": "Sokongan keutamaan"
+      }
+    },
+    "priceUnknown": "Harga tidak tersedia",
+    "expireAt": "Tamat {date}",
+    "planTier": "Pelan: {tier}",
+    "planActive": "Aktif",
+    "planPurchase": "Langgan",
+    "purchaseFailed": "Pembelian gagal: {reason}",
+    "statusLoading": "Menyemak langganan…",
+    "statusUnavailable": "Store tidak tersedia",
+    "listFailed": "Gagal memuatkan produk: {reason}",
+    "statusActiveExpire": "Aktif ({plan}) · Tamat {date}",
+    "statusActive": "Aktif ({plan})",
+    "statusFree": "Percuma",
+    "restoreFailed": "Pemulihan gagal: {reason}",
+    "restoreOk": "Dipulihkan",
+    "manageFailed": "Gagal membuka pengurusan: {reason}",
+    "openFailed": "Gagal membuka store: {reason}"
+  }
+}

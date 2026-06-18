@@ -1,0 +1,194 @@
+{
+  "app": {
+    "pickPcap": "PCAPを選択",
+    "analyze": "診断",
+    "notLoaded": "未読み込み",
+    "pickedFileHint": "ファイルを選択しました。「診断」をクリックして概要を取得し、続行可否を判断します。",
+    "documentTitleWithFile": "LLM診断 - {file}"
+  },
+  "top": {
+    "about": "概要",
+    "settings": "設定",
+    "theme": "テーマ",
+    "language": "言語"
+  },
+  "sidebar": {
+    "toggle": "折りたたみ/展開"
+  },
+  "sessions": {
+    "title": "セッション",
+    "new": "新規",
+    "sessionN": "セッション {n}",
+    "rename": "名前変更",
+    "delete": "削除",
+    "unnamed": "無題",
+    "renamePromptTitle": "セッション名の変更",
+    "deleteConfirm": "このセッションを削除しますか？"
+  },
+  "chat": {
+    "title": "対話",
+    "placeholder": "追加で質問…",
+    "send": "送信",
+    "stop": "停止",
+    "needAnalyzeFirst": "先に「診断」を実行してコンテキストを作成してから質問してください。"
+  },
+  "report": {
+    "title": "レポート"
+  },
+  "settings": {
+    "modelConfigTitle": "モデル設定（OpenAI互換）",
+    "endpoint": "Endpoint",
+    "apiKey": "API Key",
+    "apiKeyPlaceholder": "任意（例：ローカルモデル）",
+    "toggleApiKeyTitle": "表示/非表示",
+    "show": "表示",
+    "hide": "非表示",
+    "model": "Model",
+    "validate": "検証",
+    "validating": "検証中…",
+    "validateOk": "検証に成功しました",
+    "validateOkWithDetail": "検証に成功しました: {detail}",
+    "validateFail": "検証に失敗しました: {reason}",
+    "temperature": "Temperature",
+    "theme": "テーマ",
+    "themeDark": "ダーク",
+    "themeLight": "ライト",
+    "stream": "ストリーム",
+    "useKb": "知識ベースを使用",
+    "caseLibraryTitle": "ケースライブラリ",
+    "useCaseLibrary": "ケースライブラリを使用",
+    "kbUserPath": "KBファイルのパス",
+    "kbUserPathPlaceholder": "任意：.md のケースライブラリファイルを選択（プレーンテキスト）",
+    "wiresharkTitle": "Wireshark",
+    "tsharkPath": "tshark.exe のパス",
+    "tsharkPathPlaceholder": "優先：検出。見つからない場合は tshark.exe（Wireshark）を選択",
+    "detect": "検出",
+    "choose": "選択…",
+    "tsharkDetected": "tshark を検出しました: {path}",
+    "tsharkNotFound": "tshark が見つかりません。Wireshark をインストールするか、tshark.exe を手動で選択してください。",
+    "saveCfg": "保存",
+    "loadCfg": "読み込み",
+    "cfgNoSaved": "保存済み設定なし",
+    "cfgLoaded": "読み込み済み",
+    "cfgSaved": "保存しました",
+    "cfgParseFail": "設定の読み込みに失敗しました",
+    "promptAuto": "外部 prompt.md を自動使用（存在する場合は内蔵を置き換え）",
+    "promptPath": "プロンプトファイルのパス",
+    "promptPathPlaceholder": "任意：prompt.md を選択（プレーンテキスト、編集可）"
+  },
+  "license": {
+    "title": "ライセンス",
+    "exportFeature": "端末フィンガープリントを書き出し",
+    "importLicense": "ライセンスを読み込み",
+    "buyPerpetual": "3年ライセンスを購入",
+    "buyYearly": "1年ライセンスを購入",
+    "softwareUpdate": "ソフトウェア更新",
+    "statusUnknown": "ライセンス：不明",
+    "statusAuthed": "ライセンス：有効",
+    "statusAuthedWithDetail": "ライセンス：有効（{detail}）",
+    "statusUnAuthed": "ライセンス：無効（{reason}）",
+    "detailExpire": "期限 {exp}",
+    "exportDialogTitle": "端末フィンガープリントを書き出し"
+  },
+  "common": {
+    "copy": "コピー",
+    "yes": "はい",
+    "no": "いいえ",
+    "unknown": "?",
+    "confirm": "確認",
+    "copied": "コピーしました。",
+    "close": "閉じる",
+    "loading": "読み込み中..."
+  },
+  "errors": {
+    "pathEmpty": "パスが空です",
+    "noShellOpen": "shell.open が利用できません。パスをコピーしてエクスプローラーで開いてください。",
+    "noTauriApiSummary": "Tauri API が見つかりません（window.__TAURI__）。デスクトップアプリで実行し、tauri.conf.json の build.withGlobalTauri を有効化してください。",
+    "noTauriApiStatus": "Tauri API が見つかりません。解析できません。",
+    "noDialogSave": "dialog.save が利用できません。書き出しできません。",
+    "needAnalyzeToAsk": "先に診断（report 生成）してから追加質問してください",
+    "streamRunning": "出力中です。お待ちください。",
+    "noEventApi": "event API が見つかりません。ストリーム出力は利用できません。",
+    "uiRuntimeError": "UI実行時エラー：{message}（ファイル：{file}、行：{line}）",
+    "scriptLoadFail": "スクリプトの読み込み/実行に失敗しました：{src}",
+    "unhandledPromise": "未処理の Promise エラー：{reason}"
+  },
+  "about": {
+    "title": "概要",
+    "subtitle": "対話型シグナリング診断ツール（AI 搭載 Flowshark）",
+    "version": "バージョン",
+    "runtime": "実行環境",
+    "developer": "開発者",
+    "developerName": "flowshark studio",
+    "copyright": "著作権",
+    "copyrightValue": "© 2026",
+    "copyInfo": "情報をコピー",
+    "dialogText": "LLM-Shark\n\n対話型シグナリング診断ツール（AI 搭載 Flowshark）"
+  },
+  "dialogs": {
+    "openPcapTitle": "PCAPファイルを選択",
+    "openKbTitle": "ケースライブラリファイルを選択",
+    "openTsharkTitle": "tshark.exe を選択",
+    "importLicenseTitle": "ライセンスファイルを読み込み",
+    "openPromptTitle": "prompt.md を選択",
+    "promptMarkdown": "プロンプト Markdown"
+  },
+  "mermaid": {
+    "notLoaded": "Mermaid ライブラリが見つかりません。図を描画できません。",
+    "zoomIn": "拡大",
+    "zoomOut": "縮小",
+    "fit": "フィット",
+    "syntaxError": "Mermaid 構文エラー{extra}",
+    "versionHint": "（mermaid {v}。オンラインは異なる場合があります）",
+    "renderFailSuppressed": "Mermaid の描画に失敗しました（エラー図は抑制）：{msg} {ver}",
+    "renderFail": "Mermaid の描画に失敗しました：{msg}\n\n{code}",
+    "renderFailSummary": "チャット内の Mermaid 描画失敗（{count}件）：{first}"
+  },
+  "markdown": {
+    "renderFail": "Markdown の描画に失敗しました：{msg}"
+  },
+  "summary": {
+    "expand": "展開",
+    "collapse": "折りたたみ"
+  },
+  "sig": {
+    "markdownTableHeader": "| Frame | 時刻 | プロトコル | メッセージ | 原因 | Src | Dst |\n|---:|---|---|---|---|---|---|",
+    "noData": "読み込めるシグナリングデータがありません。",
+    "allShown": "すべてのシグナリングを表示しました。",
+    "fullHint": "全シグナリング：{count} 件。\n続きのページを読み込むか、CSV/JSON を直接開けます。",
+    "nextPage": "次を読み込む（{pageSize}）",
+    "appendTable": "シグナリング表を追加：\n\n{table}",
+    "sequenceDiagramTitle": "シグナリング時系列図：",
+    "keyTableTitle": "主要シグナリング表：",
+    "appendTableTitle": "シグナリング表を追加：",
+    "fullTitle": "全シグナリング：",
+    "pageHeader": "{start}-{end} 件 / 全 {total} 件",
+    "onlyFirstN": "先頭 {n} 件のみ表示（全 {total} 件）。",
+    "openCsv": "CSVを開く",
+    "openJson": "JSONを開く",
+    "openDir": "フォルダを開く",
+    "copyCsvPath": "CSVパスをコピー"
+  },
+  "statusBar": {
+    "template": "発/着: {a} -> {b}  開始/時間: {start} / {dur}  種類: {callType}  180: {has180}  200: {has200}  Cancel: {hasCancel}  切断: {dropped}  ケース: {kbCount}",
+    "labels": {
+      "number": "番号",
+      "time": "時刻",
+      "duration": "通話時間",
+      "ringing": "呼出",
+      "offhook": "受話器を上げる",
+      "answered": "応答",
+      "cancel": "取消",
+      "dropped": "切断",
+      "cases": "ケース"
+    }
+  },
+  "analyze": {
+    "fetchingSummary": "概要を取得中…",
+    "tooLarge": "ファイルが上限（{size}）を超えました。解析を停止しました。",
+    "detectedProtocols": "検出されたプロトコル: {protocols}",
+    "notAnalyzable": "概要により診断を停止します（{reason}）。",
+    "summaryOk": "概要OK。解析開始…",
+    "defaultPrompt": "プロンプトの要件に厳密に従い、診断タスクを開始してください。"
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "app": {
+    "pickPcap": "Escolher PCAP",
+    "analyze": "Diagnosticar",
+    "notLoaded": "Não carregado",
+    "pickedFileHint": "Arquivo selecionado. Clique em “Diagnosticar” para obter o resumo e decidir se continua.",
+    "documentTitleWithFile": "Diagnóstico LLM - {file}"
+  },
+  "top": {
+    "about": "Sobre",
+    "settings": "Configurações",
+    "theme": "Tema",
+    "language": "Idioma"
+  },
+  "sidebar": {
+    "toggle": "Recolher/Expandir"
+  },
+  "sessions": {
+    "title": "Sessões",
+    "new": "Nova sessão",
+    "sessionN": "Sessão {n}",
+    "rename": "Renomear",
+    "delete": "Excluir",
+    "unnamed": "Sessão sem título",
+    "renamePromptTitle": "Renomear sessão",
+    "deleteConfirm": "Excluir esta sessão?"
+  },
+  "chat": {
+    "title": "Chat",
+    "placeholder": "Faça uma pergunta…",
+    "send": "Enviar",
+    "stop": "Parar",
+    "needAnalyzeFirst": "Clique primeiro em “Diagnosticar” para criar o contexto e depois pergunte."
+  },
+  "report": {
+    "title": "Relatório"
+  },
+  "settings": {
+    "modelConfigTitle": "Configurações do modelo (compatível com OpenAI)",
+    "endpoint": "Endpoint",
+    "apiKey": "Chave da API",
+    "apiKeyPlaceholder": "Opcional (ex.: modelo local)",
+    "toggleApiKeyTitle": "Mostrar/Ocultar",
+    "show": "Mostrar",
+    "hide": "Ocultar",
+    "model": "Modelo",
+    "validate": "Validar",
+    "validating": "Validando…",
+    "validateOk": "Validação bem-sucedida",
+    "validateOkWithDetail": "Validação bem-sucedida: {detail}",
+    "validateFail": "Falha na validação: {reason}",
+    "temperature": "Temperatura",
+    "theme": "Tema",
+    "themeDark": "Escuro",
+    "themeLight": "Claro",
+    "stream": "Fluxo",
+    "useKb": "Usar base de conhecimento",
+    "caseLibraryTitle": "Biblioteca de casos",
+    "useCaseLibrary": "Usar biblioteca de casos",
+    "kbUserPath": "Caminho do arquivo KB",
+    "kbUserPathPlaceholder": "Opcional: escolha um arquivo .md de casos (texto simples, editável)",
+    "wiresharkTitle": "Wireshark",
+    "tsharkPath": "Caminho do tshark.exe",
+    "tsharkPathPlaceholder": "Prefira “Detectar”. Se não encontrar, escolha tshark.exe (Wireshark)",
+    "detect": "Detectar",
+    "choose": "Escolher…",
+    "tsharkDetected": "tshark detectado: {path}",
+    "tsharkNotFound": "tshark não encontrado. Instale o Wireshark ou escolha tshark.exe manualmente.",
+    "saveCfg": "Salvar",
+    "loadCfg": "Carregar",
+    "cfgNoSaved": "Nenhuma configuração salva",
+    "cfgLoaded": "Carregado",
+    "cfgSaved": "Salvo",
+    "cfgParseFail": "Falha ao analisar a configuração",
+    "promptAuto": "Usar automaticamente prompt.md externo (se existir, substitui o interno)",
+    "promptPath": "Caminho do arquivo prompt",
+    "promptPathPlaceholder": "Opcional: escolha um prompt.md (texto simples, editável)"
+  },
+  "license": {
+    "title": "Licença",
+    "exportFeature": "Exportar impressão digital da máquina",
+    "importLicense": "Importar arquivo de licença",
+    "buyPerpetual": "Comprar licença de 3 anos",
+    "buyYearly": "Comprar licença de 1 ano",
+    "softwareUpdate": "Atualizações de software",
+    "statusUnknown": "Licença: Desconhecida",
+    "statusAuthed": "Licença: Ativada",
+    "statusAuthedWithDetail": "Licença: Ativada ({detail})",
+    "statusUnAuthed": "Licença: Não ativada ({reason})",
+    "detailExpire": "Expira em {exp}",
+    "exportDialogTitle": "Exportar impressão digital da máquina"
+  },
+  "common": {
+    "copy": "Copiar",
+    "yes": "Sim",
+    "no": "Não",
+    "unknown": "?",
+    "confirm": "Confirmar",
+    "copied": "Copiado.",
+    "close": "Fechar",
+    "loading": "Carregando..."
+  },
+  "errors": {
+    "pathEmpty": "Caminho vazio",
+    "noShellOpen": "shell.open não disponível. Copie o caminho e abra no Explorador de Arquivos.",
+    "noTauriApiSummary": "API Tauri não detectada (window.__TAURI__). Execute como app desktop e ative build.withGlobalTauri no tauri.conf.json.",
+    "noTauriApiStatus": "API Tauri não detectada. Não foi possível analisar.",
+    "noDialogSave": "dialog.save não disponível. Não foi possível exportar.",
+    "needAnalyzeToAsk": "Diagnostique primeiro (gerar relatório) antes de perguntar",
+    "streamRunning": "A transmissão está em andamento. Aguarde.",
+    "noEventApi": "API de eventos não detectada. A transmissão não está disponível.",
+    "uiRuntimeError": "Erro de execução da UI: {message} (arquivo: {file}, linha: {line})",
+    "scriptLoadFail": "Falha ao carregar/executar script: {src}",
+    "unhandledPromise": "Erro de Promise não tratado: {reason}"
+  },
+  "about": {
+    "title": "Sobre",
+    "subtitle": "Ferramenta de diagnóstico de sinalização conversacional, Flowshark com IA",
+    "version": "Versão",
+    "runtime": "Ambiente de execução",
+    "developer": "Desenvolvedor",
+    "developerName": "flowshark studio",
+    "copyright": "Copyright",
+    "copyrightValue": "© 2026",
+    "copyInfo": "Copiar info",
+    "dialogText": "LLM-Shark\n\nFerramenta de diagnóstico de sinalização conversacional, Flowshark com IA"
+  },
+  "dialogs": {
+    "openPcapTitle": "Escolher arquivo PCAP",
+    "openKbTitle": "Escolher arquivo da biblioteca de casos",
+    "openTsharkTitle": "Escolher tshark.exe",
+    "importLicenseTitle": "Importar arquivo de licença",
+    "openPromptTitle": "Escolher prompt.md",
+    "promptMarkdown": "Markdown do prompt"
+  },
+  "mermaid": {
+    "notLoaded": "Biblioteca Mermaid não detectada. Não é possível renderizar diagramas no chat.",
+    "zoomIn": "Zoom",
+    "zoomOut": "Reduzir",
+    "fit": "Ajustar",
+    "syntaxError": "Erro de sintaxe Mermaid{extra}",
+    "versionHint": "(mermaid {v}; o visualizador online pode diferir)",
+    "renderFailSuppressed": "Falha ao renderizar Mermaid (gráfico de erro suprimido): {msg} {ver}",
+    "renderFail": "Falha ao renderizar Mermaid: {msg}\n\n{code}",
+    "renderFailSummary": "Falha ao renderizar Mermaid no chat ({count}): {first}"
+  },
+  "markdown": {
+    "renderFail": "Falha ao renderizar Markdown: {msg}"
+  },
+  "summary": {
+    "expand": "Expandir",
+    "collapse": "Recolher"
+  },
+  "sig": {
+    "markdownTableHeader": "| Frame | Time | Protocol | Message | Cause | Src | Dst |\n|---:|---|---|---|---|---|---|",
+    "noData": "Nenhum dado de sinalização para carregar.",
+    "allShown": "Todos os itens de sinalização estão exibidos.",
+    "fullHint": "Sinalização completa: {count} itens.\nVocê pode carregar mais páginas ou abrir o arquivo CSV/JSON diretamente.",
+    "nextPage": "Carregar próxima ({pageSize})",
+    "appendTable": "Anexar tabela de sinalização:\n\n{table}",
+    "sequenceDiagramTitle": "Diagrama de sequência de sinalização:",
+    "keyTableTitle": "Tabela de sinalização chave:",
+    "appendTableTitle": "Anexar tabela de sinalização:",
+    "fullTitle": "Sinalização completa:",
+    "pageHeader": "Itens {start}-{end} / Total {total}",
+    "onlyFirstN": "Mostrando os primeiros {n} itens (total {total}).",
+    "openCsv": "Abrir CSV",
+    "openJson": "Abrir JSON",
+    "openDir": "Abrir pasta",
+    "copyCsvPath": "Copiar caminho do CSV"
+  },
+  "statusBar": {
+    "template": "De/Para: {a} -> {b}  Início/Duração: {start} / {dur}  Tipo: {callType}  Toque: {has180}  Atendida: {has200}  Cancelada: {hasCancel}  Queda: {dropped}  Casos: {kbCount}",
+    "labels": {
+      "number": "Número",
+      "time": "Início",
+      "duration": "Duração",
+      "ringing": "Toque",
+      "offhook": "Fora do gancho",
+      "answered": "Atendida",
+      "cancel": "Cancelar",
+      "dropped": "Queda",
+      "cases": "Casos"
+    }
+  },
+  "analyze": {
+    "fetchingSummary": "Obtendo resumo…",
+    "tooLarge": "O arquivo excede o limite de tamanho ({size}). Análise interrompida.",
+    "detectedProtocols": "Protocolos detectados: {protocols}",
+    "notAnalyzable": "O resumo indica que o diagnóstico deve parar ({reason}).",
+    "summaryOk": "Resumo aprovado. Iniciando análise…",
+    "defaultPrompt": "Siga rigorosamente os requisitos do prompt e inicie a tarefa de diagnóstico."
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "store": {
+    "entry": "Abonament",
+    "title": "Centru de abonamente",
+    "refresh": "Reîmprospătează",
+    "restore": "Restaurează achizițiile",
+    "manage": "Gestionează abonamentul",
+    "openProduct": "Deschide Microsoft Store",
+    "plan": {
+      "pro_month": "Pro lunar",
+      "pro_year": "Pro anual"
+    },
+    "compare": {
+      "title": "Compară planurile dintr-o privire",
+      "sub": "Gratuit pentru verificări rapide, Pro pentru diagnostic complet și exporturi.",
+      "tag1": "Expert AI în semnalizare",
+      "tag2": "Diagnostic profesional eficient",
+      "tag3": "Bibliotecă de cazuri LLM-Shark",
+      "tag4": "Creștere majoră a eficienței",
+      "free": {
+        "tier": "Gratuit",
+        "price": "Acces de bază",
+        "f1": "3 analize pe zi",
+        "f2": "10 întrebări suplimentare pe zi",
+        "f3": "Potrivit pentru utilizare ușoară",
+        "f4": "Poți face upgrade oricând"
+      },
+      "proMonth": {
+        "badge": "Popular",
+        "tier": "Pro (lunar)",
+        "price": "Facturare lunară",
+        "f1": "Analize nelimitate",
+        "f2": "Întrebări suplimentare nelimitate",
+        "f3": "Potrivit pentru utilizare intensă",
+        "f4": "Abonament lunar"
+      },
+      "proYear": {
+        "badge": "Cel mai bun raport calitate-preț",
+        "tier": "Pro (anual)",
+        "price": "Facturare anuală",
+        "f1": "Analize nelimitate",
+        "f2": "Întrebări suplimentare nelimitate",
+        "f3": "Potrivit pentru utilizare intensă",
+        "f4": "Abonament anual"
+      }
+    },
+    "priceUnknown": "Preț indisponibil",
+    "expireAt": "Expiră {date}",
+    "planTier": "Plan: {tier}",
+    "planActive": "Activ",
+    "planPurchase": "Abonează-te",
+    "purchaseFailed": "Achiziție eșuată: {reason}",
+    "statusLoading": "Se verifică abonamentul…",
+    "statusUnavailable": "Store indisponibil",
+    "listFailed": "Încărcarea produselor a eșuat: {reason}",
+    "statusActiveExpire": "Activ ({plan}) · Expiră {date}",
+    "statusActive": "Activ ({plan})",
+    "statusFree": "Gratuit",
+    "restoreFailed": "Restaurare eșuată: {reason}",
+    "restoreOk": "Restaurat",
+    "manageFailed": "Deschiderea gestionării a eșuat: {reason}",
+    "openFailed": "Deschiderea magazinului a eșuat: {reason}"
+  }
+}

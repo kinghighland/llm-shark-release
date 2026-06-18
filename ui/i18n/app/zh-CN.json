@@ -1,0 +1,195 @@
+{
+  "app": {
+    "pickPcap": "选择 PCAP",
+    "analyze": "诊断",
+    "notLoaded": "未加载",
+    "pickedFileHint": "已选择文件，点击“诊断”将自动获取摘要并判断是否可继续。",
+    "documentTitleWithFile": "LLM诊断 - {file}"
+  },
+  "top": {
+    "about": "关于",
+    "settings": "设置",
+    "theme": "主题",
+    "language": "语言"
+  },
+  "sidebar": {
+    "toggle": "收起/展开"
+  },
+  "sessions": {
+    "title": "会话",
+    "new": "新建会话",
+    "sessionN": "会话 {n}",
+    "rename": "改名",
+    "delete": "删除",
+    "unnamed": "未命名会话",
+    "renamePromptTitle": "会话改名",
+    "deleteConfirm": "确定删除该会话？"
+  },
+  "chat": {
+    "title": "对话",
+    "placeholder": "继续追问…",
+    "send": "发送",
+    "stop": "中止",
+    "needAnalyzeFirst": "请先点击“诊断”生成上下文，再继续追问。",
+    "noPcapPaidOnly": "无PCAP对话仅对订阅版或正式授权开放。"
+  },
+  "report": {
+    "title": "报告"
+  },
+  "settings": {
+    "modelConfigTitle": "模型配置（OpenAI-compatible）",
+    "endpoint": "Endpoint",
+    "apiKey": "API Key",
+    "apiKeyPlaceholder": "可留空（如本地模型）",
+    "toggleApiKeyTitle": "显示/隐藏",
+    "show": "显示",
+    "hide": "隐藏",
+    "model": "Model",
+    "validate": "验证",
+    "validating": "验证中…",
+    "validateOk": "验证成功",
+    "validateOkWithDetail": "验证成功：{detail}",
+    "validateFail": "验证失败：{reason}",
+    "temperature": "Temperature",
+    "theme": "Theme",
+    "themeDark": "夜间",
+    "themeLight": "白天",
+    "stream": "Stream",
+    "useKb": "使用知识库",
+    "caseLibraryTitle": "案例库",
+    "useCaseLibrary": "使用案例库",
+    "kbUserPath": "用户案例库路径",
+    "kbUserPathPlaceholder": "可选：选择一个 .md 案例知识库文件（明文可编辑）",
+    "wiresharkTitle": "Wireshark",
+    "tsharkPath": "tshark.exe 路径",
+    "tsharkPathPlaceholder": "优先检测，检测不到再选择 tshark.exe（Wireshark）",
+    "detect": "检测",
+    "choose": "选择…",
+    "tsharkDetected": "已检测到 tshark：{path}",
+    "tsharkNotFound": "未检测到 tshark，请安装 Wireshark 或手动选择 tshark.exe",
+    "saveCfg": "保存配置",
+    "loadCfg": "加载配置",
+    "cfgNoSaved": "没有保存的配置",
+    "cfgLoaded": "已加载",
+    "cfgSaved": "已保存",
+    "cfgParseFail": "配置解析失败",
+    "promptAuto": "自动使用外置 prompt.md（存在则替换内置）",
+    "promptPath": "提示词文件路径",
+    "promptPathPlaceholder": "可选：选择一个 prompt.md（明文可编辑）"
+  },
+  "license": {
+    "title": "授权",
+    "exportFeature": "导出机器特征",
+    "importLicense": "导入授权文件",
+    "buyPerpetual": "购买三年授权",
+    "buyYearly": "购买一年授权",
+    "softwareUpdate": "软件更新",
+    "statusUnknown": "授权状态：未知",
+    "statusAuthed": "授权状态：已授权",
+    "statusAuthedWithDetail": "授权状态：已授权（{detail}）",
+    "statusUnAuthed": "授权状态：未授权（{reason}）",
+    "detailExpire": "有效期至 {exp}",
+    "exportDialogTitle": "导出机器特征"
+  },
+  "common": {
+    "copy": "复制",
+    "yes": "是",
+    "no": "否",
+    "unknown": "?",
+    "confirm": "确认",
+    "copied": "已复制。",
+    "close": "关闭",
+    "loading": "加载中..."
+  },
+  "errors": {
+    "pathEmpty": "路径为空",
+    "noShellOpen": "未检测到 shell.open，无法从应用内打开文件。可先复制路径到资源管理器打开。",
+    "noTauriApiSummary": "未检测到 Tauri API（window.__TAURI__）。请确认已用桌面程序运行，并在 tauri.conf.json 的 build.withGlobalTauri 启用全局 API。",
+    "noTauriApiStatus": "未检测到 Tauri API，无法执行解析。",
+    "noDialogSave": "未检测到 dialog.save，无法导出文件",
+    "needAnalyzeToAsk": "请先诊断（生成 report）后再追问",
+    "streamRunning": "正在输出中，请稍候",
+    "noEventApi": "未检测到 event API，无法流式输出",
+    "uiRuntimeError": "UI 运行时错误: {message} (文件: {file}, 行: {line})",
+    "scriptLoadFail": "脚本加载/执行失败: {src}",
+    "unhandledPromise": "未捕获的 Promise 错误: {reason}"
+  },
+  "about": {
+    "title": "关于",
+    "subtitle": "对话式信令诊断工具，AI 赋能的流鲨软件",
+    "version": "版本",
+    "runtime": "运行环境",
+    "developer": "开发者",
+    "developerName": "flowshark studio",
+    "copyright": "版权",
+    "copyrightValue": "© 2026",
+    "copyInfo": "复制信息",
+    "dialogText": "LLM-Shark\n\n对话式信令诊断工具，AI 赋能的流鲨软件"
+  },
+  "dialogs": {
+    "openPcapTitle": "选择 PCAP 文件",
+    "openKbTitle": "选择案例库文件",
+    "openTsharkTitle": "选择 tshark.exe",
+    "importLicenseTitle": "导入授权文件",
+    "openPromptTitle": "选择 prompt.md",
+    "promptMarkdown": "提示词 Markdown"
+  },
+  "mermaid": {
+    "notLoaded": "未检测到 mermaid 库，无法在对话中绘图。",
+    "zoomIn": "放大",
+    "zoomOut": "收小",
+    "fit": "适配",
+    "syntaxError": "Mermaid 语法错误{extra}",
+    "versionHint": "（当前 mermaid {v}，在线网站可能版本不同）",
+    "renderFailSuppressed": "Mermaid 渲染失败（已抑制错误图形渲染）: {msg} {ver}",
+    "renderFail": "Mermaid 渲染失败: {msg}\n\n{code}",
+    "renderFailSummary": "对话 Mermaid 渲染失败({count}处): {first}"
+  },
+  "markdown": {
+    "renderFail": "Markdown 渲染失败: {msg}"
+  },
+  "summary": {
+    "expand": "点击展开",
+    "collapse": "点击收起"
+  },
+  "sig": {
+    "markdownTableHeader": "| 帧 | 时间 | 协议 | 消息 | 原因 | 源 | 目的 |\n|---:|---|---|---|---|---|---|",
+    "noData": "暂无可加载的信令数据。",
+    "allShown": "已显示全部信令。",
+    "fullHint": "完整信令：共 {count} 条。\n你可以逐步加载后续页，或直接打开 CSV/JSON 文件查看。",
+    "nextPage": "加载下一页({pageSize})",
+    "appendTable": "追加信令表：\n\n{table}",
+    "sequenceDiagramTitle": "信令时序图：",
+    "keyTableTitle": "关键信令表：",
+    "appendTableTitle": "追加信令表：",
+    "fullTitle": "完整信令：",
+    "pageHeader": "第 {start}-{end} 条 / 共 {total} 条",
+    "onlyFirstN": "仅展示前 {n} 条（总计 {total} 条）。",
+    "openCsv": "打开 CSV",
+    "openJson": "打开 JSON",
+    "openDir": "打开目录",
+    "copyCsvPath": "复制 CSV 路径"
+  },
+  "statusBar": {
+    "template": "主叫/被叫: {a} -> {b}  起呼/时长: {start} / {dur}  类型: {callType}  回铃: {has180}  接通: {has200}  取消: {hasCancel}  掉话: {dropped}  案例: {kbCount}条",
+    "labels": {
+      "number": "号码",
+      "time": "起呼",
+      "duration": "时长",
+      "ringing": "回铃",
+      "offhook": "摘机",
+      "answered": "接通",
+      "cancel": "取消",
+      "dropped": "掉话",
+      "cases": "案例"
+    }
+  },
+  "analyze": {
+    "fetchingSummary": "正在获取摘要…",
+    "tooLarge": "该文件超过大小限制({size})，已停止解析。",
+    "detectedProtocols": "检测到协议：{protocols}",
+    "notAnalyzable": "摘要判断不适合继续诊断（{reason}）。",
+    "summaryOk": "摘要通过，开始解析…",
+    "defaultPrompt": "严格按照提示词的要求开始执行诊断任务"
+  }
+}

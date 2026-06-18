@@ -1,0 +1,8 @@
+[package]
+name = "policy_core"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+license_core = { path = "../license_core" }
+serde = { version = "1", features = ["derive"] }

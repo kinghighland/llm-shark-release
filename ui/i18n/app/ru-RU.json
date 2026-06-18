@@ -1,0 +1,194 @@
+{
+  "app": {
+    "pickPcap": "Выбрать PCAP",
+    "analyze": "Диагностика",
+    "notLoaded": "Не загружено",
+    "pickedFileHint": "Файл выбран. Нажмите «Диагностика», чтобы получить сводку и решить, продолжать ли.",
+    "documentTitleWithFile": "Диагностика LLM - {file}"
+  },
+  "top": {
+    "about": "О программе",
+    "settings": "Настройки",
+    "theme": "Тема",
+    "language": "Язык"
+  },
+  "sidebar": {
+    "toggle": "Свернуть/Развернуть"
+  },
+  "sessions": {
+    "title": "Сессии",
+    "new": "Новая сессия",
+    "sessionN": "Сессия {n}",
+    "rename": "Переименовать",
+    "delete": "Удалить",
+    "unnamed": "Без названия",
+    "renamePromptTitle": "Переименовать сессию",
+    "deleteConfirm": "Удалить эту сессию?"
+  },
+  "chat": {
+    "title": "Чат",
+    "placeholder": "Задайте вопрос…",
+    "send": "Отправить",
+    "stop": "Стоп",
+    "needAnalyzeFirst": "Сначала выполните «Диагностика» (создайте контекст), затем задавайте вопросы."
+  },
+  "report": {
+    "title": "Отчет"
+  },
+  "settings": {
+    "modelConfigTitle": "Настройки модели (OpenAI-совместимо)",
+    "endpoint": "Endpoint",
+    "apiKey": "API Key",
+    "apiKeyPlaceholder": "Необязательно (например, локальная модель)",
+    "toggleApiKeyTitle": "Показать/Скрыть",
+    "show": "Показать",
+    "hide": "Скрыть",
+    "model": "Модель",
+    "validate": "Проверить",
+    "validating": "Проверка…",
+    "validateOk": "Проверка успешна",
+    "validateOkWithDetail": "Проверка успешна: {detail}",
+    "validateFail": "Ошибка проверки: {reason}",
+    "temperature": "Температура",
+    "theme": "Тема",
+    "themeDark": "Тёмная",
+    "themeLight": "Светлая",
+    "stream": "Поток",
+    "useKb": "Использовать базу знаний",
+    "caseLibraryTitle": "Библиотека кейсов",
+    "useCaseLibrary": "Использовать библиотеку кейсов",
+    "kbUserPath": "Путь к файлу KB",
+    "kbUserPathPlaceholder": "Необязательно: выберите .md файл библиотеки кейсов (текстовый)",
+    "wiresharkTitle": "Wireshark",
+    "tsharkPath": "Путь к tshark.exe",
+    "tsharkPathPlaceholder": "Предпочтительно «Обнаружить». Если не найдено — выберите tshark.exe (Wireshark)",
+    "detect": "Обнаружить",
+    "choose": "Выбрать…",
+    "tsharkDetected": "tshark обнаружен: {path}",
+    "tsharkNotFound": "tshark не найден. Установите Wireshark или выберите tshark.exe вручную.",
+    "saveCfg": "Сохранить",
+    "loadCfg": "Загрузить",
+    "cfgNoSaved": "Нет сохранённой конфигурации",
+    "cfgLoaded": "Загружено",
+    "cfgSaved": "Сохранено",
+    "cfgParseFail": "Не удалось прочитать конфигурацию",
+    "promptAuto": "Автоматически использовать внешний prompt.md (если есть, заменяет встроенный)",
+    "promptPath": "Путь к файлу prompt",
+    "promptPathPlaceholder": "Необязательно: выбрать prompt.md (обычный текст, редактируемый)"
+  },
+  "license": {
+    "title": "Лицензия",
+    "exportFeature": "Экспорт отпечатка машины",
+    "importLicense": "Импорт файла лицензии",
+    "buyPerpetual": "Купить лицензию на 3 года",
+    "buyYearly": "Купить лицензию на 1 год",
+    "softwareUpdate": "Обновления",
+    "statusUnknown": "Лицензия: неизвестно",
+    "statusAuthed": "Лицензия: активна",
+    "statusAuthedWithDetail": "Лицензия: активна ({detail})",
+    "statusUnAuthed": "Лицензия: не активна ({reason})",
+    "detailExpire": "Истекает {exp}",
+    "exportDialogTitle": "Экспорт отпечатка машины"
+  },
+  "common": {
+    "copy": "Копировать",
+    "yes": "Да",
+    "no": "Нет",
+    "unknown": "?",
+    "confirm": "Подтвердить",
+    "copied": "Скопировано.",
+    "close": "Закрыть",
+    "loading": "Загрузка..."
+  },
+  "errors": {
+    "pathEmpty": "Пустой путь",
+    "noShellOpen": "shell.open недоступен. Скопируйте путь и откройте в Проводнике.",
+    "noTauriApiSummary": "Tauri API не обнаружен (window.__TAURI__). Запустите как десктоп-приложение и включите build.withGlobalTauri в tauri.conf.json.",
+    "noTauriApiStatus": "Tauri API не обнаружен. Анализ недоступен.",
+    "noDialogSave": "dialog.save недоступен. Экспорт невозможен.",
+    "needAnalyzeToAsk": "Сначала диагностика (создать отчёт), затем задавайте вопросы",
+    "streamRunning": "Идёт вывод. Подождите.",
+    "noEventApi": "Event API не обнаружен. Поток недоступен.",
+    "uiRuntimeError": "Ошибка UI: {message} (файл: {file}, строка: {line})",
+    "scriptLoadFail": "Скрипт не загрузился/не выполнился: {src}",
+    "unhandledPromise": "Необработанная ошибка Promise: {reason}"
+  },
+  "about": {
+    "title": "О программе",
+    "subtitle": "Инструмент диалоговой диагностики сигнализации, Flowshark на базе ИИ",
+    "version": "Версия",
+    "runtime": "Среда выполнения",
+    "developer": "Разработчик",
+    "developerName": "flowshark studio",
+    "copyright": "Copyright",
+    "copyrightValue": "© 2026",
+    "copyInfo": "Копировать информацию",
+    "dialogText": "LLM-Shark\n\nИнструмент диалоговой диагностики сигнализации, Flowshark на базе ИИ"
+  },
+  "dialogs": {
+    "openPcapTitle": "Выбрать файл PCAP",
+    "openKbTitle": "Выбрать файл библиотеки кейсов",
+    "openTsharkTitle": "Выбрать tshark.exe",
+    "importLicenseTitle": "Импорт файла лицензии",
+    "openPromptTitle": "Выбрать prompt.md",
+    "promptMarkdown": "Prompt Markdown"
+  },
+  "mermaid": {
+    "notLoaded": "Библиотека Mermaid не обнаружена. Диаграммы недоступны.",
+    "zoomIn": "Увеличить",
+    "zoomOut": "Уменьшить",
+    "fit": "По размеру",
+    "syntaxError": "Синтаксическая ошибка Mermaid{extra}",
+    "versionHint": "(mermaid {v}; онлайн-версия может отличаться)",
+    "renderFailSuppressed": "Ошибка рендера Mermaid (графика ошибки скрыта): {msg} {ver}",
+    "renderFail": "Ошибка рендера Mermaid: {msg}\n\n{code}",
+    "renderFailSummary": "Ошибка рендера Mermaid в чате ({count}): {first}"
+  },
+  "markdown": {
+    "renderFail": "Ошибка рендера Markdown: {msg}"
+  },
+  "summary": {
+    "expand": "Развернуть",
+    "collapse": "Свернуть"
+  },
+  "sig": {
+    "markdownTableHeader": "| Кадр | Время | Протокол | Сообщение | Причина | Src | Dst |\n|---:|---|---|---|---|---|---|",
+    "noData": "Нет данных сигнализации для загрузки.",
+    "allShown": "Показаны все элементы сигнализации.",
+    "fullHint": "Полная сигнализация: {count} элементов.\nМожно подгружать страницы или открыть CSV/JSON.",
+    "nextPage": "Загрузить ещё ({pageSize})",
+    "appendTable": "Добавить таблицу сигнализации:\n\n{table}",
+    "sequenceDiagramTitle": "Диаграмма последовательности сигнализации:",
+    "keyTableTitle": "Таблица ключевой сигнализации:",
+    "appendTableTitle": "Добавить таблицу сигнализации:",
+    "fullTitle": "Полная сигнализация:",
+    "pageHeader": "Элементы {start}-{end} / Всего {total}",
+    "onlyFirstN": "Показаны первые {n} (всего {total}).",
+    "openCsv": "Открыть CSV",
+    "openJson": "Открыть JSON",
+    "openDir": "Открыть папку",
+    "copyCsvPath": "Копировать путь CSV"
+  },
+  "statusBar": {
+    "template": "От/Кому: {a} -> {b}  Начало/Длительность: {start} / {dur}  Тип: {callType}  180: {has180}  200: {has200}  Cancel: {hasCancel}  Срыв: {dropped}  Кейсы: {kbCount}",
+    "labels": {
+      "number": "Номер",
+      "time": "Время",
+      "duration": "Длительность",
+      "ringing": "Гудок",
+      "offhook": "Снята трубка",
+      "answered": "Ответ",
+      "cancel": "Отмена",
+      "dropped": "Срыв",
+      "cases": "Кейсы"
+    }
+  },
+  "analyze": {
+    "fetchingSummary": "Получение сводки…",
+    "tooLarge": "Файл превышает лимит ({size}). Анализ остановлен.",
+    "detectedProtocols": "Обнаруженные протоколы: {protocols}",
+    "notAnalyzable": "Сводка рекомендует остановить диагностику ({reason}).",
+    "summaryOk": "Сводка OK. Анализ…",
+    "defaultPrompt": "Строго следуйте требованиям промпта и начните выполнение диагностической задачи."
+  }
+}
