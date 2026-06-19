@@ -5,7 +5,7 @@
 
 | 版本 | 主要方向 | 代表提交 |
 |------|----------|----------|
-| Unreleased（Next） | fshark 解码模式探索、地图/交互辅助、仓库清理 | `cc81f61` `3027710` `0843578` |
+| Unreleased | fshark 解码模式探索、地图/交互辅助、仓库清理 | `cc81f61` `3027710` `0843578` |
 | 1.1.0 | 批处理 CLI 工具链落地、配置收口、商店订阅防重复扣费、版本升级 | `87e414e` `83a2909` `e488dc9` `c114820` |
 | 1.0.9 | 按授权动态限制 PCAP 大小、离线授权状态、移动端授权链路闭环 | `a2f2338` `1e4d0aa` `f631980` |
 | 1.0.8 | 版本升级、英文知识库打包、解析/可视化增强 | `d0162fb` `7b3aba0` |
@@ -13,7 +13,12 @@
 
 ---
 
-## Unreleased（Next）
+## 下个 Release
+
+- [ ] Support 2G/3G Legacy Network Signaling Analysis (#2)
+- [ ] Support 5G SBA Interface Analysis (#3)
+
+## Unreleased
 
 ### 新增特性
 - 初始化 fshark 信令解码 CLI 项目  
